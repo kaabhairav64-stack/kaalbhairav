@@ -1,0 +1,210 @@
+<?php
+$page_title    = "Dog Seva &amp; Donation — Feed Bhairav's Vahana | kaalbhairav.org";
+$meta_desc     = "The dog is Kaal Bhairav's sacred vahana. Feeding stray dogs, supporting dog welfare organizations, and contributing to Bhairav temple seva are among the most powerful acts of devotion.";
+$meta_keywords = "Kaal Bhairav dog seva, feed dogs Bhairav, Bhairav vahana dog, dog seva karma, stray dog feeding, Kaal Bhairav donation, Bhairav temple seva, Kashi Bhairav seva";
+$current_page  = "seva";
+include 'includes/header.php';
+?>
+
+<div class="page-header">
+  <h1>Seva &amp; Donation</h1>
+  <p>The dog is Bhairav's beloved vahana — seva of his vehicle is seva of the Lord himself</p>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- WHY DOG SEVA -->
+    <div class="story-block">
+      <span class="source-tag">Source: Kashi Khanda, Skanda Purana; Oral tradition of Kashi priests</span>
+      <h3 class="story-title">The Sacred Dog — Why Dog Seva is Bhairav Seva</h3>
+      <p>
+        The <strong class="text-gold">dog (Shvan)</strong> is not merely a vehicle for Kaal Bhairav —
+        it is an integral symbol of his nature. The dog represents:
+      </p>
+      <br>
+      <ul style="color:var(--ash); padding-left:1.5rem; line-height:2.2;">
+        <li><strong class="text-gold">Absolute loyalty</strong> — the dog follows its master through all conditions, representing the devotee's unwavering devotion to Bhairav</li>
+        <li><strong class="text-gold">Alertness and vigilance</strong> — Bhairav as Kotwal is always watchful; the dog never sleeps on duty</li>
+        <li><strong class="text-gold">Perception beyond the veil</strong> — dogs are said to see spirits and perceive what humans cannot; Bhairav roams the cremation grounds with his dog</li>
+        <li><strong class="text-gold">The outcaste and the divine</strong> — the dog was considered an "impure" animal in caste society, yet Bhairav — who himself lived as an outcast Kapalika — chose the dog as his companion, affirming that the divine transcends human prejudices</li>
+      </ul>
+      <br>
+      <p>
+        Multiple texts confirm: <em>"Jo nahin karwa sakta Kashi Yatra, woh kar le Shvan Seva" —
+        "One who cannot make the pilgrimage to Kashi can earn the same merit by serving dogs."</em>
+        This is the ancient tradition of Kashi.
+      </p>
+    </div>
+
+    <!-- HOW TO DO DOG SEVA -->
+    <h2 class="section-title" style="margin-top:3rem;">How to Perform Dog Seva</h2>
+    <div class="gold-line"></div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🍚</div>
+        <h3 class="card-title">Daily Feeding</h3>
+        <p class="card-text">The simplest and most powerful form of seva. Feed a stray dog every day — especially on Sunday, Tuesday, or Bhairav Ashtami. Use cooked food, bread, or quality dog food. A black dog is most auspicious.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💊</div>
+        <h3 class="card-title">Veterinary Care</h3>
+        <p class="card-text">Treating an injured or sick stray dog — arranging vet care, bandaging wounds, or contributing to a dog's treatment — is considered one of the most direct forms of Bhairav puja.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🏠</div>
+        <h3 class="card-title">Shelter Support</h3>
+        <p class="card-text">Supporting dog shelters and rescue organizations financially or with your time is a profound act of seva. Bhairav watches over all street dogs — your seva reaches him directly.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💧</div>
+        <h3 class="card-title">Water in Summer</h3>
+        <p class="card-text">Place bowls of clean water outside your home for street dogs and birds, especially during hot months. This simple act is considered highly meritorious in Bhairav tradition.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩺</div>
+        <h3 class="card-title">Sterilization Programs</h3>
+        <p class="card-text">Supporting ABC (Animal Birth Control) programs that humanely sterilize stray dogs reduces suffering. Contributing to such programs is a compassionate and dharmic act.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">❤️</div>
+        <h3 class="card-title">Simple Kindness</h3>
+        <p class="card-text">Even acknowledging a dog, petting it with affection, or speaking gently to it is an act of seva. Bhairav is present in the eyes of every dog.</p>
+      </div>
+    </div>
+
+    <!-- AUSPICIOUS DAYS FOR SEVA -->
+    <h2 class="section-title" style="margin-top:3rem;">Most Auspicious Days for Dog Seva</h2>
+    <div class="gold-line"></div>
+    <table>
+      <tr>
+        <th>Day / Occasion</th>
+        <th>Significance</th>
+        <th>Recommended Seva</th>
+      </tr>
+      <tr>
+        <td>Kaal Bhairav Ashtami</td>
+        <td>Bhairav's most sacred annual day</td>
+        <td>Feed 8 or more dogs; donate to a dog shelter</td>
+      </tr>
+      <tr>
+        <td>Every Sunday</td>
+        <td>Bhairav's weekly day</td>
+        <td>Feed at least one dog before eating your own food</td>
+      </tr>
+      <tr>
+        <td>Ashtami Tithi (monthly)</td>
+        <td>8th lunar day — sacred to Bhairav</td>
+        <td>Feed dogs and contribute to their care</td>
+      </tr>
+      <tr>
+        <td>Amavasya (New Moon)</td>
+        <td>Night of Bhairav's power</td>
+        <td>Leave food out for dogs at night</td>
+      </tr>
+      <tr>
+        <td>Diwali / Narak Chaturdashi</td>
+        <td>Night of the ancestors and Bhairav</td>
+        <td>Special feeding of dogs on this night</td>
+      </tr>
+      <tr>
+        <td>Shivratri</td>
+        <td>Night of Shiva-Bhairav</td>
+        <td>Combine Shiva pooja with dog feeding</td>
+      </tr>
+    </table>
+
+    <!-- DONATION SECTION -->
+    <h2 class="section-title" style="margin-top:3rem;">Contribute to Dog Seva</h2>
+    <div class="gold-line"></div>
+    <div class="donation-section">
+      <div style="font-size:3.5rem; margin-bottom:1rem;">🐕</div>
+      <h3 style="font-family:'Cinzel',serif; color:var(--gold); font-size:1.3rem; margin-bottom:1rem;">
+        Support Stray Dog Welfare in the Name of Kaal Bhairav
+      </h3>
+      <p style="color:var(--smoke); max-width:600px; margin:0 auto 1.5rem; font-size:0.95rem;">
+        Your donation contributes to feeding, treating, and sheltering stray dogs —
+        the living vahanas of Lord Kaal Bhairav. Every contribution, however small,
+        is a direct act of devotion and earns the blessings of the Lord of Kashi.
+      </p>
+
+      <p style="color:var(--gold); font-family:'Cinzel',serif; font-size:0.85rem; letter-spacing:0.1em; margin-bottom:1rem;">SELECT AMOUNT (₹)</p>
+      <div class="donation-amount-grid">
+        <button class="amount-btn" data-amount="51">₹ 51</button>
+        <button class="amount-btn" data-amount="108">₹ 108</button>
+        <button class="amount-btn" data-amount="251">₹ 251</button>
+        <button class="amount-btn" data-amount="501">₹ 501</button>
+        <button class="amount-btn" data-amount="1008">₹ 1008</button>
+        <button class="amount-btn" data-amount="2100">₹ 2100</button>
+      </div>
+
+      <div style="margin: 1rem 0;">
+        <input type="number" id="custom-amount" placeholder="Or enter custom amount (₹)"
+          style="background:rgba(0,0,0,0.4); border:1px solid var(--border); color:var(--ash);
+            font-family:'EB Garamond',serif; font-size:1rem; padding:0.7rem 1.2rem;
+            border-radius:3px; width:260px; text-align:center; outline:none;">
+      </div>
+
+      <div style="margin-top:1.5rem;">
+        <p style="color:var(--smoke); font-size:0.85rem; margin-bottom:1rem; font-style:italic;">
+          Donation can be made via UPI / Bank Transfer. Contact us at seva@kaalbhairav.org for details.
+        </p>
+        <a href="mailto:seva@kaalbhairav.org?subject=Dog Seva Donation Inquiry" class="btn-primary">
+          Contact for Donation Details
+        </a>
+      </div>
+
+      <div style="margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border);">
+        <p style="color:var(--smoke); font-size:0.82rem;">
+          ₹51 feeds 3-5 dogs for a day &nbsp;|&nbsp;
+          ₹108 provides emergency vet care &nbsp;|&nbsp;
+          ₹1008 sponsors a dog's monthly care
+        </p>
+      </div>
+    </div>
+
+    <!-- TEMPLE SEVA -->
+    <h2 class="section-title" style="margin-top:3rem;">Temple Seva — Kaal Bhairav Mandir, Varanasi</h2>
+    <div class="gold-line"></div>
+    <div class="two-col">
+      <div>
+        <p>
+          The <strong class="text-gold">Kaal Bhairav Temple in Varanasi</strong> (Kaal Bhairav Gali,
+          near Trilochan) is the most important Bhairav shrine in all of India. It is said that
+          no one can permanently settle in Kashi without first obtaining Kaal Bhairav's permission —
+          and devotees visit this temple before Kashi Vishwanath.
+        </p>
+        <br>
+        <p>
+          Seva at this temple includes: anna-daan (food donation), deepa-daan (lamp donation),
+          abhishek seva, and dog-feeding at the temple premises. The temple priests can arrange
+          specific sevas on your behalf if you cannot visit in person.
+        </p>
+        <br>
+        <p>
+          <strong class="text-gold">Temple Address:</strong><br>
+          Kaal Bhairav Mandir, Kaal Bhairav Gali,<br>
+          Near Trilochan, Varanasi (Kashi), UP — 221001
+        </p>
+      </div>
+      <div>
+        <div class="highlight-box">
+          <h3 class="card-title" style="margin-bottom:1rem;">Other Important Bhairav Shrines</h3>
+          <table>
+            <tr><th>Temple</th><th>Location</th></tr>
+            <tr><td>Kaal Bhairav Mandir</td><td>Varanasi, UP</td></tr>
+            <tr><td>Bhairavnath Mandir</td><td>Ujjain, MP</td></tr>
+            <tr><td>Bhairav Temple (Batuk Bhairav)</td><td>Varanasi, UP</td></tr>
+            <tr><td>Kal Bhairav Temple</td><td>Saundatti, Karnataka</td></tr>
+            <tr><td>Bhairav Temple (Ashtabhairav)</td><td>Varanasi (8 shrines)</td></tr>
+            <tr><td>Bhairavnath Mandir</td><td>Tryambakeshwar, MH</td></tr>
+            <tr><td>Kal Bhairav Mandir</td><td>Gokarna, Karnataka</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<?php include 'includes/footer.php'; ?>
