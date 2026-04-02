@@ -7,14 +7,14 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>About Kaal Bhairav</h1>
-  <p>Iconography, significance, and his place across the great traditions of Shaivism</p>
+  <h1 data-key="about_header">About Kaal Bhairav</h1>
+  <p data-key="about_sub">Iconography, significance, and his place across the great traditions of Shaivism</p>
 </div>
 
 <section class="section">
   <div class="section-inner">
 
-    <h2 class="section-title">Iconography — The Form of Bhairav</h2>
+    <h2 class="section-title" data-key="about_ico_title">Iconography — The Form of Bhairav</h2>
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
@@ -35,7 +35,7 @@ include 'includes/header.php';
         </ul>
       </div>
       <div>
-        <h3 class="card-title" style="margin-bottom:1rem;">The 8 Weapons (Ashtayudha)</h3>
+        <h3 class="card-title" style="margin-bottom:1rem;" data-key="about_weapons_title">The 8 Weapons (Ashtayudha)</h3>
         <table>
           <tr><th>Weapon</th><th>Symbolism</th></tr>
           <tr><td>Trishula (Trident)</td><td>Destroys the 3 gunas, 3 worlds, 3 bodies</td></tr>
@@ -51,7 +51,7 @@ include 'includes/header.php';
     </div>
 
     <!-- NAME MEANING -->
-    <h2 class="section-title" style="margin-top:4rem;">The Meaning of the Name</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="about_name_title">The Meaning of the Name</h2>
     <div class="gold-line"></div>
     <div class="card-grid">
       <div class="card">
@@ -73,7 +73,7 @@ include 'includes/header.php';
     </div>
 
     <!-- TRADITIONS -->
-    <h2 class="section-title" style="margin-top:4rem;">Bhairav Across Traditions</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="about_traditions_title">Bhairav Across Traditions</h2>
     <div class="gold-line"></div>
 
     <div class="story-block">
@@ -126,10 +126,10 @@ include 'includes/header.php';
     </div>
 
     <!-- PHILOSOPHICAL MEANING -->
-    <h2 class="section-title" style="margin-top:4rem;">The Deeper Teaching</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="about_deeper_title">The Deeper Teaching</h2>
     <div class="gold-line"></div>
     <div class="mantra-block">
-      <p style="color:var(--ash); font-size:1.05rem; line-height:2; max-width:700px; margin:0 auto;">
+      <p style="color:var(--ash); font-size:1.05rem; line-height:2; max-width:700px; margin:0 auto;" data-key="about_deeper_text">
         Kaal Bhairav is not merely a deity to be propitiated — he is a mirror.
         When you stand before him, you see what you truly are: consciousness wearing
         a temporary body, moving through time, destined to dissolve back into the

@@ -7,15 +7,15 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Kaal Bhairav &amp; Kashi</h1>
-  <p>The eternal city and its cosmic guardian — an inseparable bond since the beginning of time</p>
+  <h1 data-key="kashi_header">Kaal Bhairav &amp; Kashi</h1>
+  <p data-key="kashi_page_sub">The eternal city and its cosmic guardian — an inseparable bond since the beginning of time</p>
 </div>
 
 <section class="section">
   <div class="section-inner">
 
     <!-- KASHI INTRO -->
-    <h2 class="section-title">Kashi — The City That Never Sleeps</h2>
+    <h2 class="section-title" data-key="kashi_intro_title">Kashi — The City That Never Sleeps</h2>
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
@@ -58,7 +58,7 @@ include 'includes/header.php';
     </div>
 
     <!-- KOTWAL OF KASHI -->
-    <h2 class="section-title" style="margin-top:4rem;">The Kotwal — Divine Police Commissioner</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_kotwal_title">The Kotwal — Divine Police Commissioner</h2>
     <div class="gold-line"></div>
 
     <div class="story-block">
@@ -88,7 +88,7 @@ include 'includes/header.php';
     </div>
 
     <!-- POWERS OF BHAIRAV IN KASHI -->
-    <h2 class="section-title" style="margin-top:4rem;">Bhairav's Powers Within Kashi</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_powers_title">Bhairav's Powers Within Kashi</h2>
     <div class="gold-line"></div>
     <div class="card-grid">
       <div class="card">
@@ -124,7 +124,7 @@ include 'includes/header.php';
     </div>
 
     <!-- KAAL BHAIRAV TEMPLE -->
-    <h2 class="section-title" style="margin-top:4rem;">The Kaal Bhairav Temple — Varanasi</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_temple_title">The Kaal Bhairav Temple — Varanasi</h2>
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
@@ -170,7 +170,7 @@ include 'includes/header.php';
     </div>
 
     <!-- KASHI AND MOKSHA -->
-    <h2 class="section-title" style="margin-top:4rem;">Why Kashi Grants Moksha</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_moksha_title">Why Kashi Grants Moksha</h2>
     <div class="gold-line"></div>
 
     <div class="story-block">
@@ -198,7 +198,7 @@ include 'includes/header.php';
     </div>
 
     <!-- ASHTABHAIRAV IN KASHI -->
-    <h2 class="section-title" style="margin-top:4rem;">The Eight Bhairavas of Kashi</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_ashta_title">The Eight Bhairavas of Kashi</h2>
     <div class="gold-line"></div>
     <p style="color:var(--smoke); margin-bottom:2rem;">
       Kashi contains eight primary Bhairav shrines — the <em>Ashtabhairav</em> — each guarding
@@ -221,7 +221,7 @@ include 'includes/header.php';
 
     <!-- CLOSING REFLECTION -->
     <div class="mantra-block" style="margin-top:4rem;">
-      <p style="color:var(--ash); font-size:1.05rem; line-height:2; max-width:700px; margin:0 auto;">
+      <p style="color:var(--ash); font-size:1.05rem; line-height:2; max-width:700px; margin:0 auto;" data-key="kashi_closing">
         Kashi and Bhairav are one. The city is his body — the Ganga its lifeblood, the ghats his
         steps, the cremation pyres his eyes. To walk in Kashi is to walk within Bhairav himself.
         <br><br>
@@ -234,7 +234,7 @@ include 'includes/header.php';
     </div>
 
     <div class="text-center mt-2" style="margin-top:2rem;">
-      <a href="/stories.php" class="btn-secondary">Read Sacred Stories →</a>
+      <a href="/stories.php" class="btn-secondary" data-key="btn_read_stories">Read Sacred Stories →</a>
       &nbsp;&nbsp;
       <a href="/pooja-vidhi.php" class="btn-primary">Pooja Vidhi</a>
     </div>

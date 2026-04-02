@@ -7,8 +7,8 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Pooja Vidhi</h1>
-  <p>Complete worship procedure — performed with devotion, sincerity, and righteous intent</p>
+  <h1 data-key="pooja_header">Pooja Vidhi</h1>
+  <p data-key="pooja_sub">Complete worship procedure — performed with devotion, sincerity, and righteous intent</p>
 </div>
 
 <section class="section">
@@ -21,7 +21,7 @@ include 'includes/header.php';
     </div>
 
     <!-- AUSPICIOUS DAYS -->
-    <h2 class="section-title" style="margin-top:3rem;">Auspicious Days for Bhairav Pooja</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="pooja_days_title">Auspicious Days for Bhairav Pooja</h2>
     <div class="gold-line"></div>
     <div class="card-grid">
       <div class="card">
@@ -57,7 +57,7 @@ include 'includes/header.php';
     </div>
 
     <!-- MATERIALS REQUIRED -->
-    <h2 class="section-title" style="margin-top:4rem;">Pooja Samagri (Materials Required)</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="pooja_materials_title">Pooja Samagri (Materials Required)</h2>
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
@@ -100,9 +100,9 @@ include 'includes/header.php';
     </div>
 
     <!-- STEP BY STEP POOJA -->
-    <h2 class="section-title" style="margin-top:4rem;">Complete Pooja Procedure</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="pooja_steps_title">Complete Pooja Procedure</h2>
     <div class="gold-line"></div>
-    <p class="section-subtitle">Shodashopachara Puja (16-Step Worship) adapted for Kaal Bhairav</p>
+    <p class="section-subtitle" data-key="pooja_steps_sub">Shodashopachara Puja (16-Step Worship) adapted for Kaal Bhairav</p>
 
     <div class="pooja-steps">
 
@@ -244,7 +244,7 @@ include 'includes/header.php';
     </div>
 
     <!-- EFFECTS -->
-    <h2 class="section-title" style="margin-top:4rem;">Known Spiritual Effects</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="pooja_effects_title">Known Spiritual Effects</h2>
     <div class="gold-line"></div>
     <div class="disclaimer-box" style="margin-bottom:2rem;">
       <h3>⚠ Important — Fair Use Only</h3>

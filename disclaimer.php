@@ -7,8 +7,8 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Disclaimer &amp; Terms of Use</h1>
-  <p>Please read carefully before performing any spiritual practice described on this website</p>
+  <h1 data-key="disc_header">Disclaimer &amp; Terms of Use</h1>
+  <p data-key="disc_sub">Please read carefully before performing any spiritual practice described on this website</p>
 </div>
 
 <section class="section">

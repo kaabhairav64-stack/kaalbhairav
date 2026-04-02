@@ -7,8 +7,8 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Mantras &amp; Tantra</h1>
-  <p>Sacred syllables of Kaal Bhairav — for devotion, protection, and liberation</p>
+  <h1 data-key="mantra_header">Mantras &amp; Tantra</h1>
+  <p data-key="mantra_sub">Sacred syllables of Kaal Bhairav — for devotion, protection, and liberation</p>
 </div>
 
 <section class="section">
@@ -20,7 +20,7 @@ include 'includes/header.php';
     </div>
 
     <!-- MOOL MANTRA -->
-    <h2 class="section-title" style="margin-top:3rem;">Mool Mantra (Root Mantra)</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="mantra_mool_title">Mool Mantra (Root Mantra)</h2>
     <div class="gold-line"></div>
     <div class="mantra-block">
       <p class="mantra-text">ॐ कालभैरवाय नमः</p>
@@ -34,7 +34,7 @@ include 'includes/header.php';
     </div>
 
     <!-- BATUK BHAIRAV MANTRA -->
-    <h2 class="section-title" style="margin-top:3rem;">Batuk Bhairav Mantra</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="mantra_batuk_title">Batuk Bhairav Mantra</h2>
     <div class="gold-line"></div>
     <p class="section-subtitle">Batuk = the eternal youth form of Bhairav — most accessible for all devotees</p>
     <div class="mantra-block">
@@ -54,7 +54,7 @@ include 'includes/header.php';
     </div>
 
     <!-- GAYATRI MANTRA -->
-    <h2 class="section-title" style="margin-top:3rem;">Kaal Bhairav Gayatri Mantra</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="mantra_gayatri_title">Kaal Bhairav Gayatri Mantra</h2>
     <div class="gold-line"></div>
     <div class="mantra-block">
       <p class="mantra-text">
@@ -71,7 +71,7 @@ include 'includes/header.php';
     </div>
 
     <!-- BEEJ MANTRA -->
-    <h2 class="section-title" style="margin-top:3rem;">Beej Mantras (Seed Syllables)</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="mantra_beej_title">Beej Mantras (Seed Syllables)</h2>
     <div class="gold-line"></div>
     <p class="section-subtitle">Beej mantras are concentrated vibrational seeds — powerful and direct. For advanced practitioners.</p>
 
@@ -94,7 +94,7 @@ include 'includes/header.php';
     </div>
 
     <!-- KAAL BHAIRAV ASHTAKAM -->
-    <h2 class="section-title" style="margin-top:3rem;">Kaal Bhairav Ashtakam</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="mantra_ashtakam_title">Kaal Bhairav Ashtakam</h2>
     <div class="gold-line"></div>
     <p class="section-subtitle">The celebrated hymn of 8 verses by Adi Shankaracharya — the most complete devotional text on Kaal Bhairav</p>
 
@@ -124,7 +124,7 @@ include 'includes/header.php';
     <?php endforeach; ?>
 
     <!-- TANTRIC PRACTICES -->
-    <h2 class="section-title" style="margin-top:4rem;">Tantric Practices</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="mantra_tantric_title">Tantric Practices</h2>
     <div class="gold-line"></div>
 
     <div class="disclaimer-box">

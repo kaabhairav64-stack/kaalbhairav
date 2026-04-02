@@ -7,8 +7,8 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Sacred Stories</h1>
-  <p>Legends from Shiva Purana, Skanda Purana, Linga Purana &amp; Tantric Texts</p>
+  <h1 data-key="stories_header">Sacred Stories</h1>
+  <p data-key="stories_sub">Legends from Shiva Purana, Skanda Purana, Linga Purana &amp; Tantric Texts</p>
 </div>
 
 <section class="section">
@@ -17,7 +17,7 @@ include 'includes/header.php';
     <!-- STORY 1 -->
     <div class="story-block">
       <span class="source-tag">Source: Shiva Purana — Shatarudra Samhita; Skanda Purana — Kashi Khanda</span>
-      <h3 class="story-title">The Birth of Kaal Bhairav — The Beheading of Brahma</h3>
+      <h3 class="story-title" data-key="story1_title">The Birth of Kaal Bhairav — The Beheading of Brahma</h3>
       <p>
         In the primordial age, a great argument erupted between Lord Brahma (the Creator) and
         Lord Vishnu (the Preserver) over who was supreme. Both claimed to be the ultimate reality.
@@ -77,7 +77,7 @@ include 'includes/header.php';
     <!-- STORY 2 -->
     <div class="story-block">
       <span class="source-tag">Source: Skanda Purana — Kashi Khanda, Chapter 31</span>
-      <h3 class="story-title">Bhairav Becomes Kotwal of Kashi</h3>
+      <h3 class="story-title" data-key="story2_title">Bhairav Becomes Kotwal of Kashi</h3>
       <p>
         After being absolved of his sin at Kashi, Kaal Bhairav stood before Lord Shiva in the
         form of the great lingam at Vishwanath. Shiva, pleased with Bhairav's penance and his
@@ -108,7 +108,7 @@ include 'includes/header.php';
     <!-- STORY 3 -->
     <div class="story-block">
       <span class="source-tag">Source: Linga Purana; Tantric tradition</span>
-      <h3 class="story-title">Kaal Bhairav and the Demon Durgama</h3>
+      <h3 class="story-title" data-key="story3_title">Kaal Bhairav and the Demon Durgama</h3>
       <p>
         The demon Durgama performed severe austerities and obtained from Brahma the boon that
         no god, man, or creature could kill him — except a child (<em>bala</em>) or an old person
@@ -135,7 +135,7 @@ include 'includes/header.php';
     <!-- STORY 4 -->
     <div class="story-block">
       <span class="source-tag">Source: Uttara Kalamrita; Kashi Kotwal oral tradition</span>
-      <h3 class="story-title">The Sacred Dog — Bhairav's Vahana</h3>
+      <h3 class="story-title" data-key="story4_title">The Sacred Dog — Bhairav's Vahana</h3>
       <p>
         There is a story from Kashi's oral tradition about why the dog is Bhairav's vehicle.
         Once, Brahmin priests in Kashi grew arrogant about their caste status and refused to
@@ -160,7 +160,7 @@ include 'includes/header.php';
     <!-- STORY 5 -->
     <div class="story-block">
       <span class="source-tag">Source: Siddha Tantra tradition; Abhinavagupta's Tantraloka</span>
-      <h3 class="story-title">Bhairav and the Kapalika Tradition</h3>
+      <h3 class="story-title" data-key="story5_title">Bhairav and the Kapalika Tradition</h3>
       <p>
         After the beheading of Brahma, Bhairav wandered as the first <em>Kapalika</em> ascetic —
         carrying the skull, bearing the mark of the ultimate sin, living outside all social norms.
@@ -184,8 +184,8 @@ include 'includes/header.php';
     </div>
 
     <div class="text-center mt-2">
-      <a href="/64-bhairav.php" class="btn-secondary">Explore the 64 Forms of Bhairav →</a>
-      <a href="/pooja-vidhi.php" class="btn-primary" style="margin-left:1rem;">Pooja Vidhi →</a>
+      <a href="/64-bhairav.php" class="btn-secondary" data-key="btn_explore_64">Explore the 64 Forms of Bhairav →</a>
+      <a href="/pooja-vidhi.php" class="btn-primary" style="margin-left:1rem;" data-key="btn_pooja_vidhi">Pooja Vidhi →</a>
     </div>
 
   </div>

@@ -7,15 +7,15 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>The 64 Forms of Bhairav</h1>
-  <p>The Ashtabhairav and their manifestations — guardians of the 8 directions of the cosmos</p>
+  <h1 data-key="bhairav64_header">The 64 Forms of Bhairav</h1>
+  <p data-key="bhairav64_sub">The Ashtabhairav and their manifestations — guardians of the 8 directions of the cosmos</p>
 </div>
 
 <section class="section">
   <div class="section-inner">
 
     <div class="highlight-box mb-2">
-      <h3 class="card-title">Understanding the 64 Bhairavas</h3>
+      <h3 class="card-title" data-key="bhairav64_intro_title">Understanding the 64 Bhairavas</h3>
       <p>
         According to the Shaiva Tantric tradition (particularly the <em>Bhairavagama</em> and
         <em>Rudrayamala Tantra</em>), there are <strong class="text-gold">64 Bhairavas</strong>
@@ -33,7 +33,7 @@ include 'includes/header.php';
       </p>
     </div>
 
-    <h2 class="section-title" style="margin-top:3rem;">The 8 Ashtabhairavas</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="bhairav64_8_title">The 8 Ashtabhairavas</h2>
     <div class="gold-line"></div>
 
     <?php
@@ -157,9 +157,9 @@ include 'includes/header.php';
     <?php endforeach; ?>
 
     <!-- FULL 64 QUICK LIST -->
-    <h2 class="section-title" style="margin-top:4rem;">Complete List — All 64 Bhairavas</h2>
+    <h2 class="section-title" style="margin-top:4rem;" data-key="bhairav64_list_title">Complete List — All 64 Bhairavas</h2>
     <div class="gold-line"></div>
-    <p class="section-subtitle">As enumerated in the Bhairavagama and Rudrayamala Tantra</p>
+    <p class="section-subtitle" data-key="bhairav64_list_sub">As enumerated in the Bhairavagama and Rudrayamala Tantra</p>
 
     <?php
     $all64 = [];
@@ -184,7 +184,7 @@ include 'includes/header.php';
     </div>
 
     <div class="disclaimer-box mt-2">
-      <h3>📚 Textual Sources</h3>
+      <h3 data-key="bhairav64_sources_title">📚 Textual Sources</h3>
       <p>The enumeration and descriptions of the 64 Bhairavas are found primarily in:</p>
       <ul>
         <li><strong>Bhairavagama</strong> — one of the 64 Shaiva Agamas</li>

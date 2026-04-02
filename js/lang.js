@@ -2,6 +2,80 @@
 
 const translations = {
   en: {
+    // ABOUT PAGE
+    about_header: 'About Kaal Bhairav',
+    about_sub: 'Iconography, significance, and his place across the great traditions of Shaivism',
+    about_ico_title: 'Iconography — The Form of Bhairav',
+    about_weapons_title: 'The 8 Weapons (Ashtayudha)',
+    about_name_title: 'The Meaning of the Name',
+    about_traditions_title: 'Bhairav Across Traditions',
+    about_deeper_title: 'The Deeper Teaching',
+    about_deeper_text: 'Kaal Bhairav is not merely a deity to be propitiated — he is a mirror. When you stand before him, you see what you truly are: consciousness wearing a temporary body, moving through time, destined to dissolve back into the infinite. The skulls he wears are every ego that has come before you.<br><br>His gift is not wealth or power — it is <em>fearlessness</em>. To know Bhairav is to know that nothing can truly harm the Self. Time destroys all forms — but you are not a form. You are the one who witnesses forms arising and dissolving.<br><br><em class="text-gold">This is the supreme teaching of Kaal Bhairav.</em>',
+
+    // STORIES PAGE
+    stories_header: 'Sacred Stories',
+    stories_sub: 'Legends from Shiva Purana, Skanda Purana, Linga Purana &amp; Tantric Texts',
+    story1_title: 'The Birth of Kaal Bhairav — The Beheading of Brahma',
+    story2_title: 'Bhairav Becomes Kotwal of Kashi',
+    story3_title: 'Kaal Bhairav and the Demon Durgama',
+    story4_title: 'The Sacred Dog — Bhairav\'s Vahana',
+    story5_title: 'Bhairav and the Kapalika Tradition',
+    btn_explore_64: 'Explore the 64 Forms of Bhairav →',
+    btn_pooja_vidhi: 'Pooja Vidhi →',
+
+    // 64 BHAIRAV PAGE
+    bhairav64_header: 'The 64 Forms of Bhairav',
+    bhairav64_sub: 'The Ashtabhairav and their manifestations — guardians of the 8 directions of the cosmos',
+    bhairav64_intro_title: 'Understanding the 64 Bhairavas',
+    bhairav64_list_title: 'Complete List — All 64 Bhairavas',
+    bhairav64_list_sub: 'As enumerated in the Bhairavagama and Rudrayamala Tantra',
+    bhairav64_8_title: 'The 8 Ashtabhairavas',
+    bhairav64_sources_title: '📚 Textual Sources',
+
+    // KASHI PAGE
+    kashi_header: 'Kaal Bhairav &amp; Kashi',
+    kashi_page_sub: 'The eternal city and its cosmic guardian — an inseparable bond since the beginning of time',
+    kashi_intro_title: 'Kashi — The City That Never Sleeps',
+    kashi_kotwal_title: 'The Kotwal — Divine Police Commissioner',
+    kashi_powers_title: 'Bhairav\'s Powers Within Kashi',
+    kashi_temple_title: 'The Kaal Bhairav Temple — Varanasi',
+    kashi_moksha_title: 'Why Kashi Grants Moksha',
+    kashi_ashta_title: 'The Eight Bhairavas of Kashi',
+    kashi_closing: 'Kashi and Bhairav are one. The city is his body — the Ganga its lifeblood, the ghats his steps, the cremation pyres his eyes. To walk in Kashi is to walk within Bhairav himself.<br><br>Every narrow gali, every lamp lit at dusk, every chant rising at Dashashwamedh — all of it reverberates with his presence. He sees every soul, knows every karma, and silently guides each one toward liberation.<br><br><em class="text-gold">Jay Kaal Bhairav. Jay Kashi Vishwanath.</em>',
+    btn_read_stories: 'Read Sacred Stories →',
+
+    // POOJA VIDHI PAGE
+    pooja_header: 'Pooja Vidhi',
+    pooja_sub: 'Complete worship procedure — performed with devotion, sincerity, and righteous intent',
+    pooja_days_title: 'Auspicious Days for Bhairav Pooja',
+    pooja_materials_title: 'Pooja Samagri (Materials Required)',
+    pooja_steps_title: 'Complete Pooja Procedure',
+    pooja_steps_sub: 'Shodashopachara Puja (16-Step Worship) adapted for Kaal Bhairav',
+    pooja_effects_title: 'Known Spiritual Effects',
+
+    // MANTRA PAGE
+    mantra_header: 'Mantras &amp; Tantra',
+    mantra_sub: 'Sacred syllables of Kaal Bhairav — for devotion, protection, and liberation',
+    mantra_mool_title: 'Mool Mantra (Root Mantra)',
+    mantra_batuk_title: 'Batuk Bhairav Mantra',
+    mantra_gayatri_title: 'Kaal Bhairav Gayatri Mantra',
+    mantra_beej_title: 'Beej Mantras (Seed Syllables)',
+    mantra_ashtakam_title: 'Kaal Bhairav Ashtakam',
+    mantra_tantric_title: 'Tantric Practices',
+
+    // SEVA PAGE
+    seva_header: 'Seva &amp; Donation',
+    seva_page_sub: 'The dog is Bhairav\'s beloved vahana — seva of his vehicle is seva of the Lord himself',
+    seva_why_title: 'The Sacred Dog — Why Dog Seva is Bhairav Seva',
+    seva_how_title: 'How to Perform Dog Seva',
+    seva_days_title: 'Most Auspicious Days for Dog Seva',
+    seva_donate_title: 'Contribute to Dog Seva',
+    seva_temple_title: 'Temple Seva — Kaal Bhairav Mandir, Varanasi',
+
+    // DISCLAIMER PAGE
+    disc_header: 'Disclaimer &amp; Terms of Use',
+    disc_sub: 'Please read carefully before performing any spiritual practice described on this website',
+
     // NAV
     nav_home: 'Home',
     nav_about: 'About',
@@ -83,6 +157,80 @@ const translations = {
   },
 
   hi: {
+    // ABOUT PAGE
+    about_header: 'काल भैरव का परिचय',
+    about_sub: 'प्रतिमा विज्ञान, महत्व और शैवाद की महान परंपराओं में उनका स्थान',
+    about_ico_title: 'प्रतिमा विज्ञान — भैरव का स्वरूप',
+    about_weapons_title: 'आठ अस्त्र (अष्टायुध)',
+    about_name_title: 'नाम का अर्थ',
+    about_traditions_title: 'विभिन्न परंपराओं में भैरव',
+    about_deeper_title: 'गहरी शिक्षा',
+    about_deeper_text: 'काल भैरव केवल एक देवता नहीं हैं जिन्हें प्रसन्न किया जाए — वे एक दर्पण हैं। जब आप उनके सामने खड़े होते हैं, तो आप देखते हैं कि आप वास्तव में क्या हैं: एक अस्थायी शरीर में चेतना, समय के साथ चलती हुई, अंततः अनंत में विलीन होने के लिए। जो खोपड़ियां वे पहनते हैं, वे उन सभी अहंकारों की हैं जो आपसे पहले आए।<br><br>उनका उपहार धन या शक्ति नहीं है — यह <em>निर्भयता</em> है। भैरव को जानना यह जानना है कि कुछ भी वास्तव में आत्मा को हानि नहीं पहुंचा सकता। काल सभी रूपों को नष्ट करता है — लेकिन आप एक रूप नहीं हैं। आप वह हैं जो रूपों को उठते और विलीन होते हुए देखते हैं।<br><br><em class="text-gold">यही काल भैरव की सर्वोच्च शिक्षा है।</em>',
+
+    // STORIES PAGE
+    stories_header: 'पवित्र कथाएं',
+    stories_sub: 'शिव पुराण, स्कंद पुराण, लिंग पुराण और तांत्रिक ग्रंथों की पौराणिक कथाएं',
+    story1_title: 'काल भैरव का जन्म — ब्रह्मा का शिरच्छेदन',
+    story2_title: 'भैरव काशी के कोतवाल बने',
+    story3_title: 'काल भैरव और राक्षस दुर्गामा',
+    story4_title: 'पवित्र कुत्ता — भैरव का वाहन',
+    story5_title: 'भैरव और कापालिक परंपरा',
+    btn_explore_64: '64 भैरव रूप देखें →',
+    btn_pooja_vidhi: 'पूजा विधि →',
+
+    // 64 BHAIRAV PAGE
+    bhairav64_header: 'भैरव के 64 रूप',
+    bhairav64_sub: 'अष्टभैरव और उनके रूप — ब्रह्मांड की आठ दिशाओं के संरक्षक',
+    bhairav64_intro_title: '64 भैरवों को समझना',
+    bhairav64_list_title: 'पूर्ण सूची — सभी 64 भैरव',
+    bhairav64_list_sub: 'भैरवागम और रुद्रयामल तंत्र में वर्णित',
+    bhairav64_8_title: 'आठ अष्टभैरव',
+    bhairav64_sources_title: '📚 ग्रंथ स्रोत',
+
+    // KASHI PAGE
+    kashi_header: 'काल भैरव और काशी',
+    kashi_page_sub: 'शाश्वत नगरी और उसका ब्रह्मांडीय संरक्षक — अनादि काल से अटूट बंधन',
+    kashi_intro_title: 'काशी — वह नगरी जो कभी नहीं सोती',
+    kashi_kotwal_title: 'कोतवाल — दिव्य पुलिस आयुक्त',
+    kashi_powers_title: 'काशी में भैरव की शक्तियां',
+    kashi_temple_title: 'काल भैरव मंदिर — वाराणसी',
+    kashi_moksha_title: 'काशी मोक्ष क्यों देती है',
+    kashi_ashta_title: 'काशी के आठ भैरव',
+    kashi_closing: 'काशी और भैरव एक हैं। नगरी उनका शरीर है — गंगा उसकी जीवन-रेखा, घाट उनके चरण-चिह्न, चिता की लपटें उनकी आंखें। काशी में चलना भैरव के भीतर ही चलना है।<br><br>हर संकरी गली, सांझ को जलती हर दीप, दशाश्वमेध पर उठता हर जयघोष — सब उनकी उपस्थिति से गूंजता है। वे हर आत्मा को देखते हैं, हर कर्म जानते हैं, और चुपचाप हर एक को मोक्ष की ओर ले जाते हैं।<br><br><em class="text-gold">जय काल भैरव। जय काशी विश्वनाथ।</em>',
+    btn_read_stories: 'पवित्र कथाएं पढ़ें →',
+
+    // POOJA VIDHI PAGE
+    pooja_header: 'पूजा विधि',
+    pooja_sub: 'पूर्ण पूजा प्रक्रिया — भक्ति, निष्ठा और धर्मपूर्ण संकल्प के साथ',
+    pooja_days_title: 'भैरव पूजा के शुभ दिन',
+    pooja_materials_title: 'पूजा सामग्री (आवश्यक वस्तुएं)',
+    pooja_steps_title: 'पूर्ण पूजा प्रक्रिया',
+    pooja_steps_sub: 'काल भैरव के लिए अनुकूलित षोडशोपचार पूजा (16 चरण)',
+    pooja_effects_title: 'आध्यात्मिक प्रभाव',
+
+    // MANTRA PAGE
+    mantra_header: 'मंत्र और तंत्र',
+    mantra_sub: 'काल भैरव के पवित्र बीज — भक्ति, सुरक्षा और मोक्ष के लिए',
+    mantra_mool_title: 'मूल मंत्र',
+    mantra_batuk_title: 'बटुक भैरव मंत्र',
+    mantra_gayatri_title: 'काल भैरव गायत्री मंत्र',
+    mantra_beej_title: 'बीज मंत्र (बीज अक्षर)',
+    mantra_ashtakam_title: 'काल भैरव अष्टकम',
+    mantra_tantric_title: 'तांत्रिक साधनाएं',
+
+    // SEVA PAGE
+    seva_header: 'सेवा और दान',
+    seva_page_sub: 'कुत्ता भैरव का प्रिय वाहन है — उनके वाहन की सेवा स्वयं भगवान की सेवा है',
+    seva_why_title: 'पवित्र कुत्ता — कुत्ता सेवा क्यों है भैरव सेवा',
+    seva_how_title: 'कुत्ता सेवा कैसे करें',
+    seva_days_title: 'कुत्ता सेवा के सबसे शुभ दिन',
+    seva_donate_title: 'कुत्ता सेवा में योगदान करें',
+    seva_temple_title: 'मंदिर सेवा — काल भैरव मंदिर, वाराणसी',
+
+    // DISCLAIMER PAGE
+    disc_header: 'अस्वीकरण और उपयोग की शर्तें',
+    disc_sub: 'इस वेबसाइट पर वर्णित किसी भी आध्यात्मिक साधना को करने से पहले कृपया ध्यान से पढ़ें',
+
     // NAV
     nav_home: 'होम',
     nav_about: 'परिचय',

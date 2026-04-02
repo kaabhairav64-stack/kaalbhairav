@@ -7,8 +7,8 @@ include 'includes/header.php';
 ?>
 
 <div class="page-header">
-  <h1>Seva &amp; Donation</h1>
-  <p>The dog is Bhairav's beloved vahana — seva of his vehicle is seva of the Lord himself</p>
+  <h1 data-key="seva_header">Seva &amp; Donation</h1>
+  <p data-key="seva_page_sub">The dog is Bhairav's beloved vahana — seva of his vehicle is seva of the Lord himself</p>
 </div>
 
 <section class="section">
@@ -17,7 +17,7 @@ include 'includes/header.php';
     <!-- WHY DOG SEVA -->
     <div class="story-block">
       <span class="source-tag">Source: Kashi Khanda, Skanda Purana; Oral tradition of Kashi priests</span>
-      <h3 class="story-title">The Sacred Dog — Why Dog Seva is Bhairav Seva</h3>
+      <h3 class="story-title" data-key="seva_why_title">The Sacred Dog — Why Dog Seva is Bhairav Seva</h3>
       <p>
         The <strong class="text-gold">dog (Shvan)</strong> is not merely a vehicle for Kaal Bhairav —
         it is an integral symbol of his nature. The dog represents:
@@ -38,7 +38,7 @@ include 'includes/header.php';
     </div>
 
     <!-- HOW TO DO DOG SEVA -->
-    <h2 class="section-title" style="margin-top:3rem;">How to Perform Dog Seva</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="seva_how_title">How to Perform Dog Seva</h2>
     <div class="gold-line"></div>
     <div class="card-grid">
       <div class="card">
@@ -74,7 +74,7 @@ include 'includes/header.php';
     </div>
 
     <!-- AUSPICIOUS DAYS FOR SEVA -->
-    <h2 class="section-title" style="margin-top:3rem;">Most Auspicious Days for Dog Seva</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="seva_days_title">Most Auspicious Days for Dog Seva</h2>
     <div class="gold-line"></div>
     <table>
       <tr>
@@ -115,7 +115,7 @@ include 'includes/header.php';
     </table>
 
     <!-- DONATION SECTION -->
-    <h2 class="section-title" style="margin-top:3rem;">Contribute to Dog Seva</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="seva_donate_title">Contribute to Dog Seva</h2>
     <div class="gold-line"></div>
     <div class="donation-section">
       <div style="font-size:3.5rem; margin-bottom:1rem;">🐕</div>
@@ -164,7 +164,7 @@ include 'includes/header.php';
     </div>
 
     <!-- TEMPLE SEVA -->
-    <h2 class="section-title" style="margin-top:3rem;">Temple Seva — Kaal Bhairav Mandir, Varanasi</h2>
+    <h2 class="section-title" style="margin-top:3rem;" data-key="seva_temple_title">Temple Seva — Kaal Bhairav Mandir, Varanasi</h2>
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
