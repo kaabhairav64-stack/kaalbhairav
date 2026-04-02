@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root {
+  --black: #0a0500;
+  --deep: #110800;
+  --crimson: #8b0000;
+  --crimson-bright: #cc1111;
+  --gold: #c9a84c;
+  --gold-light: #e8c96e;
+  --gold-pale: #f5e4a0;
+  --saffron: #ff6b00;
+  --ash: #d4c9b0;
+  --smoke: #9a8e7a;
+  --white: #fff8ee;
+  --border: rgba(201,168,76,0.3);
+  --glow: rgba(201,168,76,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--black);
+  color: var(--ash);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--crimson); border-radius: 3px; }
+
+/* ─── NAVIGATION ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(10,5,0,0.98), rgba(10,5,0,0.85));
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  padding: 0 2rem;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.nav-logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 1.2rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 20px rgba(201,168,76,0.5);
+}
+
+.nav-logo span { color: var(--crimson-bright); }
+
+.nav-links {
+  display: flex;
+  gap: 0.2rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--smoke);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.7rem;
+  border-radius: 2px;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--gold);
+  border-color: var(--border);
+  background: var(--glow);
+}
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 2rem 4rem;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 60%, rgba(139,0,0,0.25) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 60%),
+    linear-gradient(to bottom, #0a0500, #150800 40%, #0a0300 100%);
+}
+
+.flame-container {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  pointer-events: none;
+}
+
+.flame {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  border-radius: 50% 50% 20% 20%;
+  animation: flicker linear infinite;
+  transform-origin: bottom center;
+  opacity: 0.7;
+}
+
+@keyframes flicker {
+  0%   { transform: scaleX(1) scaleY(1) rotate(-2deg); opacity: 0.7; }
+  25%  { transform: scaleX(0.8) scaleY(1.1) rotate(1deg); opacity: 0.9; }
+  50%  { transform: scaleX(1.1) scaleY(0.95) rotate(-1deg); opacity: 0.6; }
+  75%  { transform: scaleX(0.9) scaleY(1.05) rotate(2deg); opacity: 0.8; }
+  100% { transform: scaleX(1) scaleY(1) rotate(-2deg); opacity: 0.7; }
+}
+
+.trishul-divider {
+  font-size: 2rem;
+  color: var(--crimson-bright);
+  letter-spacing: 1rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 30px rgba(204,17,17,0.7);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { text-shadow: 0 0 20px rgba(204,17,17,0.5); }
+  50% { text-shadow: 0 0 50px rgba(204,17,17,0.9), 0 0 80px rgba(201,168,76,0.3); }
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 900px; }
+
+.hero-sanskrit {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--gold-light);
+  text-shadow:
+    0 0 40px rgba(201,168,76,0.6),
+    0 0 80px rgba(139,0,0,0.4),
+    2px 2px 0 rgba(0,0,0,0.5);
+  margin-bottom: 0.3rem;
+  animation: title-appear 1.5s ease-out;
+}
+
+.hero-title-sub {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  color: var(--crimson-bright);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 20px rgba(204,17,17,0.5);
+}
+
+@keyframes title-appear {
+  from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  color: var(--smoke);
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  font-style: italic;
+  line-height: 2;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: linear-gradient(135deg, var(--crimson) 0%, #6b0000 100%);
+  color: var(--gold-pale);
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px rgba(139,0,0,0.4);
+  margin: 0.4rem;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--crimson-bright) 0%, var(--crimson) 100%);
+  box-shadow: 0 0 40px rgba(204,17,17,0.6), 0 0 60px rgba(201,168,76,0.2);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: transparent;
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+  margin: 0.4rem;
+}
+
+.btn-secondary:hover {
+  background: var(--glow);
+  box-shadow: 0 0 20px rgba(201,168,76,0.3);
+}
+
+/* ─── SECTIONS ─── */
+.section {
+  padding: 5rem 2rem;
+  position: relative;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 30px rgba(201,168,76,0.4);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--smoke);
+  font-style: italic;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.gold-line {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 1rem auto 2.5rem;
+}
+
+/* ─── CARDS ─── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: linear-gradient(135deg, rgba(139,0,0,0.08) 0%, rgba(17,8,0,0.8) 100%);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--crimson), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover { border-color: rgba(201,168,76,0.5); transform: translateY(-3px); }
+.card:hover::before { opacity: 1; }
+
+.card-icon { font-size: 2rem; margin-bottom: 1rem; }
+.card-title {
+  font-family: 'Cinzel', serif;
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+.card-text { color: var(--smoke); font-size: 0.95rem; line-height: 1.7; }
+
+/* ─── STORY BLOCKS ─── */
+.story-block {
+  background: rgba(17,8,0,0.6);
+  border-left: 3px solid var(--crimson);
+  padding: 2rem 2.5rem;
+  margin: 2rem 0;
+  border-radius: 0 4px 4px 0;
+  position: relative;
+}
+
+.story-block .source-tag {
+  display: inline-block;
+  background: rgba(139,0,0,0.3);
+  border: 1px solid rgba(139,0,0,0.5);
+  color: var(--smoke);
+  font-size: 0.75rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.story-title {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* ─── MANTRA BLOCKS ─── */
+.mantra-block {
+  text-align: center;
+  padding: 2.5rem;
+  background: radial-gradient(ellipse at center, rgba(139,0,0,0.15) 0%, transparent 70%);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+
+.mantra-text {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: var(--gold-pale);
+  line-height: 2.2;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 20px rgba(201,168,76,0.3);
+}
+
+.mantra-meaning {
+  font-style: italic;
+  color: var(--smoke);
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ─── POOJA STEPS ─── */
+.pooja-steps { counter-reset: step; }
+
+.pooja-step {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.step-num {
+  counter-increment: step;
+  min-width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, var(--crimson), #6b0000);
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  color: var(--gold);
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(139,0,0,0.4);
+}
+
+.step-content h4 {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.step-content p { color: var(--ash); font-size: 0.95rem; }
+
+/* ─── BHAIRAV GRID ─── */
+.bhairav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.bhairav-item {
+  background: rgba(17,8,0,0.7);
+  border: 1px solid rgba(201,168,76,0.2);
+  padding: 1.2rem 1.5rem;
+  border-radius: 3px;
+  transition: all 0.25s;
+}
+
+.bhairav-item:hover {
+  border-color: var(--gold);
+  background: rgba(139,0,0,0.1);
+  transform: scale(1.02);
+}
+
+.bhairav-num {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  color: var(--crimson-bright);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+
+.bhairav-name {
+  font-family: 'Cinzel', serif;
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.bhairav-desc {
+  font-size: 0.82rem;
+  color: var(--smoke);
+  line-height: 1.5;
+}
+
+/* ─── DISCLAIMER BOX ─── */
+.disclaimer-box {
+  background: rgba(139,0,0,0.1);
+  border: 1px solid rgba(139,0,0,0.5);
+  border-radius: 4px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.disclaimer-box h3 {
+  font-family: 'Cinzel', serif;
+  color: var(--crimson-bright);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.disclaimer-box p, .disclaimer-box li {
+  color: var(--smoke);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.disclaimer-box ul { padding-left: 1.5rem; margin-top: 0.5rem; }
+
+/* ─── DONATION ─── */
+.donation-section {
+  background: linear-gradient(135deg, rgba(139,0,0,0.12) 0%, rgba(17,8,0,0.95) 100%);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.donation-amount-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.amount-btn {
+  background: rgba(139,0,0,0.2);
+  border: 1px solid var(--border);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.amount-btn:hover, .amount-btn.selected {
+  background: var(--crimson);
+  border-color: var(--gold);
+  box-shadow: 0 0 20px rgba(139,0,0,0.5);
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.footer-inner { max-width: 900px; margin: 0 auto; }
+
+.footer-logo {
+  font-family: 'Cinzel Decorative', serif;
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--smoke);
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+.footer-text {
+  color: var(--smoke);
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+/* ─── UTILITY ─── */
+.text-gold { color: var(--gold); }
+.text-crimson { color: var(--crimson-bright); }
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+.highlight-box {
+  background: rgba(201,168,76,0.05);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .two-col { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hero-title { font-size: 2.2rem; }
+  .bhairav-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── PAGE HEADER ─── */
+.page-header {
+  padding: 130px 2rem 4rem;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 100%, rgba(139,0,0,0.2) 0%, transparent 70%),
+    linear-gradient(to bottom, var(--deep), var(--black));
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0;
+}
+
+.page-header h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  color: var(--gold);
+  text-shadow: 0 0 40px rgba(201,168,76,0.4);
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--smoke);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+/* ─── TABLE ─── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th {
+  background: rgba(139,0,0,0.3);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+  color: var(--ash);
+  font-size: 0.95rem;
+}
+
+tr:hover td { background: rgba(201,168,76,0.03); }
+
+/* ─── MOBILE MENU ─── */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn { display: block; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px; left: 0; right: 0;
+    background: rgba(10,5,0,0.98);
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+  }
+}
+
+/* ─── SACRED GEOMETRY DECORATION ─── */
+.sacred-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3Cpolygon points='50,8 90,65 10,65' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3Cpolygon points='50,92 10,35 90,35' fill='none' stroke='%23c9a84c' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-size: 100px 100px;
+}
