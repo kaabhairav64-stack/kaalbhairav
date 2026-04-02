@@ -19,7 +19,7 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
-        <p>
+        <p data-key="kashi_intro_p1">
           <strong class="text-gold">Kashi (Varanasi)</strong> is not merely a city — it is a cosmic
           axis, a place where the boundaries between the living world and the realm beyond are
           permanently thin. According to the <em>Kashi Khanda</em> of the Skanda Purana, Kashi stands
@@ -27,14 +27,14 @@ include 'includes/header.php';
           touching the ground.
         </p>
         <br>
-        <p>
+        <p data-key="kashi_intro_p2">
           In this sacred city, death itself becomes liberation (<em>moksha</em>). Every soul
           that departs from Kashi is said to receive the <strong class="text-gold">Tarak Mantra</strong>
           — the mantra of crossing — whispered directly into the ear by Lord Shiva. This is why
           Kashi has been the destination of pilgrims, ascetics, and the dying for thousands of years.
         </p>
         <br>
-        <p>
+        <p data-key="kashi_intro_p3">
           But Kashi requires a guardian — an eternal Kotwal — to maintain its cosmic order,
           protect its boundaries, and ensure that no soul departs without the grace of liberation.
           That guardian is <strong class="text-gold">Kaal Bhairav</strong>.
@@ -62,28 +62,17 @@ include 'includes/header.php';
     <div class="gold-line"></div>
 
     <div class="story-block">
-      <span class="source-tag">Source: Kashi Khanda, Skanda Purana; Linga Purana</span>
-      <h3 class="story-title">How Kaal Bhairav Became the Kotwal of Kashi</h3>
-      <p>
+      <span class="source-tag" data-key="kashi_kotwal_src">Source: Kashi Khanda, Skanda Purana; Linga Purana</span>
+      <h3 class="story-title" data-key="kashi_kotwal_story">How Kaal Bhairav Became the Kotwal of Kashi</h3>
+      <p data-key="kashi_kotwal_body">
         When Lord Shiva chose Kashi as his permanent abode, he needed to appoint a guardian who
         would govern the eternal city with absolute authority. The city needed a deity powerful
         enough to command respect from gods, demons, and humans alike — one who would maintain
-        dharmic order and ensure that every soul reaching Kashi's borders received liberation.
-      </p>
-      <br>
-      <p>
+        dharmic order and ensure that every soul reaching Kashi's borders received liberation.<br><br>
         Shiva appointed <strong class="text-gold">Kaal Bhairav</strong> as the <em>Kshetrapala</em>
-        (protector of the field) and <em>Kotwal</em> (divine commissioner) of Kashi. The title
-        "Kotwal" is significant — in ancient India, the Kotwal was the city's chief law enforcer,
-        responsible for justice, order, and the registry of all citizens. Bhairav keeps the
-        cosmic registry of every soul in Kashi.
-      </p>
-      <br>
-      <p>
+        and <em>Kotwal</em> of Kashi. Bhairav keeps the cosmic registry of every soul in Kashi.<br><br>
         The <em>Kashi Khanda</em> states: <em>"Without first taking the darshan of Kaal Bhairav,
-        the Kotwal of Kashi, one's pilgrimage to Kashi Vishwanath is incomplete."</em> This is
-        why, to this day, devotees visit the Kaal Bhairav temple before proceeding to the
-        Kashi Vishwanath Jyotirlinga.
+        the Kotwal of Kashi, one's pilgrimage to Kashi Vishwanath is incomplete."</em>
       </p>
     </div>
 
@@ -93,33 +82,33 @@ include 'includes/header.php';
     <div class="card-grid">
       <div class="card">
         <div class="card-icon">⚖️</div>
-        <h3 class="card-title">Keeper of Cosmic Law</h3>
-        <p class="card-text">Bhairav registers every soul that enters Kashi. No one can reside permanently in the city without his permission — this is the ancient tradition still observed by those settling in Varanasi.</p>
+        <h3 class="card-title" data-key="kashi_card1_title">Keeper of Cosmic Law</h3>
+        <p class="card-text" data-key="kashi_card1_text">Bhairav registers every soul that enters Kashi. No one can reside permanently in the city without his permission — this is the ancient tradition still observed by those settling in Varanasi.</p>
       </div>
       <div class="card">
         <div class="card-icon">💀</div>
-        <h3 class="card-title">Lord of Liberation</h3>
-        <p class="card-text">Within Kashi's boundaries, even Lord Yama (the god of death) has no authority. It is Bhairav alone who presides over death here, and he ensures that every departing soul receives moksha.</p>
+        <h3 class="card-title" data-key="kashi_card2_title">Lord of Liberation</h3>
+        <p class="card-text" data-key="kashi_card2_text">Within Kashi's boundaries, even Lord Yama (the god of death) has no authority. It is Bhairav alone who presides over death here, and he ensures that every departing soul receives moksha.</p>
       </div>
       <div class="card">
         <div class="card-icon">🛡️</div>
-        <h3 class="card-title">Protector of the City</h3>
-        <p class="card-text">Bhairav roams the streets of Kashi, especially at night, guarding against negative forces, malevolent spirits, and those who would disturb the city's sacred peace.</p>
+        <h3 class="card-title" data-key="kashi_card3_title">Protector of the City</h3>
+        <p class="card-text" data-key="kashi_card3_text">Bhairav roams the streets of Kashi, especially at night, guarding against negative forces, malevolent spirits, and those who would disturb the city's sacred peace.</p>
       </div>
       <div class="card">
         <div class="card-icon">🏛️</div>
-        <h3 class="card-title">Pilgrimage Gateway</h3>
-        <p class="card-text">Ancient tradition holds that one must seek Bhairav's permission before undertaking any pilgrimage within Kashi. His darshan opens the door to the city's deeper spiritual blessings.</p>
+        <h3 class="card-title" data-key="kashi_card4_title">Pilgrimage Gateway</h3>
+        <p class="card-text" data-key="kashi_card4_text">Ancient tradition holds that one must seek Bhairav's permission before undertaking any pilgrimage within Kashi. His darshan opens the door to the city's deeper spiritual blessings.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌙</div>
-        <h3 class="card-title">Master of the Night</h3>
-        <p class="card-text">Bhairav is most active from midnight to dawn in Kashi. The cremation grounds of Manikarnika and Harishchandra Ghat are his domain — places where he presides over the transition between life and death.</p>
+        <h3 class="card-title" data-key="kashi_card5_title">Master of the Night</h3>
+        <p class="card-text" data-key="kashi_card5_text">Bhairav is most active from midnight to dawn in Kashi. The cremation grounds of Manikarnika and Harishchandra Ghat are his domain — places where he presides over the transition between life and death.</p>
       </div>
       <div class="card">
         <div class="card-icon">🔱</div>
-        <h3 class="card-title">Shiva's Representative</h3>
-        <p class="card-text">Bhairav acts as Shiva's direct representative in Kashi. To honor Bhairav is to honor Shiva himself — the two are considered non-different within Kashi's sacred geography.</p>
+        <h3 class="card-title" data-key="kashi_card6_title">Shiva's Representative</h3>
+        <p class="card-text" data-key="kashi_card6_text">Bhairav acts as Shiva's direct representative in Kashi. To honor Bhairav is to honor Shiva himself — the two are considered non-different within Kashi's sacred geography.</p>
       </div>
     </div>
 
@@ -128,20 +117,20 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
-        <p>
+        <p data-key="kashi_temple_p1">
           The <strong class="text-gold">Kaal Bhairav Mandir</strong> on Kaal Bhairav Gali in Varanasi
           is the most important Bhairav shrine in India. The deity here is worshipped as the
           sovereign ruler of Kashi — and the temple receives thousands of devotees daily.
         </p>
         <br>
-        <p>
+        <p data-key="kashi_temple_p2">
           One of the most distinctive features of this temple is the offering of
           <strong class="text-gold">Madhya (liquor)</strong> — the deity here is known to accept
           and consume alcohol as naivedya. This is a rare and ancient Tantric tradition — Bhairav
           as the lord of the cremation grounds accepts what society rejects.
         </p>
         <br>
-        <p>
+        <p data-key="kashi_temple_p3">
           The temple also keeps a sacred <strong class="text-gold">black dog</strong> — Bhairav's
           vahana — within the premises. Feeding and honoring this dog is considered a direct act
           of devotion to Bhairav himself.
@@ -174,23 +163,14 @@ include 'includes/header.php';
     <div class="gold-line"></div>
 
     <div class="story-block">
-      <span class="source-tag">Source: Kashi Khanda, Skanda Purana; Shiva Purana</span>
-      <h3 class="story-title">The Tarak Mantra and Bhairav's Role</h3>
-      <p>
+      <span class="source-tag" data-key="kashi_moksha_src">Source: Kashi Khanda, Skanda Purana; Shiva Purana</span>
+      <h3 class="story-title" data-key="kashi_moksha_story">The Tarak Mantra and Bhairav's Role</h3>
+      <p data-key="kashi_moksha_body">
         The <em>Kashi Khanda</em> describes a divine arrangement: every soul that dies within
-        the boundaries of Kashi — the <em>Pancha Koshi</em> — is liberated. This liberation
-        occurs through a specific mechanism. At the moment of death, Lord Shiva himself appears
-        and whispers the <em>Tarak Mantra</em> into the dying person's ear.
-      </p>
-      <br>
-      <p>
+        the boundaries of Kashi — the <em>Pancha Koshi</em> — is liberated. At the moment of death,
+        Lord Shiva himself appears and whispers the <em>Tarak Mantra</em> into the dying person's ear.<br><br>
         But this sacred arrangement is maintained and protected by <strong class="text-gold">Kaal Bhairav</strong>.
-        It is he who ensures no negative force disrupts this process, he who keeps the boundaries
-        of Kashi sacred, and he who registers each departing soul and confirms their liberation.
-        The Kotwal, in this sense, is the administrator of moksha itself.
-      </p>
-      <br>
-      <p>
+        The Kotwal, in this sense, is the administrator of moksha itself.<br><br>
         This is why the tradition says: <em>"Kashi mein mara, toh mukti mili"</em> — "Die in Kashi
         and you are free." But behind this liberation stands Kaal Bhairav, the unseen guardian
         who makes the promise of Kashi real.
