@@ -65,6 +65,22 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
   margin-left: 0.5rem;
 }
 #lang-toggle:hover { background: rgba(201,168,76,0.1); border-color: #c9a84c; }
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: #c9a84c;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: rgba(10,5,0,0.98); border-bottom: 1px solid rgba(201,168,76,0.3); padding: 1rem 0; z-index: 999; }
+  .nav-links.open { display: flex; }
+  .nav-links li { text-align: center; padding: 0.4rem 0; }
+}
 </style>
 </head>
 <body>
@@ -72,6 +88,7 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
 <nav>
     <div class="nav-inner">
         <a href="/index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
+        <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
         <ul class="nav-links" id="mainNav">
             <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
             <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
