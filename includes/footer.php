@@ -11,10 +11,11 @@
             <li><a href="/seva.php">Dog Seva</a></li>
             <li><a href="/disclaimer.php">Disclaimer</a></li>
         </ul>
-        <p class="footer-text">Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.</p>
-        <p class="footer-text">&copy; <?php echo date('Y'); ?> KaalBhairav.org · All Rights Reserved</p>
+        <p class="footer-text" data-key="footer_tagline">Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.</p>
+        <p class="footer-text" data-key="footer_copy">&copy; <?php echo date('Y'); ?> KaalBhairav.org · All Rights Reserved</p>
     </div>
 </footer>
+<script src="/js/lang.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>

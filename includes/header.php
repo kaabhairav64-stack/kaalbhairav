@@ -50,6 +50,22 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
+<style>
+#lang-toggle {
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: #c9a84c;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-left: 0.5rem;
+}
+#lang-toggle:hover { background: rgba(201,168,76,0.1); border-color: #c9a84c; }
+</style>
 </head>
 <body>
 <div class="particles" id="particles"></div>
@@ -57,15 +73,16 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
     <div class="nav-inner">
         <a href="/index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
         <ul class="nav-links" id="mainNav">
-            <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?>>Home</a></li>
-            <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?>>About</a></li>
-            <li><a href="/stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?>>Stories</a></li>
-            <li><a href="/64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?>>64 Bhairavas</a></li>
-            <li><a href="/kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?>>Kashi</a></li>
-            <li><a href="/pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?>>Pooja Vidhi</a></li>
-            <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?>>Mantra &amp; Tantra</a></li>
-            <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?>>Dog Seva</a></li>
-            <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?>>Disclaimer</a></li>
+            <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
+            <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
+            <li><a href="/stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?> data-key="nav_stories">Stories</a></li>
+            <li><a href="/64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?> data-key="nav_64">64 Bhairavas</a></li>
+            <li><a href="/kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?> data-key="nav_kashi">Kashi</a></li>
+            <li><a href="/pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
+            <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
+            <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
+            <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
+            <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi')">हिंदी</button></li>
         </ul>
     </div>
 </nav>
