@@ -53,29 +53,19 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
 </head>
 <body>
 <div class="particles" id="particles"></div>
-<header class="site-header">
-    <div class="header-inner">
-        <div class="logo-area">
-            <div class="om-symbol">ॐ</div>
-            <div class="logo-text">
-                <h1 class="site-title">KaalBhairav<span>.org</span></h1>
-                <p class="site-tagline">Kotwal of Kashi · The Eternal Guardian</p>
-            </div>
-        </div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
-        <nav class="main-nav" id="mainNav">
-            <ul>
-                <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?>>Home</a></li>
-                <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?>>About</a></li>
-                <li><a href="/stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?>>Stories</a></li>
-                <li><a href="/64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?>>64 Bhairavas</a></li>
-                <li><a href="/kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?>>Kashi</a></li>
-                <li><a href="/pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?>>Pooja Vidhi</a></li>
-                <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?>>Mantra &amp; Tantra</a></li>
-                <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?>>Dog Seva</a></li>
-                <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?>>Disclaimer</a></li>
-            </ul>
-        </nav>
+<nav>
+    <div class="nav-inner">
+        <a href="/index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
+        <ul class="nav-links" id="mainNav">
+            <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?>>Home</a></li>
+            <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?>>About</a></li>
+            <li><a href="/stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?>>Stories</a></li>
+            <li><a href="/64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?>>64 Bhairavas</a></li>
+            <li><a href="/kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?>>Kashi</a></li>
+            <li><a href="/pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?>>Pooja Vidhi</a></li>
+            <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?>>Mantra &amp; Tantra</a></li>
+            <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?>>Dog Seva</a></li>
+            <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?>>Disclaimer</a></li>
+        </ul>
     </div>
-</header>
-<div class="header-divider"></div>
+</nav>

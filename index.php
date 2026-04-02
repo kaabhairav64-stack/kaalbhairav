@@ -12,7 +12,7 @@ include 'includes/header.php';
   <div class="flame-container"></div>
   <div class="hero-content">
     <p class="hero-sanskrit">ॐ कालभैरवाय नमः</p>
-    <div class="trishul-divider">𑣶 ☽ 𑣶</div>
+    <div class="trishul-divider">✦ ☽ ✦</div>
     <h1 class="hero-title">Kaal Bhairav</h1>
     <p class="hero-title-sub">Kotwal of Kashi · Lord of Time · Destroyer of Ego</p>
     <p class="hero-desc">
