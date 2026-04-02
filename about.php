@@ -18,7 +18,7 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
-        <p>
+        <p data-key="about_ico_intro">
           Kaal Bhairav's form is deliberately designed to be overwhelming to the senses —
           to confront the ego directly. He is described across texts as:
         </p>
@@ -36,6 +36,7 @@ include 'includes/header.php';
       </div>
       <div>
         <h3 class="card-title" style="margin-bottom:1rem;" data-key="about_weapons_title">The 8 Weapons (Ashtayudha)</h3>
+
         <table>
           <tr><th>Weapon</th><th>Symbolism</th></tr>
           <tr><td>Trishula (Trident)</td><td>Destroys the 3 gunas, 3 worlds, 3 bodies</td></tr>
@@ -55,20 +56,20 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="card-grid">
       <div class="card">
-        <h3 class="card-title">Kaal (काल)</h3>
-        <p class="card-text">Means both "Time" and "Death." Bhairav as Kaal is Time personified — the force that dissolves all things. He is simultaneously the destroyer and the one who transcends destruction. He is called "Mahakal" — beyond all time.</p>
+        <h3 class="card-title" data-key="about_card_kaal_title">Kaal (काल)</h3>
+        <p class="card-text" data-key="about_card_kaal_text">Means both "Time" and "Death." Bhairav as Kaal is Time personified — the force that dissolves all things. He is simultaneously the destroyer and the one who transcends destruction. He is called "Mahakal" — beyond all time.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Bhairav (भैरव)</h3>
-        <p class="card-text">Derived from the root "Bhiru" (fear) or "Bha-Ra-Va" — the three syllables symbolizing: Bha = Bharana (sustaining), Ra = Ramana (dissolving), Va = Vamana (creating). Bhairav is thus a complete cosmic force.</p>
+        <h3 class="card-title" data-key="about_card_bhairav_title">Bhairav (भैरव)</h3>
+        <p class="card-text" data-key="about_card_bhairav_text">Derived from the root "Bhiru" (fear) or "Bha-Ra-Va" — the three syllables symbolizing: Bha = Bharana (sustaining), Ra = Ramana (dissolving), Va = Vamana (creating). Bhairav is thus a complete cosmic force.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Kshetrapala</h3>
-        <p class="card-text">Protector of the field (kshetra) — both the field of the body and the sacred field (temple, cremation ground). He is the guardian of thresholds and boundaries between worlds.</p>
+        <h3 class="card-title" data-key="about_card_kshtra_title">Kshetrapala</h3>
+        <p class="card-text" data-key="about_card_kshtra_text">Protector of the field (kshetra) — both the field of the body and the sacred field (temple, cremation ground). He is the guardian of thresholds and boundaries between worlds.</p>
       </div>
       <div class="card">
-        <h3 class="card-title">Dandapani</h3>
-        <p class="card-text">Holder of the staff (danda) of justice. As Kotwal, he administers divine law. His danda cannot be escaped by any soul — every action is recorded and every karma is addressed.</p>
+        <h3 class="card-title" data-key="about_card_danda_title">Dandapani</h3>
+        <p class="card-text" data-key="about_card_danda_text">Holder of the staff (danda) of justice. As Kotwal, he administers divine law. His danda cannot be escaped by any soul — every action is recorded and every karma is addressed.</p>
       </div>
     </div>
 
@@ -77,9 +78,9 @@ include 'includes/header.php';
     <div class="gold-line"></div>
 
     <div class="story-block">
-      <span class="source-tag">Shaiva Siddhanta &amp; Shaiva Agamas</span>
-      <h3 class="story-title">In Shaiva Tradition</h3>
-      <p>
+      <span class="source-tag" data-key="about_shaiva_tag">Shaiva Siddhanta &amp; Shaiva Agamas</span>
+      <h3 class="story-title" data-key="about_shaiva_title">In Shaiva Tradition</h3>
+      <p data-key="about_shaiva_text">
         In the classical Shaiva tradition, Bhairav is understood as one of Shiva's most
         important manifestations. The Shaiva Agamas — 64 primary texts — include the
         <em>Bhairavagama</em> which is dedicated entirely to Bhairav worship. Bhairav is
@@ -89,9 +90,9 @@ include 'includes/header.php';
     </div>
 
     <div class="story-block">
-      <span class="source-tag">Kashmir Shaivism (Trika)</span>
-      <h3 class="story-title">In Kashmir Shaivism</h3>
-      <p>
+      <span class="source-tag" data-key="about_kashmir_tag">Kashmir Shaivism (Trika)</span>
+      <h3 class="story-title" data-key="about_kashmir_title">In Kashmir Shaivism</h3>
+      <p data-key="about_kashmir_text">
         In the non-dual Kashmir Shaivism of Abhinavagupta and Utpaladeva, Bhairav is
         the highest symbol of pure consciousness itself — <em>Paramashiva</em>. The Trika
         tradition centers on three goddesses (Para, Parapara, Apara) with Bhairav as their
@@ -102,9 +103,9 @@ include 'includes/header.php';
     </div>
 
     <div class="story-block">
-      <span class="source-tag">Nath Sampradaya</span>
-      <h3 class="story-title">In the Nath Tradition</h3>
-      <p>
+      <span class="source-tag" data-key="about_nath_tag">Nath Sampradaya</span>
+      <h3 class="story-title" data-key="about_nath_title">In the Nath Tradition</h3>
+      <p data-key="about_nath_text">
         Gorakshnath and the Nath lineage revere Bhairav as the archetypal Siddha —
         the perfected yogi who has mastered the body, mind, and death itself. The Naths
         practice Bhairav sadhana as a path to Kaya-siddhi (bodily perfection) and
@@ -114,9 +115,9 @@ include 'includes/header.php';
     </div>
 
     <div class="story-block">
-      <span class="source-tag">Shakta Tradition</span>
-      <h3 class="story-title">Bhairav and the Shaktas</h3>
-      <p>
+      <span class="source-tag" data-key="about_shakta_tag">Shakta Tradition</span>
+      <h3 class="story-title" data-key="about_shakta_title">Bhairav and the Shaktas</h3>
+      <p data-key="about_shakta_text">
         In the Shakta tradition, Bhairav is inseparable from his Shakti. The 64 Yoginis —
         powerful tantric goddesses — each have a corresponding Bhairav. The 64 Bhairava-Yogini
         pairs govern the entire Tantric cosmos. In the Devi Bhagavata and Lalita Sahasranama
