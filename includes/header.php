@@ -82,13 +82,26 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
   .nav-links li { text-align: center; padding: 0.4rem 0; }
 }
 </style>
+<script>
+function closeMenu() {
+  var nav = document.getElementById('mainNav');
+  var btn = document.getElementById('navToggle');
+  if (nav) nav.classList.remove('open');
+  if (btn) btn.textContent = '☰';
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', closeMenu);
+  });
+});
+</script>
 </head>
 <body>
 <div class="particles" id="particles"></div>
 <nav>
     <div class="nav-inner">
         <a href="/index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
-        <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open')">☰</button>
+        <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.textContent=document.getElementById('mainNav').classList.contains('open')?'✕':'☰'">☰</button>
         <ul class="nav-links" id="mainNav">
             <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
             <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
@@ -99,7 +112,7 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
             <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
             <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
             <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
-            <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi')">हिंदी</button></li>
+            <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>
         </ul>
     </div>
 </nav>
