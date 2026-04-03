@@ -26,33 +26,33 @@ include 'includes/header.php';
     <div class="card-grid">
       <div class="card">
         <div class="card-icon">📅</div>
-        <h3 class="card-title">Kaal Bhairav Ashtami</h3>
-        <p class="card-text">The most sacred day — Krishna Paksha Ashtami of Margashirsha month (November–December). The day Bhairav manifested from Shiva. The most powerful day for all Bhairav practices.</p>
+        <h3 class="card-title" data-key="pooja_card1_title">Kaal Bhairav Ashtami</h3>
+        <p class="card-text" data-key="pooja_card1_text">The most sacred day — Krishna Paksha Ashtami of Margashirsha month (November–December). The day Bhairav manifested from Shiva. The most powerful day for all Bhairav practices.</p>
       </div>
       <div class="card">
         <div class="card-icon">☀️</div>
-        <h3 class="card-title">Sunday (Ravivar)</h3>
-        <p class="card-text">Kaal Bhairav's primary weekly day. Perform pooja on Sunday for general blessings, protection, and removal of obstacles. Bhairav's energy is strongest on this day.</p>
+        <h3 class="card-title" data-key="pooja_card2_title">Sunday (Ravivar)</h3>
+        <p class="card-text" data-key="pooja_card2_text">Kaal Bhairav's primary weekly day. Perform pooja on Sunday for general blessings, protection, and removal of obstacles. Bhairav's energy is strongest on this day.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌙</div>
-        <h3 class="card-title">Ashtami Tithi</h3>
-        <p class="card-text">Both Krishna (dark) and Shukla (bright) Ashtami tithis every month are sacred to Bhairav. Perform pooja or at minimum chant his mantra on every 8th lunar day.</p>
+        <h3 class="card-title" data-key="pooja_card3_title">Ashtami Tithi</h3>
+        <p class="card-text" data-key="pooja_card3_text">Both Krishna (dark) and Shukla (bright) Ashtami tithis every month are sacred to Bhairav. Perform pooja or at minimum chant his mantra on every 8th lunar day.</p>
       </div>
       <div class="card">
         <div class="card-icon">⭐</div>
-        <h3 class="card-title">Tuesday (Mangalvar)</h3>
-        <p class="card-text">Also considered auspicious for Bhairav. Particularly good for Ruru Bhairav and Chanda Bhairav worship — for removing enemies, legal troubles, and health issues.</p>
+        <h3 class="card-title" data-key="pooja_card4_title">Tuesday (Mangalvar)</h3>
+        <p class="card-text" data-key="pooja_card4_text">Also considered auspicious for Bhairav. Particularly good for Ruru Bhairav and Chanda Bhairav worship — for removing enemies, legal troubles, and health issues.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌑</div>
-        <h3 class="card-title">Amavasya (New Moon)</h3>
-        <p class="card-text">The dark moon night is especially powerful for Tantric Bhairav practices. Bhairav is a deity of the night, and new moon intensifies his energy significantly.</p>
+        <h3 class="card-title" data-key="pooja_card5_title">Amavasya (New Moon)</h3>
+        <p class="card-text" data-key="pooja_card5_text">The dark moon night is especially powerful for Tantric Bhairav practices. Bhairav is a deity of the night, and new moon intensifies his energy significantly.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌃</div>
-        <h3 class="card-title">Midnight (Nishitha Kaal)</h3>
-        <p class="card-text">The midnight hour (approximately 11:30 PM–12:30 AM) is considered Bhairav's most powerful time. Advanced practitioners perform sadhana at this hour.</p>
+        <h3 class="card-title" data-key="pooja_card6_title">Midnight (Nishitha Kaal)</h3>
+        <p class="card-text" data-key="pooja_card6_text">The midnight hour (approximately 11:30 PM–12:30 AM) is considered Bhairav's most powerful time. Advanced practitioners perform sadhana at this hour.</p>
       </div>
     </div>
 
@@ -251,12 +251,12 @@ include 'includes/header.php';
       <p>These effects are described in traditional texts and devotional tradition. They apply <strong>only when the practice is performed with righteous intent for the practitioner's own wellbeing</strong>. No practice should be performed to cause harm to others. Results depend on the sincerity of the practitioner, their karma, and divine grace — they cannot be guaranteed.</p>
     </div>
     <div class="card-grid">
-      <div class="card"><div class="card-icon">🛡️</div><h3 class="card-title">Protection</h3><p class="card-text">Regular worship creates a powerful protective shield against enemies, evil spirits, negative energies, and unexpected dangers.</p></div>
-      <div class="card"><div class="card-icon">⚖️</div><h3 class="card-title">Justice &amp; Legal Matters</h3><p class="card-text">Bhairav is the Kotwal — the divine administrator of justice. He assists in legal disputes, court cases, and situations where truth needs to prevail.</p></div>
-      <div class="card"><div class="card-icon">😰</div><h3 class="card-title">Freedom from Fear</h3><p class="card-text">Kaal Bhairav is the ultimate destroyer of fear. Regular devotion dissolves anxiety, phobias, and existential fear — particularly the fear of death.</p></div>
-      <div class="card"><div class="card-icon">🧠</div><h3 class="card-title">Mental Clarity</h3><p class="card-text">Bhairav cuts through confusion and delusion. Devotees report increased clarity, decisive thinking, and removal of mental obstacles.</p></div>
-      <div class="card"><div class="card-icon">🔑</div><h3 class="card-title">Obstacle Removal</h3><p class="card-text">Bhairav clears the path — both materially (job, career, relationship obstacles) and spiritually (karmic blocks, past-life baggage).</p></div>
-      <div class="card"><div class="card-icon">🕉️</div><h3 class="card-title">Spiritual Liberation</h3><p class="card-text">The highest effect — Bhairav grants liberation from the cycle of rebirth. As Kotwal of Kashi, he ultimately grants moksha to sincere devotees.</p></div>
+      <div class="card"><div class="card-icon">🛡️</div><h3 class="card-title" data-key="pooja_eff1_title">Protection</h3><p class="card-text" data-key="pooja_eff1_text">Regular worship creates a powerful protective shield against enemies, evil spirits, negative energies, and unexpected dangers.</p></div>
+      <div class="card"><div class="card-icon">⚖️</div><h3 class="card-title" data-key="pooja_eff2_title">Justice &amp; Legal Matters</h3><p class="card-text" data-key="pooja_eff2_text">Bhairav is the Kotwal — the divine administrator of justice. He assists in legal disputes, court cases, and situations where truth needs to prevail.</p></div>
+      <div class="card"><div class="card-icon">😰</div><h3 class="card-title" data-key="pooja_eff3_title">Freedom from Fear</h3><p class="card-text" data-key="pooja_eff3_text">Kaal Bhairav is the ultimate destroyer of fear. Regular devotion dissolves anxiety, phobias, and existential fear — particularly the fear of death.</p></div>
+      <div class="card"><div class="card-icon">🧠</div><h3 class="card-title" data-key="pooja_eff4_title">Mental Clarity</h3><p class="card-text" data-key="pooja_eff4_text">Bhairav cuts through confusion and delusion. Devotees report increased clarity, decisive thinking, and removal of mental obstacles.</p></div>
+      <div class="card"><div class="card-icon">🔑</div><h3 class="card-title" data-key="pooja_eff5_title">Obstacle Removal</h3><p class="card-text" data-key="pooja_eff5_text">Bhairav clears the path — both materially (job, career, relationship obstacles) and spiritually (karmic blocks, past-life baggage).</p></div>
+      <div class="card"><div class="card-icon">🕉️</div><h3 class="card-title" data-key="pooja_eff6_title">Spiritual Liberation</h3><p class="card-text" data-key="pooja_eff6_text">The highest effect — Bhairav grants liberation from the cycle of rebirth. As Kotwal of Kashi, he ultimately grants moksha to sincere devotees.</p></div>
     </div>
 
   </div>

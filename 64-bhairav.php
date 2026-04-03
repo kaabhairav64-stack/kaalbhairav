@@ -16,7 +16,7 @@ include 'includes/header.php';
 
     <div class="highlight-box mb-2">
       <h3 class="card-title" data-key="bhairav64_intro_title">Understanding the 64 Bhairavas</h3>
-      <p>
+      <p data-key="bhairav64_intro_p1">
         According to the Shaiva Tantric tradition (particularly the <em>Bhairavagama</em> and
         <em>Rudrayamala Tantra</em>), there are <strong class="text-gold">64 Bhairavas</strong>
         organized into 8 primary forms called the <strong class="text-gold">Ashtabhairava</strong>
@@ -25,7 +25,7 @@ include 'includes/header.php';
         grounds (<em>ashta shmashana</em>), and 8 aspects of Tantric power (<em>ashta siddhi</em>).
       </p>
       <br>
-      <p>
+      <p data-key="bhairav64_intro_p2">
         In Kashi (Varanasi), the Ashtabhairav are stationed at 8 points around the city,
         forming a sacred protective ring — the <em>Kashi Ashtabhairav Chakra</em> — that
         guards the holy city. Completing a pilgrimage to all 8 Bhairav shrines in Kashi is
@@ -185,7 +185,7 @@ include 'includes/header.php';
 
     <div class="disclaimer-box mt-2">
       <h3 data-key="bhairav64_sources_title">📚 Textual Sources</h3>
-      <p>The enumeration and descriptions of the 64 Bhairavas are found primarily in:</p>
+      <p data-key="bhairav64_sources_text">The enumeration and descriptions of the 64 Bhairavas are found primarily in:</p>
       <ul>
         <li><strong>Bhairavagama</strong> — one of the 64 Shaiva Agamas</li>
         <li><strong>Rudrayamala Tantra</strong> — describes the 8 × 8 structure in detail</li>
