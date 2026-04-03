@@ -117,9 +117,9 @@ include 'includes/header.php';
 
     <?php foreach ($ashtakam as $v): ?>
     <div class="story-block" style="margin:1.5rem 0; border-left-color: rgba(201,168,76,0.5);">
-      <span class="source-tag">Verse <?php echo $v['verse']; ?> of 8</span>
-      <p><?php echo $v['desc']; ?></p>
-      <p style="margin-top:0.7rem; color:var(--gold); font-style:italic; font-size:0.9rem;">→ <?php echo $v['refrain']; ?></p>
+      <span class="source-tag" data-key="mantra_ashta_v<?php echo $v['verse']; ?>_src">Verse <?php echo $v['verse']; ?> of 8</span>
+      <p data-key="mantra_ashta_v<?php echo $v['verse']; ?>_desc"><?php echo $v['desc']; ?></p>
+      <p style="margin-top:0.7rem; color:var(--gold); font-style:italic; font-size:0.9rem;" data-key="mantra_ashta_v<?php echo $v['verse']; ?>_refrain">→ <?php echo $v['refrain']; ?></p>
     </div>
     <?php endforeach; ?>
 

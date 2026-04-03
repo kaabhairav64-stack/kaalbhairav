@@ -124,8 +124,8 @@ include 'includes/header.php';
     <div class="story-block" style="margin:2.5rem 0;">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
         <div>
-          <span class="source-tag">Form #<?php echo $b['num']; ?> of 8</span>
-          <h3 class="story-title" style="margin-top:0.5rem;">
+          <span class="source-tag" data-key="bhairav64_form<?php echo $b['num']; ?>_src">Form #<?php echo $b['num']; ?> of 8</span>
+          <h3 class="story-title" style="margin-top:0.5rem;" data-key="bhairav64_form<?php echo $b['num']; ?>_name">
             <?php echo $b['num']; ?>. <?php echo $b['name']; ?>
             <span style="font-family:'EB Garamond',serif; font-size:1rem; color:var(--smoke); font-style:italic;">
               — <?php echo $b['sanskrit']; ?>
@@ -134,15 +134,15 @@ include 'includes/header.php';
         </div>
         <div style="text-align:right;">
           <div style="color:var(--smoke); font-size:0.82rem; font-family:'Cinzel',serif;">
-            Direction: <span style="color:var(--gold);"><?php echo $b['direction']; ?></span><br>
-            Color: <span style="color:var(--gold);"><?php echo $b['color']; ?></span><br>
-            Shakti: <span style="color:var(--gold);"><?php echo $b['shakti']; ?></span>
+            <span data-key="bhairav64_label_dir">Direction:</span> <span style="color:var(--gold);" data-key="bhairav64_form<?php echo $b['num']; ?>_dir"><?php echo $b['direction']; ?></span><br>
+            <span data-key="bhairav64_label_color">Color:</span> <span style="color:var(--gold);" data-key="bhairav64_form<?php echo $b['num']; ?>_color"><?php echo $b['color']; ?></span><br>
+            <span data-key="bhairav64_label_shakti">Shakti:</span> <span style="color:var(--gold);" data-key="bhairav64_form<?php echo $b['num']; ?>_shakti"><?php echo $b['shakti']; ?></span>
           </div>
         </div>
       </div>
-      <p><?php echo $b['desc']; ?></p>
+      <p data-key="bhairav64_form<?php echo $b['num']; ?>_desc"><?php echo $b['desc']; ?></p>
       <div style="margin-top:1.2rem;">
-        <p style="font-family:'Cinzel',serif; font-size:0.75rem; color:var(--crimson-bright); letter-spacing:0.1em; margin-bottom:0.5rem;">
+        <p style="font-family:'Cinzel',serif; font-size:0.75rem; color:var(--crimson-bright); letter-spacing:0.1em; margin-bottom:0.5rem;" data-key="bhairav64_label_subforms">
           8 SUB-FORMS:
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
