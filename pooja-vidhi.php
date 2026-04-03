@@ -109,135 +109,135 @@ include 'includes/header.php';
       <div class="pooja-step">
         <div class="step-num">1</div>
         <div class="step-content">
-          <h4>Shuddhi (Self-Purification)</h4>
-          <p>Take a bath before beginning. Wear clean clothes — ideally black or dark red. If performing at home, clean the worship space thoroughly. Apply tilak (optional: use black sesame paste or sindoor). Clear your mind of all negative thoughts.</p>
+          <h4 data-key="pooja_step1_title">Shuddhi (Self-Purification)</h4>
+          <p data-key="pooja_step1_text">Take a bath before beginning. Wear clean clothes — ideally black or dark red. If performing at home, clean the worship space thoroughly. Apply tilak (optional: use black sesame paste or sindoor). Clear your mind of all negative thoughts.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">2</div>
         <div class="step-content">
-          <h4>Dog Seva (Before Pooja)</h4>
-          <p>Before beginning the pooja, feed a dog. This is not optional in serious Bhairav practice — it is considered the first offering to Bhairav himself. Feed cooked food, bread, or dog food to any dog you encounter. A black dog is most auspicious.</p>
+          <h4 data-key="pooja_step2_title">Dog Seva (Before Pooja)</h4>
+          <p data-key="pooja_step2_text">Before beginning the pooja, feed a dog. This is not optional in serious Bhairav practice — it is considered the first offering to Bhairav himself. Feed cooked food, bread, or dog food to any dog you encounter. A black dog is most auspicious.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">3</div>
         <div class="step-content">
-          <h4>Dipa Prajvalana (Lighting the Lamp)</h4>
-          <p>Light a mustard oil lamp or sesame oil lamp before the Bhairav murti or image. The lamp represents the dissolution of darkness (ignorance) by the light of Bhairav's consciousness. Light it facing South or facing the murti. Chant: <em class="text-gold">ॐ कालभैरवाय नमः</em></p>
+          <h4 data-key="pooja_step3_title">Dipa Prajvalana (Lighting the Lamp)</h4>
+          <p data-key="pooja_step3_text">Light a mustard oil lamp or sesame oil lamp before the Bhairav murti or image. The lamp represents the dissolution of darkness (ignorance) by the light of Bhairav's consciousness. Light it facing South or facing the murti. Chant: <em class="text-gold">ॐ कालभैरवाय नमः</em></p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">4</div>
         <div class="step-content">
-          <h4>Dhyana (Meditation on Form)</h4>
-          <p>Close your eyes and visualize Kaal Bhairav: dark complexion, three eyes blazing with fire, wearing a garland of skulls, holding trident, damaru, kapala, and abhaya mudra (gesture of fearlessness). His black dog sits at his feet. Hold this image for at least 5 minutes before proceeding.</p>
-          <p style="margin-top:0.5rem; font-style:italic; color:var(--gold-pale); font-size:0.9rem;">Dhyana Shloka: "Kalabhairava divyam, shyamam trinetradharam, kapaladharam, dandapani, shvaravahana..."</p>
+          <h4 data-key="pooja_step4_title">Dhyana (Meditation on Form)</h4>
+          <p data-key="pooja_step4_text">Close your eyes and visualize Kaal Bhairav: dark complexion, three eyes blazing with fire, wearing a garland of skulls, holding trident, damaru, kapala, and abhaya mudra (gesture of fearlessness). His black dog sits at his feet. Hold this image for at least 5 minutes before proceeding.</p>
+          <p style="margin-top:0.5rem; font-style:italic; color:var(--gold-pale); font-size:0.9rem;" data-key="pooja_step4_shloka">Dhyana Shloka: "Kalabhairava divyam, shyamam trinetradharam, kapaladharam, dandapani, shvaravahana..."</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">5</div>
         <div class="step-content">
-          <h4>Sankalpa (Sacred Intention)</h4>
-          <p>State your sankalpa (intention) clearly — aloud or in your mind. Say your name, gotra (if known), and your purpose for performing this pooja. <strong>Important:</strong> your intention must be righteous — for your own protection, spiritual progress, removal of obstacles, or general wellbeing. An intention to harm another person will invite adverse karma.</p>
+          <h4 data-key="pooja_step5_title">Sankalpa (Sacred Intention)</h4>
+          <p data-key="pooja_step5_text">State your sankalpa (intention) clearly — aloud or in your mind. Say your name, gotra (if known), and your purpose for performing this pooja. <strong>Important:</strong> your intention must be righteous — for your own protection, spiritual progress, removal of obstacles, or general wellbeing. An intention to harm another person will invite adverse karma.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">6</div>
         <div class="step-content">
-          <h4>Avahana (Invocation)</h4>
-          <p>Invite Kaal Bhairav into the worship space with folded hands:</p>
+          <h4 data-key="pooja_step6_title">Avahana (Invocation)</h4>
+          <p data-key="pooja_step6_text">Invite Kaal Bhairav into the worship space with folded hands:</p>
           <p class="text-gold" style="font-family:'EB Garamond',serif; font-size:1.1rem; margin-top:0.5rem;">
             ॐ आगच्छ देव कालभैरव, इहाम आसनं गृह्ण। सर्वपूजा स्वीकुरु।
           </p>
-          <p style="font-size:0.9rem; color:var(--smoke);">"O Lord Kaal Bhairav, please come and take your seat here. Accept all offerings."</p>
+          <p style="font-size:0.9rem; color:var(--smoke);" data-key="pooja_step6_trans">"O Lord Kaal Bhairav, please come and take your seat here. Accept all offerings."</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">7</div>
         <div class="step-content">
-          <h4>Asana (Offering a Seat)</h4>
-          <p>Place a clean black cloth beneath the murti or image as Bhairav's divine seat. Offer akshata (unbroken rice grains mixed with turmeric) as symbolic seating.</p>
+          <h4 data-key="pooja_step7_title">Asana (Offering a Seat)</h4>
+          <p data-key="pooja_step7_text">Place a clean black cloth beneath the murti or image as Bhairav's divine seat. Offer akshata (unbroken rice grains mixed with turmeric) as symbolic seating.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">8</div>
         <div class="step-content">
-          <h4>Paadya, Arghya, Achamaniya (Foot Wash, Hand Wash, Mouth Rinse)</h4>
-          <p>Offer Gangajal or clean water three times in a small vessel, symbolically washing the feet, hands, and mouth of the deity. With each offering say: <em class="text-gold">ॐ कालभैरवाय नमः</em></p>
+          <h4 data-key="pooja_step8_title">Paadya, Arghya, Achamaniya (Foot Wash, Hand Wash, Mouth Rinse)</h4>
+          <p data-key="pooja_step8_text">Offer Gangajal or clean water three times in a small vessel, symbolically washing the feet, hands, and mouth of the deity. With each offering say: <em class="text-gold">ॐ कालभैरवाय नमः</em></p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">9</div>
         <div class="step-content">
-          <h4>Abhishek (Sacred Bath)</h4>
-          <p>Bathe the murti (or pour water before the image) with: (1) Gangajal, (2) raw milk, (3) honey, (4) curd, (5) Gangajal again to finish. This is the <em>Panchamrita Abhishek</em>. While pouring, continuously chant: <em class="text-gold">ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं</em></p>
+          <h4 data-key="pooja_step9_title">Abhishek (Sacred Bath)</h4>
+          <p data-key="pooja_step9_text">Bathe the murti (or pour water before the image) with: (1) Gangajal, (2) raw milk, (3) honey, (4) curd, (5) Gangajal again to finish. This is the <em>Panchamrita Abhishek</em>. While pouring, continuously chant: <em class="text-gold">ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं</em></p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">10</div>
         <div class="step-content">
-          <h4>Vastra (Clothing) and Gandha (Fragrance)</h4>
-          <p>Offer a black cloth or dark fabric to Bhairav. Apply sindoor or sandalwood paste. Offer a few drops of mustard oil. Apply fragrance — kewra or musk are traditional for Bhairav.</p>
+          <h4 data-key="pooja_step10_title">Vastra (Clothing) and Gandha (Fragrance)</h4>
+          <p data-key="pooja_step10_text">Offer a black cloth or dark fabric to Bhairav. Apply sindoor or sandalwood paste. Offer a few drops of mustard oil. Apply fragrance — kewra or musk are traditional for Bhairav.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">11</div>
         <div class="step-content">
-          <h4>Pushpa (Flowers)</h4>
-          <p>Offer red hibiscus flowers, red roses, or Kadamba flowers. Place bilva leaves (bel patra) with the smooth side facing the murti. Black sesame seeds can also be offered at this point.</p>
+          <h4 data-key="pooja_step11_title">Pushpa (Flowers)</h4>
+          <p data-key="pooja_step11_text">Offer red hibiscus flowers, red roses, or Kadamba flowers. Place bilva leaves (bel patra) with the smooth side facing the murti. Black sesame seeds can also be offered at this point.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">12</div>
         <div class="step-content">
-          <h4>Dhupa and Dipa (Incense and Light)</h4>
-          <p>Offer dhoop (incense sticks) — preferably Loban (frankincense) or Guggul resin. Wave the incense in clockwise circles before the murti 3 times. Then offer the lamp again, 3 clockwise circles.</p>
+          <h4 data-key="pooja_step12_title">Dhupa and Dipa (Incense and Light)</h4>
+          <p data-key="pooja_step12_text">Offer dhoop (incense sticks) — preferably Loban (frankincense) or Guggul resin. Wave the incense in clockwise circles before the murti 3 times. Then offer the lamp again, 3 clockwise circles.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">13</div>
         <div class="step-content">
-          <h4>Naivedya (Food Offering)</h4>
-          <p>Offer cooked black urad dal, black sesame sweets (til ladoo), or any sweet preparation. Coconut and banana are also acceptable. Place the offering before the murti and say: <em class="text-gold">ॐ प्राणाय स्वाहा, ॐ कालभैरवाय नमः</em>. Do NOT taste the food before offering.</p>
+          <h4 data-key="pooja_step13_title">Naivedya (Food Offering)</h4>
+          <p data-key="pooja_step13_text">Offer cooked black urad dal, black sesame sweets (til ladoo), or any sweet preparation. Coconut and banana are also acceptable. Place the offering before the murti and say: <em class="text-gold">ॐ प्राणाय स्वाहा, ॐ कालभैरवाय नमः</em>. Do NOT taste the food before offering.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">14</div>
         <div class="step-content">
-          <h4>Mantra Japa (Chanting)</h4>
-          <p>Using a Rudraksha mala, perform 108 repetitions of the chosen mantra. The most accessible mantra for daily practice:</p>
+          <h4 data-key="pooja_step14_title">Mantra Japa (Chanting)</h4>
+          <p data-key="pooja_step14_text">Using a Rudraksha mala, perform 108 repetitions of the chosen mantra. The most accessible mantra for daily practice:</p>
           <p class="text-gold" style="font-family:'EB Garamond',serif; font-size:1.2rem; margin:0.5rem 0;">ॐ कालभैरवाय नमः</p>
-          <p style="color:var(--smoke); font-size:0.9rem;">For more powerful mantras and their procedures, see the <a href="/mantra.php" style="color:var(--gold);">Mantra &amp; Tantra page</a>.</p>
+          <p style="color:var(--smoke); font-size:0.9rem;" data-key="pooja_step14_link">For more powerful mantras and their procedures, see the <a href="/mantra.php" style="color:var(--gold);">Mantra &amp; Tantra page</a>.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">15</div>
         <div class="step-content">
-          <h4>Aarti (Waving the Lamp)</h4>
-          <p>Perform aarti with camphor or ghee lamp. Wave it clockwise — first at the feet (1 time), then at the navel (2 times), then at the face (3 times), then full body (7 times). Sing or recite the Kaal Bhairav Aarti. This is a moment of complete surrender and joy.</p>
+          <h4 data-key="pooja_step15_title">Aarti (Waving the Lamp)</h4>
+          <p data-key="pooja_step15_text">Perform aarti with camphor or ghee lamp. Wave it clockwise — first at the feet (1 time), then at the navel (2 times), then at the face (3 times), then full body (7 times). Sing or recite the Kaal Bhairav Aarti. This is a moment of complete surrender and joy.</p>
         </div>
       </div>
 
       <div class="pooja-step">
         <div class="step-num">16</div>
         <div class="step-content">
-          <h4>Pradakshina and Visarjana (Circumambulation and Farewell)</h4>
-          <p>Perform 3 clockwise pradakshinas (circumambulations) around the murti or in your mind if space is limited. Then offer farewell with folded hands: <em class="text-gold">ॐ यान्तु देव-गणाः सर्वे, पूजामादाय मामकीम्। इष्ट-काम-समृद्ध्यर्थं, पुनरागमनाय च ॥</em></p>
+          <h4 data-key="pooja_step16_title">Pradakshina and Visarjana (Circumambulation and Farewell)</h4>
+          <p data-key="pooja_step16_text">Perform 3 clockwise pradakshinas (circumambulations) around the murti or in your mind if space is limited. Then offer farewell with folded hands: <em class="text-gold">ॐ यान्तु देव-गणाः सर्वे, पूजामादाय मामकीम्। इष्ट-काम-समृद्ध्यर्थं, पुनरागमनाय च ॥</em></p>
         </div>
       </div>
 
