@@ -61,38 +61,38 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="two-col">
       <div>
-        <h3 class="card-title" style="margin-bottom:1rem;">Essential Items</h3>
+        <h3 class="card-title" style="margin-bottom:1rem;" data-key="pooja_essential_title">Essential Items</h3>
         <table>
-          <tr><th>Item</th><th>Significance</th></tr>
-          <tr><td>Kaal Bhairav image / murti</td><td>Focus of worship</td></tr>
-          <tr><td>Mustard oil lamp (Sarson tel)</td><td>Bhairav's preferred light</td></tr>
-          <tr><td>Black sesame seeds (Kala til)</td><td>Sacred to Bhairav</td></tr>
-          <tr><td>Black urad dal (lentils)</td><td>Bhairav's naivedya</td></tr>
-          <tr><td>Red hibiscus flowers</td><td>Bhairav's preferred flower</td></tr>
-          <tr><td>Bilva leaves (Bel patra)</td><td>Sacred to all Shiva forms</td></tr>
-          <tr><td>Incense (dhoop / agarbatti)</td><td>Purification of space</td></tr>
-          <tr><td>Rudraksha mala (108 beads)</td><td>For mantra japa</td></tr>
-          <tr><td>Gangajal (Ganga water)</td><td>For abhishek and purification</td></tr>
-          <tr><td>Sindoor (vermillion)</td><td>Applied to Bhairav murti</td></tr>
+          <tr><th data-key="pooja_mat_th1">Item</th><th data-key="pooja_mat_th2">Significance</th></tr>
+          <tr><td data-key="pooja_mat_r1_item">Kaal Bhairav image / murti</td><td data-key="pooja_mat_r1_sig">Focus of worship</td></tr>
+          <tr><td data-key="pooja_mat_r2_item">Mustard oil lamp (Sarson tel)</td><td data-key="pooja_mat_r2_sig">Bhairav's preferred light</td></tr>
+          <tr><td data-key="pooja_mat_r3_item">Black sesame seeds (Kala til)</td><td data-key="pooja_mat_r3_sig">Sacred to Bhairav</td></tr>
+          <tr><td data-key="pooja_mat_r4_item">Black urad dal (lentils)</td><td data-key="pooja_mat_r4_sig">Bhairav's naivedya</td></tr>
+          <tr><td data-key="pooja_mat_r5_item">Red hibiscus flowers</td><td data-key="pooja_mat_r5_sig">Bhairav's preferred flower</td></tr>
+          <tr><td data-key="pooja_mat_r6_item">Bilva leaves (Bel patra)</td><td data-key="pooja_mat_r6_sig">Sacred to all Shiva forms</td></tr>
+          <tr><td data-key="pooja_mat_r7_item">Incense (dhoop / agarbatti)</td><td data-key="pooja_mat_r7_sig">Purification of space</td></tr>
+          <tr><td data-key="pooja_mat_r8_item">Rudraksha mala (108 beads)</td><td data-key="pooja_mat_r8_sig">For mantra japa</td></tr>
+          <tr><td data-key="pooja_mat_r9_item">Gangajal (Ganga water)</td><td data-key="pooja_mat_r9_sig">For abhishek and purification</td></tr>
+          <tr><td data-key="pooja_mat_r10_item">Sindoor (vermillion)</td><td data-key="pooja_mat_r10_sig">Applied to Bhairav murti</td></tr>
         </table>
       </div>
       <div>
-        <h3 class="card-title" style="margin-bottom:1rem;">Additional Offerings</h3>
+        <h3 class="card-title" style="margin-bottom:1rem;" data-key="pooja_additional_title">Additional Offerings</h3>
         <table>
-          <tr><th>Item</th><th>Purpose</th></tr>
-          <tr><td>Coconut</td><td>Symbolizes ego surrender</td></tr>
-          <tr><td>Sweets (especially black halwa)</td><td>Naivedya offering</td></tr>
-          <tr><td>Black cloth</td><td>For Bhairav's seat / altar</td></tr>
-          <tr><td>Dog food / cooked food</td><td>For dog seva before pooja</td></tr>
-          <tr><td>Iron vessel</td><td>For water offerings</td></tr>
-          <tr><td>Skull / kapala symbol</td><td>Tantric representation</td></tr>
-          <tr><td>Neem leaves</td><td>Purification</td></tr>
-          <tr><td>Five metals (panchadhatu)</td><td>For advanced practitioners</td></tr>
-          <tr><td>Camphor (Kapoor)</td><td>For aarti</td></tr>
-          <tr><td>Raw milk</td><td>Abhishek (if available)</td></tr>
+          <tr><th data-key="pooja_add_th1">Item</th><th data-key="pooja_add_th2">Purpose</th></tr>
+          <tr><td data-key="pooja_add_r1_item">Coconut</td><td data-key="pooja_add_r1_pur">Symbolizes ego surrender</td></tr>
+          <tr><td data-key="pooja_add_r2_item">Sweets (especially black halwa)</td><td data-key="pooja_add_r2_pur">Naivedya offering</td></tr>
+          <tr><td data-key="pooja_add_r3_item">Black cloth</td><td data-key="pooja_add_r3_pur">For Bhairav's seat / altar</td></tr>
+          <tr><td data-key="pooja_add_r4_item">Dog food / cooked food</td><td data-key="pooja_add_r4_pur">For dog seva before pooja</td></tr>
+          <tr><td data-key="pooja_add_r5_item">Iron vessel</td><td data-key="pooja_add_r5_pur">For water offerings</td></tr>
+          <tr><td data-key="pooja_add_r6_item">Skull / kapala symbol</td><td data-key="pooja_add_r6_pur">Tantric representation</td></tr>
+          <tr><td data-key="pooja_add_r7_item">Neem leaves</td><td data-key="pooja_add_r7_pur">Purification</td></tr>
+          <tr><td data-key="pooja_add_r8_item">Five metals (panchadhatu)</td><td data-key="pooja_add_r8_pur">For advanced practitioners</td></tr>
+          <tr><td data-key="pooja_add_r9_item">Camphor (Kapoor)</td><td data-key="pooja_add_r9_pur">For aarti</td></tr>
+          <tr><td data-key="pooja_add_r10_item">Raw milk</td><td data-key="pooja_add_r10_pur">Abhishek (if available)</td></tr>
         </table>
         <div class="highlight-box" style="margin-top:1rem;">
-          <p style="font-size:0.9rem; color:var(--smoke);">
+          <p style="font-size:0.9rem; color:var(--smoke);" data-key="pooja_alcohol_note">
             <strong class="text-gold">Note on alcohol:</strong> Some older texts mention alcohol as an offering. This website <strong>does not recommend</strong> alcohol offerings, particularly for home practice. Devotion and purity of intent are far more important than any specific offering.
           </p>
         </div>
@@ -247,8 +247,8 @@ include 'includes/header.php';
     <h2 class="section-title" style="margin-top:4rem;" data-key="pooja_effects_title">Known Spiritual Effects</h2>
     <div class="gold-line"></div>
     <div class="disclaimer-box" style="margin-bottom:2rem;">
-      <h3>⚠ Important — Fair Use Only</h3>
-      <p>These effects are described in traditional texts and devotional tradition. They apply <strong>only when the practice is performed with righteous intent for the practitioner's own wellbeing</strong>. No practice should be performed to cause harm to others. Results depend on the sincerity of the practitioner, their karma, and divine grace — they cannot be guaranteed.</p>
+      <h3 data-key="pooja_fairuse_title">⚠ Important — Fair Use Only</h3>
+      <p data-key="pooja_fairuse_text">These effects are described in traditional texts and devotional tradition. They apply <strong>only when the practice is performed with righteous intent for the practitioner's own wellbeing</strong>. No practice should be performed to cause harm to others. Results depend on the sincerity of the practitioner, their karma, and divine grace — they cannot be guaranteed.</p>
     </div>
     <div class="card-grid">
       <div class="card"><div class="card-icon">🛡️</div><h3 class="card-title" data-key="pooja_eff1_title">Protection</h3><p class="card-text" data-key="pooja_eff1_text">Regular worship creates a powerful protective shield against enemies, evil spirits, negative energies, and unexpected dangers.</p></div>
