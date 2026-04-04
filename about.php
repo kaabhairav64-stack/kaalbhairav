@@ -24,29 +24,29 @@ include 'includes/header.php';
         </p>
         <br>
         <ul style="color:var(--ash); padding-left:1.5rem; line-height:2.4;">
-          <li><strong class="text-gold">Complexion:</strong> Dark as a storm cloud or a collyrium (kajal) — representing the void and the night</li>
-          <li><strong class="text-gold">Eyes:</strong> Three eyes blazing with fire — past, present, future; or sun, moon, fire</li>
-          <li><strong class="text-gold">Matted hair:</strong> Jata (matted locks) — like Shiva, indicating an ascetic nature beyond social norms</li>
-          <li><strong class="text-gold">Garland:</strong> Skulls (Mundashreni) — each skull represents one of 51 letters of the Sanskrit alphabet; also represents dissolved egos</li>
-          <li><strong class="text-gold">Ornaments:</strong> Snakes as sacred thread and ornaments — representing Kundalini energy and mastery over primal forces</li>
-          <li><strong class="text-gold">State:</strong> Often naked or wearing tiger skin — nakedness represents pure consciousness beyond all coverings</li>
-          <li><strong class="text-gold">Companion:</strong> A black dog always at his side — his vahana, guardian, and companion</li>
-          <li><strong class="text-gold">Setting:</strong> Cremation grounds, midnight, burning pyres — representing the ultimate reality of impermanence</li>
+          <li data-key="about_ico_li1"><strong class="text-gold">Complexion:</strong> Dark as a storm cloud or a collyrium (kajal) — representing the void and the night</li>
+          <li data-key="about_ico_li2"><strong class="text-gold">Eyes:</strong> Three eyes blazing with fire — past, present, future; or sun, moon, fire</li>
+          <li data-key="about_ico_li3"><strong class="text-gold">Matted hair:</strong> Jata (matted locks) — like Shiva, indicating an ascetic nature beyond social norms</li>
+          <li data-key="about_ico_li4"><strong class="text-gold">Garland:</strong> Skulls (Mundashreni) — each skull represents one of 51 letters of the Sanskrit alphabet; also represents dissolved egos</li>
+          <li data-key="about_ico_li5"><strong class="text-gold">Ornaments:</strong> Snakes as sacred thread and ornaments — representing Kundalini energy and mastery over primal forces</li>
+          <li data-key="about_ico_li6"><strong class="text-gold">State:</strong> Often naked or wearing tiger skin — nakedness represents pure consciousness beyond all coverings</li>
+          <li data-key="about_ico_li7"><strong class="text-gold">Companion:</strong> A black dog always at his side — his vahana, guardian, and companion</li>
+          <li data-key="about_ico_li8"><strong class="text-gold">Setting:</strong> Cremation grounds, midnight, burning pyres — representing the ultimate reality of impermanence</li>
         </ul>
       </div>
       <div>
         <h3 class="card-title" style="margin-bottom:1rem;" data-key="about_weapons_title">The 8 Weapons (Ashtayudha)</h3>
 
         <table>
-          <tr><th>Weapon</th><th>Symbolism</th></tr>
-          <tr><td>Trishula (Trident)</td><td>Destroys the 3 gunas, 3 worlds, 3 bodies</td></tr>
-          <tr><td>Kapala (Skull Bowl)</td><td>Ego's dissolution; container of liberation</td></tr>
-          <tr><td>Damaru (Drum)</td><td>The primordial sound — Nada Brahman</td></tr>
-          <tr><td>Pasha (Noose)</td><td>Binds the wicked; the law of karma</td></tr>
-          <tr><td>Danda (Staff)</td><td>Divine justice — the Kotwal's authority</td></tr>
-          <tr><td>Khadga (Sword)</td><td>Cuts through ignorance and illusion</td></tr>
-          <tr><td>Abhaya Mudra</td><td>Grant of fearlessness to devotees</td></tr>
-          <tr><td>Varada Mudra</td><td>Grant of boons and grace</td></tr>
+          <tr><th data-key="about_wpn_th1">Weapon</th><th data-key="about_wpn_th2">Symbolism</th></tr>
+          <tr><td data-key="about_wpn_r1_name">Trishula (Trident)</td><td data-key="about_wpn_r1_sym">Destroys the 3 gunas, 3 worlds, 3 bodies</td></tr>
+          <tr><td data-key="about_wpn_r2_name">Kapala (Skull Bowl)</td><td data-key="about_wpn_r2_sym">Ego's dissolution; container of liberation</td></tr>
+          <tr><td data-key="about_wpn_r3_name">Damaru (Drum)</td><td data-key="about_wpn_r3_sym">The primordial sound — Nada Brahman</td></tr>
+          <tr><td data-key="about_wpn_r4_name">Pasha (Noose)</td><td data-key="about_wpn_r4_sym">Binds the wicked; the law of karma</td></tr>
+          <tr><td data-key="about_wpn_r5_name">Danda (Staff)</td><td data-key="about_wpn_r5_sym">Divine justice — the Kotwal's authority</td></tr>
+          <tr><td data-key="about_wpn_r6_name">Khadga (Sword)</td><td data-key="about_wpn_r6_sym">Cuts through ignorance and illusion</td></tr>
+          <tr><td data-key="about_wpn_r7_name">Abhaya Mudra</td><td data-key="about_wpn_r7_sym">Grant of fearlessness to devotees</td></tr>
+          <tr><td data-key="about_wpn_r8_name">Varada Mudra</td><td data-key="about_wpn_r8_sym">Grant of boons and grace</td></tr>
         </table>
       </div>
     </div>

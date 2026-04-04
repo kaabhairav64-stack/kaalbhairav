@@ -169,6 +169,7 @@ include 'includes/header.php';
           'num'   => count($all64)+1,
           'name'  => $sf . ' Bhairav',
           'group' => $b['name'],
+          'gnum'  => $b['num'],
         ];
       }
     }
@@ -178,7 +179,7 @@ include 'includes/header.php';
       <div class="bhairav-item">
         <div class="bhairav-num">#<?php echo str_pad($item['num'],2,'0',STR_PAD_LEFT); ?></div>
         <div class="bhairav-name"><?php echo htmlspecialchars($item['name']); ?></div>
-        <div class="bhairav-desc">Sub-form of <?php echo htmlspecialchars($item['group']); ?></div>
+        <div class="bhairav-desc"><span data-key="bhairav64_subof">Sub-form of</span> <span data-key="bhairav64_gname<?php echo $item['gnum']; ?>"><?php echo htmlspecialchars($item['group']); ?></span></div>
       </div>
       <?php endforeach; ?>
     </div>

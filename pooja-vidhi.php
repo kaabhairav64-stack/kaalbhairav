@@ -16,8 +16,8 @@ include 'includes/header.php';
 
     <!-- DISCLAIMER FIRST -->
     <div class="disclaimer-box">
-      <h3>⚠ Before You Begin — Please Read</h3>
-      <p>This pooja vidhi is provided for sincere devotees seeking <strong>protection, spiritual progress, removal of obstacles, and liberation</strong>. All practices described are for <strong>personal spiritual use only</strong>. Using any practice to harm others is <strong>strictly prohibited</strong> and will bring adverse karma to the practitioner. Performing any Tantric practice is entirely at your own risk and responsibility. Consult a qualified guru for advanced Tantric procedures. See full <a href="/disclaimer.php" style="color:var(--gold);">Disclaimer</a>.</p>
+      <h3 data-key="pooja_disc_title">⚠ Before You Begin — Please Read</h3>
+      <p data-key="pooja_disc_text">This pooja vidhi is provided for sincere devotees seeking <strong>protection, spiritual progress, removal of obstacles, and liberation</strong>. All practices described are for <strong>personal spiritual use only</strong>. Using any practice to harm others is <strong>strictly prohibited</strong> and will bring adverse karma to the practitioner. Performing any Tantric practice is entirely at your own risk and responsibility. Consult a qualified guru for advanced Tantric procedures. See full <a href="/disclaimer.php" style="color:var(--gold);">Disclaimer</a>.</p>
     </div>
 
     <!-- AUSPICIOUS DAYS -->

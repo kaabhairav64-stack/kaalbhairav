@@ -42,16 +42,16 @@ include 'includes/header.php';
       </div>
       <div>
         <div class="highlight-box">
-          <h3 class="card-title" style="margin-bottom:1rem;">Kashi — Sacred Facts</h3>
+          <h3 class="card-title" style="margin-bottom:1rem;" data-key="kashi_facts_title">Kashi — Sacred Facts</h3>
           <table>
-            <tr><th>Attribute</th><th>Detail</th></tr>
-            <tr><td>Also Known As</td><td>Varanasi, Benares, Avimukta</td></tr>
-            <tr><td>Rivers</td><td>Ganga, Varuna, Asi</td></tr>
-            <tr><td>Primary Deity</td><td>Kashi Vishwanath (Shiva)</td></tr>
-            <tr><td>Guardian</td><td>Kaal Bhairav (Kotwal)</td></tr>
-            <tr><td>Sacred Text</td><td>Kashi Khanda, Skanda Purana</td></tr>
-            <tr><td>Significance</td><td>Dying here grants moksha</td></tr>
-            <tr><td>Bhairav Temple</td><td>Kaal Bhairav Gali, near Trilochan</td></tr>
+            <tr><th data-key="kashi_facts_th1">Attribute</th><th data-key="kashi_facts_th2">Detail</th></tr>
+            <tr><td data-key="kashi_facts_r1_attr">Also Known As</td><td data-key="kashi_facts_r1_val">Varanasi, Benares, Avimukta</td></tr>
+            <tr><td data-key="kashi_facts_r2_attr">Rivers</td><td data-key="kashi_facts_r2_val">Ganga, Varuna, Asi</td></tr>
+            <tr><td data-key="kashi_facts_r3_attr">Primary Deity</td><td data-key="kashi_facts_r3_val">Kashi Vishwanath (Shiva)</td></tr>
+            <tr><td data-key="kashi_facts_r4_attr">Guardian</td><td data-key="kashi_facts_r4_val">Kaal Bhairav (Kotwal)</td></tr>
+            <tr><td data-key="kashi_facts_r5_attr">Sacred Text</td><td data-key="kashi_facts_r5_val">Kashi Khanda, Skanda Purana</td></tr>
+            <tr><td data-key="kashi_facts_r6_attr">Significance</td><td data-key="kashi_facts_r6_val">Dying here grants moksha</td></tr>
+            <tr><td data-key="kashi_facts_r7_attr">Bhairav Temple</td><td data-key="kashi_facts_r7_val">Kaal Bhairav Gali, near Trilochan</td></tr>
           </table>
         </div>
       </div>
@@ -136,23 +136,23 @@ include 'includes/header.php';
           of devotion to Bhairav himself.
         </p>
         <br>
-        <p>
+        <p data-key="kashi_temple_location">
           <strong class="text-gold">Location:</strong> Kaal Bhairav Gali, near Trilochan,<br>
           Varanasi (Kashi), Uttar Pradesh — 221001
         </p>
       </div>
       <div>
         <div class="highlight-box">
-          <h3 class="card-title" style="margin-bottom:1rem;">Temple Worship Details</h3>
+          <h3 class="card-title" style="margin-bottom:1rem;" data-key="kashi_worship_title">Temple Worship Details</h3>
           <table>
-            <tr><th>Aspect</th><th>Detail</th></tr>
-            <tr><td>Opening Hours</td><td>5:00 AM – 10:30 PM</td></tr>
-            <tr><td>Main Offering</td><td>Madhya (liquor), flowers, sindoor</td></tr>
-            <tr><td>Best Day to Visit</td><td>Sunday, Bhairav Ashtami</td></tr>
-            <tr><td>Best Time</td><td>Midnight (Nishitha Puja)</td></tr>
-            <tr><td>Sacred Animal</td><td>Black dog (kept at temple)</td></tr>
-            <tr><td>Nearest Landmark</td><td>Trilochan Mahadev</td></tr>
-            <tr><td>Significance</td><td>Visit before Kashi Vishwanath</td></tr>
+            <tr><th data-key="kashi_worship_th1">Aspect</th><th data-key="kashi_worship_th2">Detail</th></tr>
+            <tr><td data-key="kashi_worship_r1_asp">Opening Hours</td><td data-key="kashi_worship_r1_val">5:00 AM – 10:30 PM</td></tr>
+            <tr><td data-key="kashi_worship_r2_asp">Main Offering</td><td data-key="kashi_worship_r2_val">Madhya (liquor), flowers, sindoor</td></tr>
+            <tr><td data-key="kashi_worship_r3_asp">Best Day to Visit</td><td data-key="kashi_worship_r3_val">Sunday, Bhairav Ashtami</td></tr>
+            <tr><td data-key="kashi_worship_r4_asp">Best Time</td><td data-key="kashi_worship_r4_val">Midnight (Nishitha Puja)</td></tr>
+            <tr><td data-key="kashi_worship_r5_asp">Sacred Animal</td><td data-key="kashi_worship_r5_val">Black dog (kept at temple)</td></tr>
+            <tr><td data-key="kashi_worship_r6_asp">Nearest Landmark</td><td data-key="kashi_worship_r6_val">Trilochan Mahadev</td></tr>
+            <tr><td data-key="kashi_worship_r7_asp">Significance</td><td data-key="kashi_worship_r7_val">Visit before Kashi Vishwanath</td></tr>
           </table>
         </div>
       </div>
@@ -180,22 +180,22 @@ include 'includes/header.php';
     <!-- ASHTABHAIRAV IN KASHI -->
     <h2 class="section-title" style="margin-top:4rem;" data-key="kashi_ashta_title">The Eight Bhairavas of Kashi</h2>
     <div class="gold-line"></div>
-    <p style="color:var(--smoke); margin-bottom:2rem;">
+    <p style="color:var(--smoke); margin-bottom:2rem;" data-key="kashi_ashta_intro">
       Kashi contains eight primary Bhairav shrines — the <em>Ashtabhairav</em> — each guarding
       one of the eight directions of the city. Together they form a sacred protective ring
       around the entire city of Kashi.
     </p>
     <div class="highlight-box">
       <table>
-        <tr><th>Bhairav</th><th>Direction</th><th>Location in Kashi</th></tr>
-        <tr><td>Kaal Bhairav</td><td>Centre / Supreme</td><td>Kaal Bhairav Gali, Trilochan</td></tr>
-        <tr><td>Batuk Bhairav</td><td>East</td><td>Batuk Bhairav Mandir, Tulsi Ghat area</td></tr>
-        <tr><td>Ruru Bhairav</td><td>South-East</td><td>Ruru Kshetra, Varanasi</td></tr>
-        <tr><td>Chanda Bhairav</td><td>South</td><td>Chanda Bhairav Shrine, Kashi</td></tr>
-        <tr><td>Asitanga Bhairav</td><td>South-West</td><td>Traditional seat, Varanasi</td></tr>
-        <tr><td>Krodha Bhairav</td><td>West</td><td>Kashi sacred precincts</td></tr>
-        <tr><td>Unmatta Bhairav</td><td>North-West</td><td>Varanasi sacred area</td></tr>
-        <tr><td>Kapala Bhairav</td><td>North</td><td>Kapala Mochan, Varanasi</td></tr>
+        <tr><th data-key="kashi_ashta_th1">Bhairav</th><th data-key="kashi_ashta_th2">Direction</th><th data-key="kashi_ashta_th3">Location in Kashi</th></tr>
+        <tr><td data-key="kashi_ashta_r1_name">Kaal Bhairav</td><td data-key="kashi_ashta_r1_dir">Centre / Supreme</td><td data-key="kashi_ashta_r1_loc">Kaal Bhairav Gali, Trilochan</td></tr>
+        <tr><td data-key="kashi_ashta_r2_name">Batuk Bhairav</td><td data-key="kashi_ashta_r2_dir">East</td><td data-key="kashi_ashta_r2_loc">Batuk Bhairav Mandir, Tulsi Ghat area</td></tr>
+        <tr><td data-key="kashi_ashta_r3_name">Ruru Bhairav</td><td data-key="kashi_ashta_r3_dir">South-East</td><td data-key="kashi_ashta_r3_loc">Ruru Kshetra, Varanasi</td></tr>
+        <tr><td data-key="kashi_ashta_r4_name">Chanda Bhairav</td><td data-key="kashi_ashta_r4_dir">South</td><td data-key="kashi_ashta_r4_loc">Chanda Bhairav Shrine, Kashi</td></tr>
+        <tr><td data-key="kashi_ashta_r5_name">Asitanga Bhairav</td><td data-key="kashi_ashta_r5_dir">South-West</td><td data-key="kashi_ashta_r5_loc">Traditional seat, Varanasi</td></tr>
+        <tr><td data-key="kashi_ashta_r6_name">Krodha Bhairav</td><td data-key="kashi_ashta_r6_dir">West</td><td data-key="kashi_ashta_r6_loc">Kashi sacred precincts</td></tr>
+        <tr><td data-key="kashi_ashta_r7_name">Unmatta Bhairav</td><td data-key="kashi_ashta_r7_dir">North-West</td><td data-key="kashi_ashta_r7_loc">Varanasi sacred area</td></tr>
+        <tr><td data-key="kashi_ashta_r8_name">Kapala Bhairav</td><td data-key="kashi_ashta_r8_dir">North</td><td data-key="kashi_ashta_r8_loc">Kapala Mochan, Varanasi</td></tr>
       </table>
     </div>
 
@@ -216,7 +216,7 @@ include 'includes/header.php';
     <div class="text-center mt-2" style="margin-top:2rem;">
       <a href="/stories.php" class="btn-secondary" data-key="btn_read_stories">Read Sacred Stories →</a>
       &nbsp;&nbsp;
-      <a href="/pooja-vidhi.php" class="btn-primary">Pooja Vidhi</a>
+      <a href="/pooja-vidhi.php" class="btn-primary" data-key="kashi_btn_pooja">Pooja Vidhi</a>
     </div>
 
   </div>

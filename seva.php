@@ -191,14 +191,14 @@ include 'includes/header.php';
         <div class="highlight-box">
           <h3 class="card-title" style="margin-bottom:1rem;" data-key="seva_shrines_title">Other Important Bhairav Shrines</h3>
           <table>
-            <tr><th>Temple</th><th>Location</th></tr>
-            <tr><td>Kaal Bhairav Mandir</td><td>Varanasi, UP</td></tr>
-            <tr><td>Bhairavnath Mandir</td><td>Ujjain, MP</td></tr>
-            <tr><td>Bhairav Temple (Batuk Bhairav)</td><td>Varanasi, UP</td></tr>
-            <tr><td>Kal Bhairav Temple</td><td>Saundatti, Karnataka</td></tr>
-            <tr><td>Bhairav Temple (Ashtabhairav)</td><td>Varanasi (8 shrines)</td></tr>
-            <tr><td>Bhairavnath Mandir</td><td>Tryambakeshwar, MH</td></tr>
-            <tr><td>Kal Bhairav Mandir</td><td>Gokarna, Karnataka</td></tr>
+            <tr><th data-key="seva_shrine_th1">Temple</th><th data-key="seva_shrine_th2">Location</th></tr>
+            <tr><td data-key="seva_shrine_r1_name">Kaal Bhairav Mandir</td><td data-key="seva_shrine_r1_loc">Varanasi, UP</td></tr>
+            <tr><td data-key="seva_shrine_r2_name">Bhairavnath Mandir</td><td data-key="seva_shrine_r2_loc">Ujjain, MP</td></tr>
+            <tr><td data-key="seva_shrine_r3_name">Bhairav Temple (Batuk Bhairav)</td><td data-key="seva_shrine_r3_loc">Varanasi, UP</td></tr>
+            <tr><td data-key="seva_shrine_r4_name">Kal Bhairav Temple</td><td data-key="seva_shrine_r4_loc">Saundatti, Karnataka</td></tr>
+            <tr><td data-key="seva_shrine_r5_name">Bhairav Temple (Ashtabhairav)</td><td data-key="seva_shrine_r5_loc">Varanasi (8 shrines)</td></tr>
+            <tr><td data-key="seva_shrine_r6_name">Bhairavnath Mandir</td><td data-key="seva_shrine_r6_loc">Tryambakeshwar, MH</td></tr>
+            <tr><td data-key="seva_shrine_r7_name">Kal Bhairav Mandir</td><td data-key="seva_shrine_r7_loc">Gokarna, Karnataka</td></tr>
           </table>
         </div>
       </div>
