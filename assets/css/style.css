@@ -416,8 +416,8 @@ nav {
 /* ─── BHAIRAV GRID ─── */
 .bhairav-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.9rem;
 }
 
 .bhairav-item {
@@ -663,11 +663,11 @@ footer {
   }
 
   /* BHAIRAV 64 GRID */
-  .bhairav-grid { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
-  .bhairav-item { padding: 0.9rem 1rem; }
-  .bhairav-name { font-size: 0.8rem; }
-  .bhairav-num { font-size: 0.65rem; }
-  .bhairav-desc { font-size: 0.75rem; }
+  .bhairav-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+  .bhairav-item { padding: 0.75rem 0.9rem; }
+  .bhairav-name { font-size: 0.78rem; line-height: 1.3; }
+  .bhairav-num { font-size: 0.62rem; margin-bottom: 0.2rem; }
+  .bhairav-desc { font-size: 0.72rem; line-height: 1.4; }
 
   /* SUB-FORM BADGES — smaller on mobile */
   .story-block span[style*="background:rgba(139,0,0"] { font-size: 0.72rem !important; padding: 0.15rem 0.5rem !important; }
@@ -718,7 +718,10 @@ footer {
   .page-header { padding: 85px 0.9rem 2rem; }
   .story-block { padding: 1rem 0.9rem; }
   .story-title { font-size: 0.98rem; }
-  .bhairav-grid { grid-template-columns: 1fr; }
+  .bhairav-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+  .bhairav-item { padding: 0.65rem 0.75rem; }
+  .bhairav-name { font-size: 0.72rem; }
+  .bhairav-desc { font-size: 0.68rem; }
   .donation-amount-grid { grid-template-columns: repeat(2, 1fr); }
   .btn-primary, .btn-secondary { font-size: 0.72rem; padding: 0.75rem 0.8rem; }
   .card { padding: 1.2rem; }
