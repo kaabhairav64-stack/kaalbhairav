@@ -56,12 +56,15 @@ $og_description  = $og_desc[$current_page] ?? $meta_description;
 $share_text      = $share_texts[$current_page] ?? 'काल भैरव की जय! जानें:';
 $canonical_path  = ($current_page === 'index') ? '' : $current_page . '.php';
 $full_url        = 'https://kaalbhairav.org/' . $canonical_path;
+$is_local        = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8080', '127.0.0.1', '127.0.0.1:8080']);
+$base_href       = $is_local ? '/kaalbhairav/' : '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="<?php echo $base_href; ?>">
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo $meta_description; ?>">
 <meta name="keywords" content="Kaal Bhairav, Kashi, Bhairav mantra, Bhairav pooja, 64 Bhairav, Ashtabhairav, Varanasi, Shiva, dog seva, Bhairav stotram, tantra, Bhairav worship">
@@ -91,7 +94,7 @@ $full_url        = 'https://kaalbhairav.org/' . $canonical_path;
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="<?php echo $base_href; ?>assets/css/style.css">
 <style>
 #lang-toggle {
   background: transparent;
@@ -199,18 +202,18 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="particles" id="particles"></div>
 <nav>
     <div class="nav-inner">
-        <a href="/index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
+        <a href="<?php echo $base_href; ?>index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
         <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.textContent=document.getElementById('mainNav').classList.contains('open')?'✕':'☰'">☰</button>
         <ul class="nav-links" id="mainNav">
-            <li><a href="/index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
-            <li><a href="/about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
-            <li><a href="/stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?> data-key="nav_stories">Stories</a></li>
-            <li><a href="/64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?> data-key="nav_64">64 Bhairavas</a></li>
-            <li><a href="/kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?> data-key="nav_kashi">Kashi</a></li>
-            <li><a href="/pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
-            <li><a href="/mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
-            <li><a href="/seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
-            <li><a href="/disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
+            <li><a href="<?php echo $base_href; ?>index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
+            <li><a href="<?php echo $base_href; ?>about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
+            <li><a href="<?php echo $base_href; ?>stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?> data-key="nav_stories">Stories</a></li>
+            <li><a href="<?php echo $base_href; ?>64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?> data-key="nav_64">64 Bhairavas</a></li>
+            <li><a href="<?php echo $base_href; ?>kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?> data-key="nav_kashi">Kashi</a></li>
+            <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
+            <li><a href="<?php echo $base_href; ?>mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
+            <li><a href="<?php echo $base_href; ?>seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
+            <li><a href="<?php echo $base_href; ?>disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
             <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>
         </ul>
     </div>
