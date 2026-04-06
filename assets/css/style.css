@@ -624,23 +624,23 @@ footer {
   .nav-logo { font-size: 1rem; }
 
   /* HERO */
-  .hero { padding: 90px 1.2rem 3rem; min-height: auto; }
-  .hero-content { width: 100%; max-width: 100%; }
-  .hero-title { font-size: clamp(1.8rem, 8vw, 2.8rem); }
-  .hero-title-sub { font-size: clamp(0.7rem, 3vw, 0.9rem); letter-spacing: 0.15em; }
-  .hero-desc { font-size: 0.95rem; margin-bottom: 1.8rem; }
-  .trishul-divider { font-size: 1.3rem; letter-spacing: 0.4rem; }
-  .hero-sanskrit { font-size: 0.95rem; letter-spacing: 0.1em; }
+  .hero { padding: 90px 1.2rem 3rem; min-height: auto; text-align: left; }
+  .hero-content { width: 100%; max-width: 100%; text-align: left; }
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.8rem); text-align: left; }
+  .hero-title-sub { font-size: clamp(0.7rem, 3vw, 0.9rem); letter-spacing: 0.1em; text-align: left; }
+  .hero-desc { font-size: 0.95rem; margin-bottom: 1.8rem; text-align: left; }
+  .hero-sanskrit { font-size: 0.95rem; letter-spacing: 0.1em; text-align: left; }
+  .trishul-divider { font-size: 1.3rem; letter-spacing: 0.4rem; text-align: left; }
 
   /* BUTTONS */
   .btn-primary, .btn-secondary {
     display: block;
-    width: 90%;
-    max-width: 280px;
+    width: 100%;
+    max-width: 320px;
     text-align: center;
     padding: 0.85rem 1rem;
     font-size: 0.75rem;
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
   }
 
   /* SECTIONS */
@@ -656,7 +656,7 @@ footer {
   .page-header p { font-size: 0.9rem; }
 
   /* TEXT ALIGNMENT — left-align all body text on mobile */
-  p, li, td, th, blockquote,
+  p, li, blockquote,
   .card-text, .step-content p,
   .highlight-box p, .disclaimer-box p, .disclaimer-box li,
   .mantra-block p, .story-block p { text-align: left !important; }
@@ -713,9 +713,11 @@ footer {
   .disclaimer-box h3 { font-size: 0.88rem; }
   .disclaimer-box p, .disclaimer-box li { font-size: 0.84rem; }
 
-  /* TABLES — horizontal scroll */
-  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; width: 100%; }
-  td, th { padding: 0.5rem 0.7rem; font-size: 0.83rem; }
+  /* TABLES — fit within screen, wrap text */
+  table { width: 100%; table-layout: fixed; }
+  td, th { padding: 0.5rem 0.6rem; font-size: 0.82rem; white-space: normal; word-break: break-word; word-wrap: break-word; overflow-wrap: break-word; vertical-align: top; }
+  td:first-child, th:first-child { width: 38%; }
+  td:last-child, th:last-child { width: 62%; }
 
   /* DONATION */
   .donation-section { padding: 1.8rem 1rem; text-align: left; }
@@ -753,7 +755,7 @@ footer {
   .donation-amount-grid { grid-template-columns: repeat(2, 1fr); }
   .pooja-step { flex-direction: column; }
   .step-num { align-self: flex-start; }
-  td, th { font-size: 0.78rem; padding: 0.4rem 0.6rem; }
+  td, th { font-size: 0.76rem; padding: 0.4rem 0.5rem; word-break: break-word; }
 }
 
 /* ─── PAGE HEADER ─── */
