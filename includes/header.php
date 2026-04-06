@@ -3,29 +3,59 @@ $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $site_name = "KaalBhairav.org";
 
 $page_titles = [
-    'index' => 'Kaal Bhairav - The Supreme Guardian of Kashi | KaalBhairav.org',
-    'about' => 'About Kaal Bhairav - Origin & Stories | KaalBhairav.org',
-    '64-bhairav' => '64 Types of Bhairav - Ashtabhairav & More | KaalBhairav.org',
-    'pooja-vidhi' => 'Pooja Vidhi & Procedure | KaalBhairav.org',
-    'mantra' => 'Mantras, Tantras & Stotras | KaalBhairav.org',
-    'kashi' => 'Kaal Bhairav & Kashi - The Sacred Connection | KaalBhairav.org',
-    'stories' => 'Stories & Legends of Kaal Bhairav | KaalBhairav.org',
-    'seva' => 'Donate for Dog Seva & Sacred Service | KaalBhairav.org',
-    'disclaimer' => 'Disclaimer & Terms | KaalBhairav.org',
+    'index'       => 'Kaal Bhairav — Kotwal of Kashi | KaalBhairav.org',
+    'about'       => 'About Kaal Bhairav — Iconography & Traditions | KaalBhairav.org',
+    '64-bhairav'  => '64 Forms of Bhairav — Ashtabhairav | KaalBhairav.org',
+    'pooja-vidhi' => 'Kaal Bhairav Pooja Vidhi — Complete Procedure | KaalBhairav.org',
+    'mantra'      => 'Kaal Bhairav Mantras — Mool Mantra, Ashtakam, Gayatri | KaalBhairav.org',
+    'kashi'       => 'Kaal Bhairav & Kashi — The Sacred Connection | KaalBhairav.org',
+    'stories'     => 'Sacred Stories of Kaal Bhairav — Puranic Legends | KaalBhairav.org',
+    'seva'        => 'Dog Seva & Donation — Feed Bhairav\'s Vahana | KaalBhairav.org',
+    'disclaimer'  => 'Disclaimer & Terms | KaalBhairav.org',
 ];
+
 $meta_desc = [
-    'index' => 'Complete guide to Kaal Bhairav: stories, pooja vidhi, mantras, 64 types, Kashi connection, and dog seva donation.',
-    'about' => 'Learn about Kaal Bhairav\'s origin, his manifestation from Shiva, his role as Kotwal of Kashi, and sacred Puranic stories.',
-    '64-bhairav' => 'Explore all 64 types of Bhairav including Ashtabhairav and their significance, forms, and worship.',
-    'pooja-vidhi' => 'Complete Kaal Bhairav Pooja Vidhi with step-by-step procedure, required items, timing, and effects.',
-    'mantra' => 'Sacred Kaal Bhairav mantras, Bhairav Ashtakam, tantric procedures, and their authentic sources.',
-    'kashi' => 'The divine connection between Kaal Bhairav and Kashi (Varanasi) - the eternal city and its cosmic guardian.',
-    'stories' => 'Ancient stories and legends of Kaal Bhairav from Shiva Purana, Skanda Purana, and other sacred texts.',
-    'seva' => 'Support dog seva and Bhairav-related charitable work. Dogs are the sacred vehicle of Kaal Bhairav.',
-    'disclaimer' => 'Important disclaimer and terms of use for KaalBhairav.org.',
+    'index'       => 'काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं और कुत्ता सेवा। Kaal Bhairav — Kotwal of Kashi. Mantras, pooja vidhi, 64 forms, sacred stories.',
+    'about'       => 'काल भैरव का प्रतिमा विज्ञान, महत्व और परंपराएं। Kaal Bhairav iconography, significance, Shaiva and Tantric traditions.',
+    '64-bhairav'  => '64 भैरव रूप — अष्टभैरव और उनके उप-रूप। 64 forms of Bhairav — Ashtabhairav and sub-forms, directions, shaktis.',
+    'pooja-vidhi' => 'काल भैरव पूजा विधि — संपूर्ण 16-चरण पूजा प्रक्रिया। Complete Kaal Bhairav pooja vidhi with materials, steps, and effects.',
+    'mantra'      => 'काल भैरव मंत्र — मूल मंत्र, अष्टकम, गायत्री, बीज मंत्र। Kaal Bhairav mantras — mool mantra, Ashtakam, Gayatri, beej mantras.',
+    'kashi'       => 'काल भैरव और काशी का दिव्य संबंध। Kaal Bhairav and Kashi (Varanasi) — the eternal city and its cosmic guardian.',
+    'stories'     => 'काल भैरव की पवित्र कथाएं — शिव पुराण, स्कंद पुराण। Sacred stories of Kaal Bhairav from Shiva Purana and Skanda Purana.',
+    'seva'        => 'कुत्ता सेवा — भैरव के वाहन की सेवा करें। Dog seva and donation — feeding dogs is the highest Bhairav devotion.',
+    'disclaimer'  => 'KaalBhairav.org अस्वीकरण और उपयोग की शर्तें। Disclaimer and terms of use.',
 ];
-$page_title = $page_titles[$current_page] ?? $site_name;
-$meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete devotional resource on Kaal Bhairav.';
+
+$og_desc = [
+    'index'       => 'काल भैरव — काशी के कोतवाल, काल के स्वामी। मंत्र, पूजा विधि, 64 रूप और पवित्र कथाएं। Kaal Bhairav — Kotwal of Kashi, Lord of Time.',
+    'about'       => 'काल भैरव का स्वरूप, अस्त्र और विभिन्न परंपराओं में उनका स्थान। Learn about Kaal Bhairav\'s form, weapons and traditions.',
+    '64-bhairav'  => 'ब्रह्मांड की 8 दिशाओं के 64 भैरव रूप। 64 Bhairavas — guardians of the 8 directions of the cosmos.',
+    'pooja-vidhi' => 'काल भैरव की संपूर्ण पूजा विधि — सामग्री, 16 चरण, और आध्यात्मिक प्रभाव। Complete Bhairav pooja procedure.',
+    'mantra'      => 'ॐ कालभैरवाय नमः — काल भैरव के पवित्र मंत्र। Sacred mantras of Kaal Bhairav for protection and liberation.',
+    'kashi'       => 'काशी और काल भैरव — अटूट दिव्य संबंध। Kashi and Kaal Bhairav — an inseparable bond since the beginning of time.',
+    'stories'     => 'ब्रह्मा के शिरच्छेदन से लेकर काशी के कोतवाल तक — काल भैरव की पवित्र कथाएं।',
+    'seva'        => 'कुत्ते की सेवा = भैरव की सेवा। Dog seva is one of the highest forms of Bhairav devotion.',
+    'disclaimer'  => 'KaalBhairav.org — disclaimer and spiritual practice guidelines.',
+];
+
+$share_texts = [
+    'index'       => 'काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप जानें:',
+    'about'       => 'काल भैरव का स्वरूप और महत्व जानें:',
+    '64-bhairav'  => 'काल भैरव के 64 रूप — अष्टभैरव:',
+    'pooja-vidhi' => 'काल भैरव पूजा विधि — संपूर्ण 16-चरण प्रक्रिया:',
+    'mantra'      => 'काल भैरव के पवित्र मंत्र — ॐ कालभैरवाय नमः:',
+    'kashi'       => 'काल भैरव और काशी का दिव्य संबंध:',
+    'stories'     => 'काल भैरव की पवित्र कथाएं — शिव पुराण से:',
+    'seva'        => 'कुत्ते की सेवा = भैरव की सेवा। जानें कैसे:',
+    'disclaimer'  => 'KaalBhairav.org — अस्वीकरण:',
+];
+
+$page_title      = $page_titles[$current_page] ?? $site_name;
+$meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org — Complete devotional resource on Kaal Bhairav.';
+$og_description  = $og_desc[$current_page] ?? $meta_description;
+$share_text      = $share_texts[$current_page] ?? 'काल भैरव की जय! जानें:';
+$canonical_path  = ($current_page === 'index') ? '' : $current_page . '.php';
+$full_url        = 'https://kaalbhairav.org/' . $canonical_path;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,12 +69,24 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
 <meta name="author" content="KaalBhairav.org">
 <link rel="canonical" href="https://kaalbhairav.org/<?php echo $current_page === 'index' ? '' : $current_page . '.php'; ?>">
 <meta property="og:title" content="<?php echo $page_title; ?>">
-<meta property="og:description" content="<?php echo $meta_description; ?>">
-<meta property="og:url" content="https://kaalbhairav.org/">
+<meta property="og:description" content="<?php echo $og_description; ?>">
+<meta property="og:url" content="<?php echo $full_url; ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KaalBhairav.org">
+<meta property="og:image" content="https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?php echo $page_title; ?>">
+<meta name="twitter:description" content="<?php echo $og_description; ?>">
+<meta name="twitter:image" content="https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://kaalbhairav.org","description":"Complete devotional and informational resource on Kaal Bhairav"}
+{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://kaalbhairav.org","description":"काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं। Complete devotional resource on Kaal Bhairav.","inLanguage":["hi","en"],"potentialAction":{"@type":"SearchAction","target":"https://kaalbhairav.org/?s={search_term_string}","query-input":"required name=search_term_string"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"KaalBhairav.org","url":"https://kaalbhairav.org","logo":"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg","sameAs":[],"description":"Devoted to spreading knowledge of Kaal Bhairav — the Kotwal of Kashi"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,8 +123,65 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org - Complete dev
   .nav-links.open { display: flex; }
   .nav-links li { text-align: center; padding: 0.4rem 0; }
 }
+/* WhatsApp Share Bar */
+#wa-share-bar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(90deg, rgba(10,5,0,0.97), rgba(20,8,0,0.97));
+  border-top: 1px solid rgba(201,168,76,0.3);
+  padding: 0.65rem 1rem;
+  z-index: 9000;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+#wa-share-bar.visible { display: flex; }
+#wa-share-bar .wa-text {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  color: rgba(201,168,76,0.85);
+  letter-spacing: 0.05em;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#wa-share-btn {
+  display: flex; align-items: center; gap: 0.45rem;
+  background: #25D366;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: none;
+  border-radius: 3px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+#wa-share-btn:hover { background: #1da851; }
+#wa-share-btn svg { width: 16px; height: 16px; fill: #fff; }
+#wa-close-btn {
+  background: transparent;
+  border: none;
+  color: rgba(201,168,76,0.6);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.3rem;
+  line-height: 1;
+}
+#wa-close-btn:hover { color: #c9a84c; }
+@media (min-width: 769px) {
+  #wa-share-bar { display: none !important; }
+}
 </style>
 <script>
+var KB_PAGE_URL = "<?php echo $full_url; ?>";
+var KB_SHARE_TEXT = "<?php echo addslashes($share_text); ?>";
 function closeMenu() {
   var nav = document.getElementById('mainNav');
   var btn = document.getElementById('navToggle');

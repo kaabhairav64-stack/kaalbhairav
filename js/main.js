@@ -133,9 +133,54 @@ function showToast(msg) {
   setTimeout(() => toast.remove(), 3000);
 }
 
+// WhatsApp Share Bar (mobile only)
+function initWAShareBar() {
+  var bar = document.getElementById('wa-share-bar');
+  var btn = document.getElementById('wa-share-btn');
+  var closeBtn = document.getElementById('wa-close-btn');
+  if (!bar || !btn) return;
+
+  var dismissed = sessionStorage.getItem('wa_bar_dismissed');
+  var shown = false;
+
+  function buildWAUrl() {
+    var url = (typeof KB_PAGE_URL !== 'undefined') ? KB_PAGE_URL : window.location.href;
+    var text = (typeof KB_SHARE_TEXT !== 'undefined') ? KB_SHARE_TEXT : 'काल भैरव की जय! जानें:';
+    return 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
+  }
+
+  function showBar() {
+    if (!dismissed && !shown) {
+      bar.classList.add('visible');
+      btn.href = buildWAUrl();
+      shown = true;
+    }
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      bar.classList.remove('visible');
+      sessionStorage.setItem('wa_bar_dismissed', '1');
+      dismissed = true;
+    });
+  }
+
+  // Show after scrolling 40% of page
+  window.addEventListener('scroll', function() {
+    var scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (scrollPct > 40) showBar();
+  }, { passive: true });
+
+  // Also update href on click in case lang changed
+  btn.addEventListener('click', function() {
+    this.href = buildWAUrl();
+  });
+}
+
 // Init on DOM ready
 document.addEventListener('DOMContentLoaded', function() {
   generateFlames();
   initScrollReveal();
   initDonation();
+  initWAShareBar();
 });

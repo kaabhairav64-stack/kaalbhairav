@@ -400,6 +400,14 @@ const translations = {
     nav_seva: 'Dog Seva',
     nav_disclaimer: 'Disclaimer',
 
+    // MANTRA BUTTONS
+    mantra_copy_btn: 'Copy',
+    mantra_wa_btn: 'Share',
+
+    // WHATSAPP SHARE BAR
+    wa_share_label: 'Share this page',
+    wa_share_btn: 'Share on WhatsApp',
+
     // FOOTER
     footer_tagline: 'Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.',
     footer_copy: '&copy; ' + new Date().getFullYear() + ' KaalBhairav.org · All Rights Reserved',
@@ -867,6 +875,14 @@ const translations = {
     nav_mantra: 'मंत्र और तंत्र',
     nav_seva: 'कुत्ता सेवा',
     nav_disclaimer: 'अस्वीकरण',
+
+    // MANTRA BUTTONS
+    mantra_copy_btn: 'कॉपी करें',
+    mantra_wa_btn: 'भेजें',
+
+    // WHATSAPP SHARE BAR
+    wa_share_label: 'यह पृष्ठ साझा करें',
+    wa_share_btn: 'WhatsApp पर भेजें',
 
     // FOOTER
     footer_tagline: 'जय काल भैरव · Jay Kaal Bhairav · कुत्ता काल भैरव का पवित्र वाहन है। पशुओं पर दयालु रहें।',

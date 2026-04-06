@@ -26,7 +26,13 @@ include 'includes/header.php';
       <p class="mantra-text">ॐ कालभैरवाय नमः</p>
       <p class="mantra-meaning"><em>Om Kalabhairavaya Namah</em><br>"I bow to Kaal Bhairav"</p>
       <br>
-      <button onclick="copyMantra('ॐ कालभैरवाय नमः')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;">Copy</button>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+        <button onclick="copyMantra('ॐ कालभैरवाय नमः')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;" data-key="mantra_copy_btn">Copy</button>
+        <a href="https://wa.me/?text=<?php echo rawurlencode('ॐ कालभैरवाय नमः — काल भैरव मूल मंत्र। जय काल भैरव! और जानें: https://kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:600;padding:0.5rem 1rem;border-radius:3px;text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          <span data-key="mantra_wa_btn">Share</span>
+        </a>
+      </div>
     </div>
     <div class="highlight-box">
       <h4 class="card-title" data-key="mantra_mool_how_title">How to Practice</h4>
@@ -47,7 +53,13 @@ include 'includes/header.php';
         "O Batuk Bhairav, please remove all calamities from my life, act swiftly, O Batuk."
       </p>
       <br>
-      <button onclick="copyMantra('ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;">Copy</button>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+        <button onclick="copyMantra('ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;" data-key="mantra_copy_btn">Copy</button>
+        <a href="https://wa.me/?text=<?php echo rawurlencode('ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं — बटुक भैरव मंत्र। जय काल भैरव! और जानें: https://kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:600;padding:0.5rem 1rem;border-radius:3px;text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          <span data-key="mantra_wa_btn">Share</span>
+        </a>
+      </div>
     </div>
     <div class="highlight-box">
       <p style="color:var(--ash);" data-key="mantra_batuk_desc">This is one of the most popular and accessible Bhairav mantras. Chant 108 times minimum. Very effective for removing sudden dangers, health crises, travel safety, and sudden reversals of fortune. Source: <em>Batuk Bhairav Tantram</em>.</p>
@@ -67,7 +79,13 @@ include 'includes/header.php';
         "We meditate upon Kaal Bhairav who holds the staff of Time. May that Bhairav illuminate our intellect."
       </p>
       <br>
-      <button onclick="copyMantra('ॐ कालदण्डाय विद्महे कालभैरवाय धीमहि तन्नो भैरवः प्रचोदयात्')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;">Copy</button>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+        <button onclick="copyMantra('ॐ कालदण्डाय विद्महे कालभैरवाय धीमहि तन्नो भैरवः प्रचोदयात्')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;" data-key="mantra_copy_btn">Copy</button>
+        <a href="https://wa.me/?text=<?php echo rawurlencode('ॐ कालदण्डाय विद्महे कालभैरवाय धीमहि तन्नो भैरवः प्रचोदयात् — काल भैरव गायत्री मंत्र। जय काल भैरव! और जानें: https://kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:600;padding:0.5rem 1rem;border-radius:3px;text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          <span data-key="mantra_wa_btn">Share</span>
+        </a>
+      </div>
     </div>
 
     <!-- BEEJ MANTRA -->
