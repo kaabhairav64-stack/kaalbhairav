@@ -132,8 +132,9 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
   position: fixed;
   bottom: 0; left: 0; right: 0;
   background: linear-gradient(90deg, rgba(10,5,0,0.97), rgba(20,8,0,0.97));
-  border-top: 1px solid rgba(201,168,76,0.3);
-  padding: 0.65rem 1rem;
+  border-top: 1px solid rgba(201,168,76,0.35);
+  box-shadow: 0 -4px 24px rgba(139,0,0,0.25);
+  padding: 0.65rem 1.2rem;
   z-index: 9000;
   align-items: center;
   justify-content: space-between;
@@ -151,23 +152,28 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
   text-overflow: ellipsis;
 }
 #wa-share-btn {
-  display: flex; align-items: center; gap: 0.45rem;
-  background: #25D366;
-  color: #fff;
+  display: flex; align-items: center; gap: 0.5rem;
+  background: linear-gradient(135deg, #8b0000 0%, #6b0000 100%);
+  color: #e8c96e;
   font-family: 'Cinzel', serif;
   font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  border: none;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(201,168,76,0.45);
   border-radius: 3px;
-  padding: 0.45rem 1rem;
+  padding: 0.5rem 1.1rem;
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 0 12px rgba(139,0,0,0.4);
 }
-#wa-share-btn:hover { background: #1da851; }
-#wa-share-btn svg { width: 16px; height: 16px; fill: #fff; }
+#wa-share-btn:hover {
+  background: linear-gradient(135deg, #a00000 0%, #8b0000 100%);
+  box-shadow: 0 0 20px rgba(204,17,17,0.5), 0 0 30px rgba(201,168,76,0.15);
+  color: #f5e4a0;
+}
+#wa-share-btn svg { width: 16px; height: 16px; fill: #e8c96e; }
 #wa-close-btn {
   background: transparent;
   border: none;
@@ -179,7 +185,32 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 }
 #wa-close-btn:hover { color: #c9a84c; }
 @media (min-width: 769px) {
-  #wa-share-bar { display: none !important; }
+  #wa-share-bar {
+    bottom: 2rem;
+    left: auto;
+    right: 1.5rem;
+    top: auto;
+    width: auto;
+    border-top: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 0;
+  }
+  #wa-share-bar .wa-text { display: none; }
+  #wa-close-btn { display: none; }
+  #wa-share-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    border-radius: 8px;
+    box-shadow: 0 0 16px rgba(139,0,0,0.5), 0 4px 12px rgba(0,0,0,0.6);
+  }
+  #wa-share-btn svg { width: 22px; height: 22px; }
 }
 </style>
 <script>

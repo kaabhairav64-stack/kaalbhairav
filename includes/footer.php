@@ -12,14 +12,14 @@
     <div class="footer-inner">
         <div class="footer-logo">ॐ KaalBhairav.org</div>
         <ul class="footer-links">
-            <li><a href="<?php echo $base_href; ?>about.php">About</a></li>
-            <li><a href="<?php echo $base_href; ?>stories.php">Stories</a></li>
-            <li><a href="<?php echo $base_href; ?>64-bhairav.php">64 Bhairavas</a></li>
-            <li><a href="<?php echo $base_href; ?>kashi.php">Kashi</a></li>
-            <li><a href="<?php echo $base_href; ?>pooja-vidhi.php">Pooja Vidhi</a></li>
-            <li><a href="<?php echo $base_href; ?>mantra.php">Mantras</a></li>
-            <li><a href="<?php echo $base_href; ?>seva.php">Dog Seva</a></li>
-            <li><a href="<?php echo $base_href; ?>disclaimer.php">Disclaimer</a></li>
+            <li><a href="<?php echo $base_href; ?>about.php" data-key="nav_about">About</a></li>
+            <li><a href="<?php echo $base_href; ?>stories.php" data-key="nav_stories">Stories</a></li>
+            <li><a href="<?php echo $base_href; ?>64-bhairav.php" data-key="nav_64">64 Bhairavas</a></li>
+            <li><a href="<?php echo $base_href; ?>kashi.php" data-key="nav_kashi">Kashi</a></li>
+            <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" data-key="nav_pooja">Pooja Vidhi</a></li>
+            <li><a href="<?php echo $base_href; ?>mantra.php" data-key="nav_mantra">Mantras</a></li>
+            <li><a href="<?php echo $base_href; ?>seva.php" data-key="nav_seva">Dog Seva</a></li>
+            <li><a href="<?php echo $base_href; ?>disclaimer.php" data-key="nav_disclaimer">Disclaimer</a></li>
         </ul>
         <p class="footer-text" data-key="footer_tagline">Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.</p>
         <p class="footer-text" data-key="footer_copy">&copy; <?php echo date('Y'); ?> KaalBhairav.org · All Rights Reserved</p>

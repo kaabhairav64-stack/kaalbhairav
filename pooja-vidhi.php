@@ -20,6 +20,44 @@ include 'includes/header.php';
       <p data-key="pooja_disc_text">This pooja vidhi is provided for sincere devotees seeking <strong>protection, spiritual progress, removal of obstacles, and liberation</strong>. All practices described are for <strong>personal spiritual use only</strong>. Using any practice to harm others is <strong>strictly prohibited</strong> and will bring adverse karma to the practitioner. Performing any Tantric practice is entirely at your own risk and responsibility. Consult a qualified guru for advanced Tantric procedures. See full <a href="/disclaimer.php" style="color:var(--gold);">Disclaimer</a>.</p>
     </div>
 
+    <!-- SPIRITUAL BENEFITS -->
+    <h2 class="section-title" style="margin-top:3rem;" data-key="pooja_benefits_title">Spiritual Benefits of Kaal Bhairav Pooja</h2>
+    <div class="gold-line"></div>
+    <p class="section-subtitle" data-key="pooja_benefits_sub">As described in Shiva Purana, Skanda Purana, and Bhairav Agamas — the fruits of sincere Bhairav worship</p>
+
+    <div class="card-grid" style="margin-bottom:2rem;">
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3 class="card-title" data-key="pb1_title">Protection</h3>
+        <p class="card-text" data-key="pb1_text">Complete protection from evil spirits, black magic, enemies, theft, accidents, and sudden misfortune. Bhairav is the Kotwal — his devotees live under his direct guardianship. No negative force can penetrate his protection.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚖️</div>
+        <h3 class="card-title" data-key="pb2_title">Justice &amp; Victory</h3>
+        <p class="card-text" data-key="pb2_text">Victory in court cases, legal battles, and disputes. Bhairav is the Dandapani — holder of the staff of justice. Those who are wronged and worship Bhairav sincerely receive divine justice. False accusations are destroyed.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔓</div>
+        <h3 class="card-title" data-key="pb3_title">Removal of Obstacles</h3>
+        <p class="card-text" data-key="pb3_text">Removal of all obstacles (vighnas) from career, marriage, health, and spiritual progress. Bhairav clears the path for his devotees. What appears impossible becomes possible through his grace.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💀</div>
+        <h3 class="card-title" data-key="pb4_title">Liberation (Moksha)</h3>
+        <p class="card-text" data-key="pb4_text">As Kotwal of Kashi, Bhairav grants liberation to all who die in Kashi. For devotees who worship him regularly, he whispers the Tarak Mantra at the time of death — ensuring liberation from the cycle of rebirth. Source: Kashi Khanda, Skanda Purana.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">😨</div>
+        <h3 class="card-title" data-key="pb5_title">Fearlessness</h3>
+        <p class="card-text" data-key="pb5_text">Bhairav literally means "he who removes fear." Regular worship eliminates irrational fears, phobias, nightmares, and anxiety. Devotees report deep inner courage and stability that no external situation can shake.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌱</div>
+        <h3 class="card-title" data-key="pb6_title">Karma Dissolution</h3>
+        <p class="card-text" data-key="pb6_text">Bhairav as Kaal (Time) governs karma itself. Sincere worship accelerates the dissolution of accumulated negative karma — what might take lifetimes to exhaust is burned quickly in Bhairav's fire of grace. Source: Rudrayamala Tantra.</p>
+      </div>
+    </div>
+
     <!-- AUSPICIOUS DAYS -->
     <h2 class="section-title" style="margin-top:3rem;" data-key="pooja_days_title">Auspicious Days for Bhairav Pooja</h2>
     <div class="gold-line"></div>

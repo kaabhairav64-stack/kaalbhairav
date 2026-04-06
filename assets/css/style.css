@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 :root {
   --black: #0a0500;
@@ -26,6 +26,7 @@ body {
   font-family: 'EB Garamond', Georgia, serif;
   font-size: 18px;
   line-height: 1.8;
+  word-spacing: 0.1em;
   overflow-x: hidden;
   width: 100%;
   max-width: 100vw;
@@ -175,6 +176,7 @@ nav {
   letter-spacing: 0.2em;
   margin-bottom: 1.5rem;
   opacity: 0.9;
+  text-align: center;
 }
 
 .hero-title {
@@ -207,12 +209,16 @@ nav {
 }
 
 .hero-desc {
-  font-size: 1.1rem;
-  color: var(--smoke);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--ash);
   max-width: 650px;
   margin: 0 auto 2.5rem;
   font-style: italic;
-  line-height: 2;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 18px rgba(201,168,76,0.18), 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .btn-primary {
@@ -299,8 +305,27 @@ nav {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: minmax(260px, auto);
   gap: 1.5rem;
   margin-top: 2rem;
+  align-items: stretch;
+}
+
+.card-grid > a {
+  display: flex;
+}
+
+.card-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  align-items: stretch;
+}
+
+.card-grid--2col > .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
@@ -311,6 +336,10 @@ nav {
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .card::before {
@@ -326,14 +355,28 @@ nav {
 .card:hover { border-color: rgba(201,168,76,0.5); transform: translateY(-3px); }
 .card:hover::before { opacity: 1; }
 
-.card-icon { font-size: 2rem; margin-bottom: 1rem; }
+.card-icon {
+  display: inline-block;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
 .card-title {
   font-family: 'Cinzel', serif;
   color: var(--gold);
   font-size: 1.1rem;
-  margin-bottom: 0.7rem;
+  display: inline;
+  vertical-align: middle;
 }
-.card-text { color: var(--smoke); font-size: 0.95rem; line-height: 1.7; }
+.card-text {
+  color: var(--smoke);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
 
 /* ─── STORY BLOCKS ─── */
 .story-block {
@@ -385,10 +428,16 @@ nav {
 }
 
 .mantra-meaning {
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-style: italic;
-  color: var(--smoke);
+  font-weight: 500;
+  color: var(--ash);
   margin-top: 1rem;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 18px rgba(201,168,76,0.18), 0 1px 3px rgba(0,0,0,0.6);
+  text-align: center;
 }
 
 /* ─── POOJA STEPS ─── */
@@ -469,6 +518,21 @@ nav {
   line-height: 1.5;
 }
 
+/* ─── ICONOGRAPHY COL ─── */
+.iconography-col p,
+.iconography-col li {
+  word-spacing: 0.12em;
+}
+
+/* ─── WEAPONS PANEL ─── */
+.weapons-panel {
+  background: var(--glow);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.8rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
 /* ─── DISCLAIMER BOX ─── */
 .disclaimer-box {
   background: rgba(139,0,0,0.1);
@@ -490,6 +554,7 @@ nav {
   color: var(--smoke);
   font-size: 0.9rem;
   line-height: 1.8;
+  word-spacing: 0.12em;
 }
 
 .disclaimer-box ul { padding-left: 1.5rem; margin-top: 0.5rem; }
@@ -573,6 +638,85 @@ footer {
   margin-top: 1rem;
 }
 
+/* ─── GUIDANCE ACCORDION ─── */
+.guidance-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+.guidance-toggle:hover { background: rgba(201,168,76,0.08); border-color: var(--gold); }
+.guidance-toggle .arrow { transition: transform 0.3s; display: inline-block; }
+.guidance-toggle.open .arrow { transform: rotate(180deg); }
+
+.guidance-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.guidance-panel.open { max-height: 3000px; }
+
+.guidance-inner {
+  margin-top: 1.2rem;
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.guidance-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+.guidance-row:last-child { border-bottom: none; }
+
+.guidance-label {
+  background: rgba(139,0,0,0.15);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: flex-start;
+  border-right: 1px solid rgba(201,168,76,0.1);
+}
+
+.guidance-value {
+  padding: 0.75rem 1rem;
+  color: var(--ash);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.guidance-value ul { padding-left: 1.2rem; margin: 0; }
+.guidance-value li { margin-bottom: 0.2rem; }
+.guidance-value .must { color: var(--gold-light); }
+.guidance-value .optional { color: var(--smoke); }
+.guidance-source {
+  font-size: 0.78rem;
+  color: var(--smoke);
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .guidance-row { grid-template-columns: 1fr; }
+  .guidance-label { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.1); padding: 0.5rem 0.8rem; font-size: 0.68rem; }
+  .guidance-value { padding: 0.6rem 0.8rem; font-size: 0.85rem; }
+}
+
 /* ─── UTILITY ─── */
 .text-gold { color: var(--gold); }
 .text-crimson { color: var(--crimson-bright); }
@@ -592,7 +736,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+.two-col > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-col .weapons-panel {
+  flex: 1;
 }
 
 /* ─── TABLET (769px – 1024px) ─── */
@@ -624,13 +777,13 @@ footer {
   .nav-logo { font-size: 1rem; }
 
   /* HERO */
-  .hero { padding: 90px 1.2rem 3rem; min-height: auto; text-align: left; }
-  .hero-content { width: 100%; max-width: 100%; text-align: left; }
-  .hero-title { font-size: clamp(1.8rem, 8vw, 2.8rem); text-align: left; }
-  .hero-title-sub { font-size: clamp(0.7rem, 3vw, 0.9rem); letter-spacing: 0.1em; text-align: left; }
-  .hero-desc { font-size: 0.95rem; margin-bottom: 1.8rem; text-align: left; }
-  .hero-sanskrit { font-size: 0.95rem; letter-spacing: 0.1em; text-align: left; }
-  .trishul-divider { font-size: 1.3rem; letter-spacing: 0.4rem; text-align: left; }
+  .hero { padding: 90px 1.2rem 3rem; min-height: auto; text-align: center !important; }
+  .hero-content { width: 100%; max-width: 100%; text-align: center !important; }
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.8rem); text-align: center; }
+  .hero-title-sub { font-size: clamp(0.7rem, 3vw, 0.9rem); letter-spacing: 0.1em; text-align: center !important; width: 100%; display: block; }
+  .hero-desc { font-size: 0.9rem; margin-bottom: 1.8rem; text-align: center; }
+  .hero-sanskrit { font-size: 0.95rem; letter-spacing: 0.1em; text-align: center !important; width: 100%; display: block; }
+  .trishul-divider { font-size: 1.3rem; letter-spacing: 0.4rem; text-align: center; }
 
   /* BUTTONS */
   .btn-primary, .btn-secondary {
@@ -640,7 +793,7 @@ footer {
     text-align: center;
     padding: 0.85rem 1rem;
     font-size: 0.75rem;
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
   }
 
   /* SECTIONS */
@@ -657,16 +810,17 @@ footer {
 
   /* TEXT ALIGNMENT — left-align all body text on mobile */
   p, li, blockquote,
-  .card-text, .step-content p,
+  .step-content p,
   .highlight-box p, .disclaimer-box p, .disclaimer-box li,
-  .mantra-block p, .story-block p { text-align: left !important; }
+  .story-block p { text-align: left !important; }
+  .mantra-meaning { text-align: center !important; }
 
   /* CARDS */
-  .card-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .card-grid { grid-template-columns: 1fr; gap: 1rem; grid-auto-rows: auto; }
   .card { padding: 1.3rem 1.2rem; }
-  .card-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
+  .card-icon { font-size: 1.4rem; margin-right: 0.4rem; }
   .card-title { font-size: 0.98rem; }
-  .card-text { font-size: 0.88rem; }
+  .card-text { font-size: 0.88rem; text-align: left !important; }
 
   /* TWO-COL → single col */
   .two-col { grid-template-columns: 1fr; gap: 1rem; }
@@ -699,7 +853,7 @@ footer {
   /* MANTRA */
   .mantra-block { padding: 1.4rem 1rem; text-align: left; }
   .mantra-text { font-size: clamp(1rem, 4vw, 1.3rem); line-height: 1.9; text-align: center !important; }
-  .mantra-meaning { font-size: 0.87rem; text-align: left; }
+  .mantra-meaning { font-size: 1rem; text-align: center !important; }
 
   /* POOJA STEPS */
   .pooja-step { gap: 0.8rem; margin-bottom: 1.4rem; }

@@ -21,9 +21,9 @@ include 'includes/header.php';
       the eternal city where death is liberation.
     </p>
     <div>
-      <a href="/pooja-vidhi.php" class="btn-primary" data-key="btn_pooja">Pooja Vidhi</a>
-      <a href="/mantra.php" class="btn-primary" data-key="btn_mantra">Mantras &amp; Tantra</a>
-      <a href="/stories.php" class="btn-secondary" data-key="btn_stories">Sacred Stories</a>
+      <a href="<?php echo $base_href; ?>pooja-vidhi.php" class="btn-primary" data-key="btn_pooja">Pooja Vidhi</a>
+      <a href="<?php echo $base_href; ?>mantra.php" class="btn-primary" data-key="btn_mantra">Mantras &amp; Tantra</a>
+      <a href="<?php echo $base_href; ?>stories.php" class="btn-secondary" data-key="btn_stories">Sacred Stories</a>
     </div>
   </div>
 </section>
@@ -53,8 +53,7 @@ include 'includes/header.php';
           enters or leaves Kashi without his permission.
         </p>
       </div>
-      <div>
-        <div class="highlight-box">
+      <div class="weapons-panel">
           <h3 class="card-title" style="margin-bottom:1rem;" data-key="attr_title">Key Attributes</h3>
           <table>
             <tr><th data-key="attr_h1">Attribute</th><th data-key="attr_h2">Details</th></tr>
@@ -67,7 +66,6 @@ include 'includes/header.php';
             <tr><td data-key="attr_river">Sacred River</td><td data-key="attr_river_val">Shipra (Ujjain), Ganga (Kashi)</td></tr>
             <tr><td data-key="attr_forms">Forms</td><td data-key="attr_forms_val">64 Bhairavas (Ashtabhairav × 8)</td></tr>
           </table>
-        </div>
       </div>
     </div>
   </div>
@@ -80,7 +78,7 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="card-grid">
 
-      <a href="/stories.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>stories.php" style="text-decoration:none;">
         <div class="card">
           <div class="card-icon">📜</div>
           <h3 class="card-title" data-key="card1_title">Sacred Stories</h3>
@@ -88,7 +86,7 @@ include 'includes/header.php';
         </div>
       </a>
 
-      <a href="/64-bhairav.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>64-bhairav.php" style="text-decoration:none;">
         <div class="card">
           <div class="card-icon">🔱</div>
           <h3 class="card-title" data-key="card2_title">64 Forms of Bhairav</h3>
@@ -96,15 +94,15 @@ include 'includes/header.php';
         </div>
       </a>
 
-      <a href="/pooja-vidhi.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>pooja-vidhi.php" style="text-decoration:none;">
         <div class="card">
-          <div class="card-icon">🪔</div>
+          <div class="card-icon">🪷</div>
           <h3 class="card-title" data-key="card3_title">Pooja Vidhi</h3>
           <p class="card-text" data-key="card3_text">Complete step-by-step Kaal Bhairav pooja procedure — materials required, sankalpa, abhishek, naivedya, aarti, and known spiritual effects.</p>
         </div>
       </a>
 
-      <a href="/mantra.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>mantra.php" style="text-decoration:none;">
         <div class="card">
           <div class="card-icon">🔔</div>
           <h3 class="card-title" data-key="card4_title">Mantras &amp; Tantra</h3>
@@ -112,17 +110,17 @@ include 'includes/header.php';
         </div>
       </a>
 
-      <a href="/seva.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>seva.php" style="text-decoration:none;">
         <div class="card">
-          <div class="card-icon">🐕</div>
+          <div class="card-icon"><span style="filter: brightness(0.05) drop-shadow(0 0 4px rgba(201,168,76,0.7));">🐕</span></div>
           <h3 class="card-title" data-key="card5_title">Dog Seva &amp; Donation</h3>
           <p class="card-text" data-key="card5_text">The dog is Bhairav's sacred vahana. Feeding and caring for dogs — especially strays — is one of the highest forms of Bhairav seva.</p>
         </div>
       </a>
 
-      <a href="/about.php" style="text-decoration:none;">
+      <a href="<?php echo $base_href; ?>about.php" style="text-decoration:none;">
         <div class="card">
-          <div class="card-icon">🕉️</div>
+          <div class="card-icon">🌙</div>
           <h3 class="card-title" data-key="card6_title">About Kaal Bhairav</h3>
           <p class="card-text" data-key="card6_text">Iconography, significance, connection to Shaivism and Tantra, Bhairav in different traditions — Shaiva, Shakta, and Nath sampradaya.</p>
         </div>
@@ -152,9 +150,9 @@ include 'includes/header.php';
         Copy Mantra
       </button>
     </div>
-    <p class="text-center" style="color:var(--smoke); font-size:0.9rem; font-style:italic;">
+    <p style="color:var(--smoke); font-size:0.9rem; font-style:italic; margin-top:1rem;">
       <span data-key="mantra_guide">Chant 108 times daily, preferably on Sunday or Tuesday, facing South.</span><br>
-      See full mantra guidance → <a href="/mantra.php" style="color:var(--gold);">Mantra Page</a>
+      <a href="<?php echo $base_href; ?>mantra.php" style="color:var(--gold);" data-key="dmw_more">See all mantras →</a>
     </p>
   </div>
 </section>
@@ -188,7 +186,7 @@ include 'includes/header.php';
       </p>
     </div>
     <div class="text-center mt-2">
-      <a href="/stories.php" class="btn-secondary" data-key="btn_all_stories">Read All Sacred Stories →</a>
+      <a href="<?php echo $base_href; ?>stories.php" class="btn-secondary" data-key="btn_all_stories">Read All Sacred Stories →</a>
     </div>
   </div>
 </section>
@@ -197,15 +195,17 @@ include 'includes/header.php';
 <section class="section" style="background: linear-gradient(to bottom, var(--deep), var(--black));">
   <div class="section-inner">
     <div class="donation-section">
-      <div style="font-size:3rem; margin-bottom:1rem;">🐕</div>
-      <h2 class="section-title" style="margin-bottom:0.5rem;" data-key="seva_title">Feed a Dog, Please Bhairav</h2>
+      <div style="display:flex; align-items:center; justify-content:center; gap:0.6rem; margin-bottom:0.5rem; flex-wrap:wrap;">
+        <span style="font-size:2.5rem; line-height:1; filter: brightness(0.05) drop-shadow(0 0 4px rgba(201,168,76,0.7));">🐕</span>
+        <h2 class="section-title" style="margin-bottom:0;" data-key="seva_title">Feed a Dog, Please Bhairav</h2>
+      </div>
       <div class="gold-line"></div>
       <p style="color:var(--smoke); max-width:600px; margin:0 auto 1.5rem;" data-key="seva_desc">
         The black dog is Kaal Bhairav's <em>vahana</em> and most beloved animal.
         Feeding a stray dog — especially on Sunday, Bhairav Ashtami, or during Kaal Bhairav Jayanti —
         is considered one of the most powerful acts of devotion.
       </p>
-      <a href="/seva.php" class="btn-primary" data-key="btn_seva">Contribute to Dog Seva</a>
+      <a href="<?php echo $base_href; ?>seva.php" class="btn-primary" data-key="btn_seva">Contribute to Dog Seva</a>
     </div>
   </div>
 </section>
@@ -223,7 +223,7 @@ include 'includes/header.php';
         dharmic principles of Bhairav worship. Any practice performed is entirely at the
         practitioner's own responsibility and risk.
       </p>
-      <a href="/disclaimer.php" style="color:var(--gold);" data-key="disclaimer_link">Read full disclaimer →</a>
+      <a href="<?php echo $base_href; ?>disclaimer.php" style="color:var(--gold);" data-key="disclaimer_link">Read full disclaimer →</a>
     </div>
   </div>
 </section>

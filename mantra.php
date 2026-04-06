@@ -24,7 +24,7 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <div class="mantra-block">
       <p class="mantra-text">ॐ कालभैरवाय नमः</p>
-      <p class="mantra-meaning"><em>Om Kalabhairavaya Namah</em><br>"I bow to Kaal Bhairav"</p>
+      <p class="mantra-meaning"><em>Om Kalabhairavaya Namah</em><br>"I bow to Kaal Bhairav — the Lord of Time, Destroyer of Ego"</p>
       <br>
       <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
         <button onclick="copyMantra('ॐ कालभैरवाय नमः')" class="btn-secondary" style="font-size:0.8rem; padding:0.5rem 1.5rem;" data-key="mantra_copy_btn">Copy</button>
@@ -33,10 +33,44 @@ include 'includes/header.php';
           <span data-key="mantra_wa_btn">Share</span>
         </a>
       </div>
-    </div>
-    <div class="highlight-box">
-      <h4 class="card-title" data-key="mantra_mool_how_title">How to Practice</h4>
-      <p style="color:var(--ash);" data-key="mantra_mool_how_text">Chant 108 times daily using a Rudraksha mala. Best time: Sunday mornings, Tuesday evenings, or midnight. Face South (Bhairav's direction). Sit in a clean place with a lamp lit. Results: protection, fear removal, obstacle clearing. Regular practice over 40 days (a <em>mandala</em>) creates noticeable effects.</p>
+
+      <button class="guidance-toggle" onclick="toggleGuidance(this)"
+        data-open="Full Guidance ▾" data-close="Hide Guidance ▴"
+        data-open-hi="पूर्ण मार्गदर्शन ▾" data-close-hi="छुपाएं ▴">
+        <span class="label-text" data-key="guidance_open">Full Guidance ▾</span>
+      </button>
+      <div class="guidance-panel">
+        <div class="guidance-inner">
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_results">Results</div>
+            <div class="guidance-value" data-key="mool_results">Protection from evil spirits, fear, enemies, black magic, and sudden misfortune. Removes past-life karma. Grants courage and fearlessness. Daily practice over 40 days (mandala) accelerates spiritual growth and clears obstacles from all areas of life. Considered the most direct invocation of Bhairav's protective energy.<span class="guidance-source">Source: Kaal Bhairav Tantra, Shiva Purana — Rudra Samhita</span></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_who">Who Should Chant</div>
+            <div class="guidance-value" data-key="mool_who">Anyone seeking protection and liberation. Especially recommended for those experiencing fear, court cases, enemies, chronic illness, recurring nightmares, or feeling spiritually blocked. Also for those who work at night or in dangerous professions.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_when">When to Chant</div>
+            <div class="guidance-value" data-key="mool_when"><ul><li><span class="must">Best:</span> Sunday before sunrise, Tuesday at dusk, or midnight (ratri puja)</li><li>Bhairav Ashtami (8th lunar day of Krishna Paksha) — most potent</li><li>Kaal Bhairav Jayanti (Krishna Ashtami in Margashirsha month)</li><li>Amavasya (new moon night) for removing deep-seated karma</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_where">Where to Sit</div>
+            <div class="guidance-value" data-key="mool_where">Face South — Bhairav's direction, the direction of Yama and cosmic justice. Sit on a black or dark-coloured mat (kambala or krishnajina). A clean home altar or Bhairav temple is ideal. Cremation ground (shmashana) is mentioned in Tantric texts for advanced practitioners only.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_must">Must Have</div>
+            <div class="guidance-value" data-key="mool_must"><ul><li class="must">Rudraksha mala (108 beads) — Shiva's sacred beads</li><li class="must">Mustard oil lamp (sarson tel ka deepak) — Bhairav's preferred offering</li><li class="must">Clean body and mind — bath before practice</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_optional">Optional</div>
+            <div class="guidance-value" data-key="mool_optional"><ul><li class="optional">Black sesame seeds (kala til) — offered to Bhairav</li><li class="optional">Urad dal (black lentil) — Bhairav's naivedya</li><li class="optional">Red hibiscus or black flowers</li><li class="optional">Bhairav yantra placed in front</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_count">Repetitions</div>
+            <div class="guidance-value" data-key="mool_count"><ul><li>Daily practice: <span class="must">108 times</span></li><li>For serious problems: <span class="must">1008 times</span> on a Sunday or Ashtami</li><li>Full purashcharana: <span class="must">1,25,000 times</span> over 40 days for complete activation</li></ul></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- BATUK BHAIRAV MANTRA -->
@@ -60,9 +94,44 @@ include 'includes/header.php';
           <span data-key="mantra_wa_btn">Share</span>
         </a>
       </div>
-    </div>
-    <div class="highlight-box">
-      <p style="color:var(--ash);" data-key="mantra_batuk_desc">This is one of the most popular and accessible Bhairav mantras. Chant 108 times minimum. Very effective for removing sudden dangers, health crises, travel safety, and sudden reversals of fortune. Source: <em>Batuk Bhairav Tantram</em>.</p>
+
+      <button class="guidance-toggle" onclick="toggleGuidance(this)"
+        data-open="Full Guidance ▾" data-close="Hide Guidance ▴"
+        data-open-hi="पूर्ण मार्गदर्शन ▾" data-close-hi="छुपाएं ▴">
+        <span class="label-text" data-key="guidance_open">Full Guidance ▾</span>
+      </button>
+      <div class="guidance-panel">
+        <div class="guidance-inner">
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_results">Results</div>
+            <div class="guidance-value" data-key="batuk_results">Removes sudden calamities (apadā) — accidents, sudden illness, financial ruin, legal trouble, travel dangers, evil eye (nazar). Most effective for crisis situations where fast relief is needed. Batuk (the eternal youth form) is approachable and responds quickly to sincere devotion. Protects children and families from unexpected harm.<span class="guidance-source">Source: Batuk Bhairav Tantram, Rudrayamala Tantra</span></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_who">Who Should Chant</div>
+            <div class="guidance-value" data-key="batuk_who">People facing sudden crisis, illness, or danger. Those who travel frequently (by road, air, or train). Parents seeking protection for children. Those experiencing unexpected financial reversal, job loss, or legal problems. Anyone feeling an unexplained sense of impending danger.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_when">When to Chant</div>
+            <div class="guidance-value" data-key="batuk_when"><ul><li><span class="must">Best:</span> Tuesday and Sunday evenings at dusk (pradosh kaal)</li><li>Midnight on Ashtami (8th lunar day) — most powerful</li><li>Before travel — chant 11 times for journey protection</li><li>In emergency: chant continuously without counting until relief comes</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_where">Where to Sit</div>
+            <div class="guidance-value" data-key="batuk_where">Home altar facing East or South. Near a Bhairav temple is ideal. For travel protection — chant mentally in any direction. No strict location restriction for this mantra — Batuk Bhairav is accessible everywhere.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_must">Must Have</div>
+            <div class="guidance-value" data-key="batuk_must"><ul><li class="must">Any oil lamp (deepak) — even a simple diya</li><li class="must">Sincere intention and full focus</li><li class="must">Mala for counting — Rudraksha preferred</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_optional">Optional</div>
+            <div class="guidance-value" data-key="batuk_optional"><ul><li class="optional">Red flowers or red sindoor</li><li class="optional">Mustard oil for lamp (sarson tel)</li><li class="optional">Sweet offering (modak or jaggery) — Batuk's favourite</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_count">Repetitions</div>
+            <div class="guidance-value" data-key="batuk_count"><ul><li>Daily protection: <span class="must">108 times</span></li><li>For active crisis: <span class="must">1008 times</span> in one sitting</li><li>For journey: <span class="must">11 or 21 times</span> before departure</li><li>Full activation: <span class="must">1,25,000 times</span> over 40 days</li></ul></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- GAYATRI MANTRA -->
@@ -86,6 +155,44 @@ include 'includes/header.php';
           <span data-key="mantra_wa_btn">Share</span>
         </a>
       </div>
+
+      <button class="guidance-toggle" onclick="toggleGuidance(this)"
+        data-open="Full Guidance ▾" data-close="Hide Guidance ▴"
+        data-open-hi="पूर्ण मार्गदर्शन ▾" data-close-hi="छुपाएं ▴">
+        <span class="label-text" data-key="guidance_open">Full Guidance ▾</span>
+      </button>
+      <div class="guidance-panel">
+        <div class="guidance-inner">
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_results">Results</div>
+            <div class="guidance-value" data-key="gayatri_results">Awakens divine intelligence and clarity of mind. Removes confusion, wrong decisions, and mental darkness. Strengthens the intellect for spiritual understanding. Regular practice helps the seeker grasp the deeper meaning of scriptures and life. Also grants concentration, memory, and discernment (viveka). Considered the highest Bhairav mantra for spiritual seekers.<span class="guidance-source">Source: Shaiva Agamas, Mahanirvana Tantra</span></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_who">Who Should Chant</div>
+            <div class="guidance-value" data-key="gayatri_who">Students seeking clarity and academic success. Spiritual seekers wanting deeper understanding of dharma. Those in confusion about major life decisions. People involved in teaching, writing, or spiritual work. Those who wish to progress beyond devotional worship into deep understanding of Bhairav's philosophy.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_when">When to Chant</div>
+            <div class="guidance-value" data-key="gayatri_when"><ul><li><span class="must">Best:</span> Brahma Muhurta (90 minutes before sunrise) — peak time for Gayatri mantras</li><li>Sandhya kaal (dusk) — second most potent time</li><li>Wednesday mornings — associated with Mercury and intelligence</li><li>Purnima (full moon) — enhanced for all Gayatri mantras</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_where">Where to Sit</div>
+            <div class="guidance-value" data-key="gayatri_where">Face East at sunrise (dawn practice). Face South at dusk or other times. Sit on a clean woollen mat (kambala). A quiet, clean space free from disturbance. Near flowing water (river, lake) enhances Gayatri practice. A dedicated meditation room or home altar is ideal.</div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_must">Must Have</div>
+            <div class="guidance-value" data-key="gayatri_must"><ul><li class="must">Clean body — bath before practice is mandatory for Gayatri</li><li class="must">Oil lamp or ghee lamp (deepak)</li><li class="must">Rudraksha or crystal mala for counting</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_optional">Optional</div>
+            <div class="guidance-value" data-key="gayatri_optional"><ul><li class="optional">White sandalwood paste (chandan) — applied to forehead</li><li class="optional">White flowers (jasmine or lotus) as offering</li><li class="optional">Copper vessel of water placed in front</li></ul></div>
+          </div>
+          <div class="guidance-row">
+            <div class="guidance-label" data-key="g_count">Repetitions</div>
+            <div class="guidance-value" data-key="gayatri_count"><ul><li>Daily: <span class="must">108 times</span> at dawn</li><li>For enhanced effect: <span class="must">3 rounds of 108</span> (324 total) at the three sandhyas</li><li>Full purashcharana: <span class="must">24,000 times</span> — one for each syllable of the original Gayatri</li></ul></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- BEEJ MANTRA -->
@@ -98,16 +205,28 @@ include 'includes/header.php';
         <h3 class="card-title" data-key="mantra_beej1_title">Bhairav Beej</h3>
         <p class="mantra-text" style="font-size:2rem; text-align:center; margin:1rem 0;">हृीं</p>
         <p class="card-text" data-key="mantra_beej1_text"><em>Hreem</em> — the primary beej of Bhairav. Represents his shakti, maya-piercing energy, and direct connection to cosmic consciousness. Used in Tantra as the core seed syllable.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;">
+          <button onclick="copyMantra('हृीं')" class="btn-secondary" style="font-size:0.75rem;padding:0.4rem 1rem;" data-key="mantra_copy_btn">Copy</button>
+          <a href="<?php echo 'https://wa.me/?text='.rawurlencode('हृीं — भैरव बीज मंत्र। काल भैरव का प्राथमिक बीज। जय काल भैरव! 🙏 kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:3px;text-decoration:none;"><svg viewBox="0 0 24 24" width="13" height="13" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg><span data-key="mantra_wa_btn">Share</span></a>
+        </div>
       </div>
       <div class="card">
         <h3 class="card-title" data-key="mantra_beej2_title">Kaal Beej</h3>
         <p class="mantra-text" style="font-size:2rem; text-align:center; margin:1rem 0;">क्रीं</p>
         <p class="card-text" data-key="mantra_beej2_text"><em>Kreem</em> — the beej of Kali, the time-force. Used in Kaal Bhairav practice to invoke the aspect of time-transcendence and dissolution of karma.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;">
+          <button onclick="copyMantra('क्रीं')" class="btn-secondary" style="font-size:0.75rem;padding:0.4rem 1rem;" data-key="mantra_copy_btn">Copy</button>
+          <a href="<?php echo 'https://wa.me/?text='.rawurlencode('क्रीं — काल बीज मंत्र। काल भैरव साधना में प्रयुक्त। जय काल भैरव! 🙏 kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:3px;text-decoration:none;"><svg viewBox="0 0 24 24" width="13" height="13" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg><span data-key="mantra_wa_btn">Share</span></a>
+        </div>
       </div>
       <div class="card">
         <h3 class="card-title" data-key="mantra_beej3_title">Mrityu Beej</h3>
         <p class="mantra-text" style="font-size:2rem; text-align:center; margin:1rem 0;">ॐ</p>
         <p class="card-text" data-key="mantra_beej3_text"><em>Om</em> — the universal sound, the beej of all mantras. Always precedes Bhairav mantras to establish cosmic resonance.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem;">
+          <button onclick="copyMantra('ॐ')" class="btn-secondary" style="font-size:0.75rem;padding:0.4rem 1rem;" data-key="mantra_copy_btn">Copy</button>
+          <a href="<?php echo 'https://wa.me/?text='.rawurlencode('ॐ — मृत्यु बीज, सभी मंत्रों का आधार। जय काल भैरव! 🙏 kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.3rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.72rem;font-weight:600;padding:0.4rem 0.8rem;border-radius:3px;text-decoration:none;"><svg viewBox="0 0 24 24" width="13" height="13" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg><span data-key="mantra_wa_btn">Share</span></a>
+        </div>
       </div>
     </div>
 
@@ -118,6 +237,9 @@ include 'includes/header.php';
 
     <div class="disclaimer-box" style="margin-bottom:1.5rem;">
       <p data-key="mantra_ashtakam_desc">The complete Ashtakam is an ancient Sanskrit text of 8 stanzas describing the glory, attributes, and grace of Kaal Bhairav. Below is a description of each verse with its meaning and significance. The full Sanskrit text is found in <em>Shankaracharya's Stotra Sangraha</em>.</p>
+      <div style="margin-top:1rem;">
+        <a href="<?php echo 'https://wa.me/?text='.rawurlencode('काल भैरव अष्टकम् — आदि शंकराचार्य द्वारा रचित 8 श्लोकों का स्तोत्र। जय काल भैरव! 🙏 पूरा पढ़ें: kaalbhairav.org/mantra.php'); ?>" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;background:#25D366;color:#fff;font-family:'Cinzel',serif;font-size:0.75rem;font-weight:600;padding:0.5rem 1.1rem;border-radius:3px;text-decoration:none;"><svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.122 1.524 5.853L.057 23.976l6.306-1.63A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.017-1.378l-.36-.214-3.742.982.999-3.648-.234-.374A9.796 9.796 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg><span data-key="mantra_wa_btn">Share Ashtakam</span></a>
+      </div>
     </div>
 
     <?php

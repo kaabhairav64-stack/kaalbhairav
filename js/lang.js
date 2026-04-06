@@ -17,6 +17,10 @@ const translations = {
     about_card_kshtra_text: 'Protector of the field (kshetra) — both the field of the body and the sacred field (temple, cremation ground). He is the guardian of thresholds and boundaries between worlds.',
     about_card_danda_title: 'Dandapani',
     about_card_danda_text: 'Holder of the staff (danda) of justice. As Kotwal, he administers divine law. His danda cannot be escaped by any soul — every action is recorded and every karma is addressed.',
+    about_card_kotwal_title: 'Kotwal (कोतवाल)',
+    about_card_kotwal_text: 'The divine guardian and police commissioner of Kashi (Varanasi). No soul enters or leaves the eternal city without his permission. He is the ultimate authority over life, death, and liberation within the sacred boundaries of Kashi.',
+    about_card_batuk_title: 'Batuk Bhairav (बटुक भैरव)',
+    about_card_batuk_text: 'The child form of Bhairav — benevolent, protective, and easily pleased. "Batuk" means a young Brahmin student. This form represents the gentler, nurturing aspect of Bhairav who blesses devotees, removes obstacles, and grants fearlessness to sincere seekers.',
     about_shaiva_tag: 'Shaiva Siddhanta &amp; Shaiva Agamas',
     about_shaiva_title: 'In Shaiva Tradition',
     about_shaiva_text: 'In the classical Shaiva tradition, Bhairav is understood as one of Shiva\'s most important manifestations. The Shaiva Agamas — 64 primary texts — include the <em>Bhairavagama</em> which is dedicated entirely to Bhairav worship. Bhairav is considered the "krodha-murti" (form of righteous wrath) of Shiva — the aspect that punishes transgression and protects dharma.',
@@ -172,6 +176,14 @@ const translations = {
     // POOJA VIDHI PAGE
     pooja_header: 'Pooja Vidhi',
     pooja_sub: 'Complete worship procedure — performed with devotion, sincerity, and righteous intent',
+    pooja_benefits_title: 'Spiritual Benefits of Kaal Bhairav Pooja',
+    pooja_benefits_sub: 'As described in Shiva Purana, Skanda Purana, and Bhairav Agamas — the fruits of sincere Bhairav worship',
+    pb1_title: 'Protection', pb1_text: 'Complete protection from evil spirits, black magic, enemies, theft, accidents, and sudden misfortune. Bhairav is the Kotwal — his devotees live under his direct guardianship. No negative force can penetrate his protection.',
+    pb2_title: 'Justice &amp; Victory', pb2_text: 'Victory in court cases, legal battles, and disputes. Bhairav is the Dandapani — holder of the staff of justice. Those who are wronged and worship Bhairav sincerely receive divine justice.',
+    pb3_title: 'Removal of Obstacles', pb3_text: 'Removal of all obstacles (vighnas) from career, marriage, health, and spiritual progress. Bhairav clears the path for his devotees. What appears impossible becomes possible through his grace.',
+    pb4_title: 'Liberation (Moksha)', pb4_text: 'As Kotwal of Kashi, Bhairav grants liberation to all who die in Kashi. For devotees who worship him regularly, he whispers the Tarak Mantra at the time of death. Source: Kashi Khanda, Skanda Purana.',
+    pb5_title: 'Fearlessness', pb5_text: 'Bhairav literally means "he who removes fear." Regular worship eliminates irrational fears, phobias, nightmares, and anxiety. Devotees report deep inner courage and stability.',
+    pb6_title: 'Karma Dissolution', pb6_text: 'Bhairav as Kaal (Time) governs karma itself. Sincere worship accelerates the dissolution of accumulated negative karma. Source: Rudrayamala Tantra.',
     pooja_days_title: 'Auspicious Days for Bhairav Pooja',
     pooja_materials_title: 'Pooja Samagri (Materials Required)',
     pooja_steps_title: 'Complete Pooja Procedure',
@@ -402,6 +414,44 @@ const translations = {
 
     // MANTRA BUTTONS
     mantra_copy_btn: 'Copy',
+
+    // GUIDANCE ACCORDION — labels
+    guidance_open: 'Full Guidance ▾',
+    guidance_close: 'Hide Guidance ▴',
+    g_results: 'Results',
+    g_who: 'Who Should Chant',
+    g_when: 'When to Chant',
+    g_where: 'Where to Sit',
+    g_must: 'Must Have',
+    g_optional: 'Optional',
+    g_count: 'Repetitions',
+
+    // MOOL MANTRA guidance
+    mool_results: 'Protection from evil spirits, fear, enemies, black magic, and sudden misfortune. Removes past-life karma. Grants courage and fearlessness. Daily practice over 40 days (mandala) accelerates spiritual growth and clears obstacles from all areas of life. Considered the most direct invocation of Bhairav\'s protective energy.<span class="guidance-source">Source: Kaal Bhairav Tantra, Shiva Purana — Rudra Samhita</span>',
+    mool_who: 'Anyone seeking protection and liberation. Especially recommended for those experiencing fear, court cases, enemies, chronic illness, recurring nightmares, or feeling spiritually blocked. Also for those who work at night or in dangerous professions.',
+    mool_when: '<ul><li><span class="must">Best:</span> Sunday before sunrise, Tuesday at dusk, or midnight (ratri puja)</li><li>Bhairav Ashtami (8th lunar day of Krishna Paksha) — most potent</li><li>Kaal Bhairav Jayanti (Krishna Ashtami in Margashirsha month)</li><li>Amavasya (new moon night) for removing deep-seated karma</li></ul>',
+    mool_where: 'Face South — Bhairav\'s direction, the direction of Yama and cosmic justice. Sit on a black or dark-coloured mat. A clean home altar or Bhairav temple is ideal. Cremation ground is mentioned in Tantric texts for advanced practitioners only.',
+    mool_must: '<ul><li class="must">Rudraksha mala (108 beads) — Shiva\'s sacred beads</li><li class="must">Mustard oil lamp (sarson tel ka deepak) — Bhairav\'s preferred offering</li><li class="must">Clean body and mind — bath before practice</li></ul>',
+    mool_optional: '<ul><li class="optional">Black sesame seeds (kala til) — offered to Bhairav</li><li class="optional">Urad dal (black lentil) — Bhairav\'s naivedya</li><li class="optional">Red hibiscus or black flowers</li><li class="optional">Bhairav yantra placed in front</li></ul>',
+    mool_count: '<ul><li>Daily practice: <span class="must">108 times</span></li><li>For serious problems: <span class="must">1008 times</span> on a Sunday or Ashtami</li><li>Full purashcharana: <span class="must">1,25,000 times</span> over 40 days for complete activation</li></ul>',
+
+    // BATUK BHAIRAV guidance
+    batuk_results: 'Removes sudden calamities (apadā) — accidents, sudden illness, financial ruin, legal trouble, travel dangers, evil eye (nazar). Most effective for crisis situations where fast relief is needed. Protects children and families from unexpected harm.<span class="guidance-source">Source: Batuk Bhairav Tantram, Rudrayamala Tantra</span>',
+    batuk_who: 'People facing sudden crisis, illness, or danger. Those who travel frequently. Parents seeking protection for children. Those experiencing unexpected financial reversal, job loss, or legal problems.',
+    batuk_when: '<ul><li><span class="must">Best:</span> Tuesday and Sunday evenings at dusk</li><li>Midnight on Ashtami — most powerful</li><li>Before travel — chant 11 times for journey protection</li><li>In emergency: chant continuously without counting</li></ul>',
+    batuk_where: 'Home altar facing East or South. Near a Bhairav temple is ideal. For travel protection — chant mentally in any direction. No strict location restriction for this mantra.',
+    batuk_must: '<ul><li class="must">Any oil lamp (deepak)</li><li class="must">Sincere intention and full focus</li><li class="must">Mala for counting — Rudraksha preferred</li></ul>',
+    batuk_optional: '<ul><li class="optional">Red flowers or red sindoor</li><li class="optional">Mustard oil for lamp</li><li class="optional">Sweet offering (modak or jaggery)</li></ul>',
+    batuk_count: '<ul><li>Daily protection: <span class="must">108 times</span></li><li>For active crisis: <span class="must">1008 times</span> in one sitting</li><li>For journey: <span class="must">11 or 21 times</span> before departure</li><li>Full activation: <span class="must">1,25,000 times</span> over 40 days</li></ul>',
+
+    // GAYATRI guidance
+    gayatri_results: 'Awakens divine intelligence and clarity of mind. Removes confusion and mental darkness. Strengthens intellect for spiritual understanding. Grants concentration, memory, and discernment (viveka). Considered the highest Bhairav mantra for spiritual seekers.<span class="guidance-source">Source: Shaiva Agamas, Mahanirvana Tantra</span>',
+    gayatri_who: 'Students seeking clarity. Spiritual seekers wanting deeper understanding. Those in confusion about major life decisions. People involved in teaching, writing, or spiritual work.',
+    gayatri_when: '<ul><li><span class="must">Best:</span> Brahma Muhurta (90 minutes before sunrise)</li><li>Sandhya kaal (dusk) — second most potent</li><li>Wednesday mornings — associated with intelligence</li><li>Purnima (full moon) — enhanced for all Gayatri mantras</li></ul>',
+    gayatri_where: 'Face East at sunrise. Face South at dusk. Sit on a clean woollen mat. A quiet, clean space. Near flowing water enhances Gayatri practice.',
+    gayatri_must: '<ul><li class="must">Clean body — bath before practice is mandatory</li><li class="must">Oil lamp or ghee lamp</li><li class="must">Rudraksha or crystal mala</li></ul>',
+    gayatri_optional: '<ul><li class="optional">White sandalwood paste applied to forehead</li><li class="optional">White flowers (jasmine or lotus)</li><li class="optional">Copper vessel of water placed in front</li></ul>',
+    gayatri_count: '<ul><li>Daily: <span class="must">108 times</span> at dawn</li><li>Enhanced: <span class="must">3 rounds of 108</span> at the three sandhyas</li><li>Full purashcharana: <span class="must">24,000 times</span></li></ul>',
     mantra_wa_btn: 'Share',
 
     // WHATSAPP SHARE BAR
@@ -452,6 +502,8 @@ const translations = {
     card6_text: 'Iconography, significance, connection to Shaivism and Tantra, Bhairav in different traditions — Shaiva, Shakta, and Nath sampradaya.',
 
     // INDEX — MANTRA
+    daily_mantra_title: 'Today\'s Mantra',
+    dmw_more: 'All Mantras →',
     mantra_title: 'The Mool Mantra',
     mantra_meaning: '"Om Hreem Batukaya Apaduddharanaya Kuru Kuru Batukaya Hreem"<br><em>O Batuk Bhairav, please remove all obstacles and distress from my life.</em>',
     mantra_guide: 'Chant 108 times daily, preferably on Sunday or Tuesday, facing South.',
@@ -493,6 +545,10 @@ const translations = {
     about_card_kshtra_text: 'क्षेत्र (भूमि) के रक्षक — शरीर का क्षेत्र और पवित्र क्षेत्र (मंदिर, श्मशान) दोनों। वे संसारों के बीच की सीमाओं और देहलीज़ों के संरक्षक हैं।',
     about_card_danda_title: 'दंडपाणि',
     about_card_danda_text: 'न्याय के दंड (दंड) के धारक। कोतवाल के रूप में वे दिव्य न्याय का संचालन करते हैं। उनके दंड से कोई आत्मा नहीं बच सकती — हर कार्य दर्ज है और हर कर्म का फल मिलता है।',
+    about_card_kotwal_title: 'कोतवाल (Kotwal)',
+    about_card_kotwal_text: 'काशी (वाराणसी) के दिव्य संरक्षक और पुलिस अधीक्षक। उनकी अनुमति के बिना कोई भी आत्मा शाश्वत नगरी में प्रवेश या निर्गम नहीं कर सकती। वे काशी की पवित्र सीमाओं के भीतर जीवन, मृत्यु और मोक्ष के परम अधिकारी हैं।',
+    about_card_batuk_title: 'बटुक भैरव (Batuk Bhairav)',
+    about_card_batuk_text: 'भैरव का बालरूप — सौम्य, रक्षक और शीघ्र प्रसन्न होने वाले। "बटुक" का अर्थ है युवा ब्राह्मण छात्र। यह रूप भैरव के कोमल, पोषक पक्ष को दर्शाता है जो भक्तों को आशीर्वाद देते हैं, बाधाएं दूर करते हैं और सच्चे साधकों को निर्भयता प्रदान करते हैं।',
     about_shaiva_tag: 'शैव सिद्धांत और शैव आगम',
     about_shaiva_title: 'शैव परंपरा में',
     about_shaiva_text: 'शास्त्रीय शैव परंपरा में भैरव को शिव के सबसे महत्वपूर्ण रूपों में से एक माना जाता है। शैव आगम — 64 प्रमुख ग्रंथ — में <em>भैरवागम</em> सम्मिलित है जो पूर्णतः भैरव पूजा को समर्पित है। भैरव को शिव का "क्रोध-मूर्ति" (धार्मिक क्रोध का रूप) माना जाता है — वह पहलू जो अधर्म को दंडित करता और धर्म की रक्षा करता है।',
@@ -648,6 +704,14 @@ const translations = {
     // POOJA VIDHI PAGE
     pooja_header: 'पूजा विधि',
     pooja_sub: 'पूर्ण पूजा प्रक्रिया — भक्ति, निष्ठा और धर्मपूर्ण संकल्प के साथ',
+    pooja_benefits_title: 'काल भैरव पूजा के आध्यात्मिक फल',
+    pooja_benefits_sub: 'शिव पुराण, स्कंद पुराण और भैरव आगम में वर्णित — सच्ची भैरव उपासना के फल',
+    pb1_title: 'सुरक्षा', pb1_text: 'दुष्ट आत्माओं, काले जादू, शत्रुओं, चोरी, दुर्घटनाओं और अचानक दुर्भाग्य से पूर्ण सुरक्षा। भैरव कोतवाल हैं — उनके भक्त उनकी प्रत्यक्ष सुरक्षा में रहते हैं।',
+    pb2_title: 'न्याय और विजय', pb2_text: 'कोर्ट केस, कानूनी लड़ाई और विवादों में विजय। भैरव दंडपाणि हैं — न्याय के दंड के धारक। जो लोग अन्याय का शिकार हैं और सच्चे मन से भैरव की उपासना करते हैं, उन्हें दिव्य न्याय मिलता है।',
+    pb3_title: 'बाधाओं का नाश', pb3_text: 'करियर, विवाह, स्वास्थ्य और आध्यात्मिक प्रगति में सभी बाधाओं का नाश। भैरव अपने भक्तों के लिए मार्ग साफ करते हैं। जो असंभव लगता है वह उनकी कृपा से संभव हो जाता है।',
+    pb4_title: 'मोक्ष', pb4_text: 'काशी के कोतवाल के रूप में भैरव काशी में मरने वाले सभी को मोक्ष प्रदान करते हैं। नियमित उपासक को मृत्यु के समय तारक मंत्र सुनाया जाता है। स्रोत: काशी खंड, स्कंद पुराण।',
+    pb5_title: 'निर्भयता', pb5_text: 'भैरव का शाब्दिक अर्थ है "जो भय को दूर करे।" नियमित पूजा से अतार्किक भय, फोबिया, बुरे सपने और चिंता समाप्त होती है।',
+    pb6_title: 'कर्म विनाश', pb6_text: 'काल (समय) के रूप में भैरव स्वयं कर्म पर शासन करते हैं। सच्ची उपासना संचित नकारात्मक कर्म के विनाश को तेज करती है। स्रोत: रुद्रयामल तंत्र।',
     pooja_days_title: 'भैरव पूजा के शुभ दिन',
     pooja_materials_title: 'पूजा सामग्री (आवश्यक वस्तुएं)',
     pooja_steps_title: 'पूर्ण पूजा प्रक्रिया',
@@ -878,6 +942,44 @@ const translations = {
 
     // MANTRA BUTTONS
     mantra_copy_btn: 'कॉपी करें',
+
+    // GUIDANCE ACCORDION — labels
+    guidance_open: 'पूर्ण मार्गदर्शन ▾',
+    guidance_close: 'छुपाएं ▴',
+    g_results: 'फल (परिणाम)',
+    g_who: 'कौन जप करे',
+    g_when: 'कब जप करें',
+    g_where: 'कहाँ बैठें',
+    g_must: 'आवश्यक सामग्री',
+    g_optional: 'वैकल्पिक सामग्री',
+    g_count: 'जप संख्या',
+
+    // MOOL MANTRA guidance
+    mool_results: 'दुष्ट आत्माओं, भय, शत्रुओं, काले जादू और अचानक दुर्भाग्य से सुरक्षा। पूर्व जन्म के कर्मों का नाश। साहस और निर्भयता की प्राप्ति। 40 दिनों का मंडल अभ्यास आध्यात्मिक विकास को तेज करता है।<span class="guidance-source">स्रोत: काल भैरव तंत्र, शिव पुराण — रुद्र संहिता</span>',
+    mool_who: 'सुरक्षा और मोक्ष चाहने वाला कोई भी व्यक्ति। विशेष रूप से उन लोगों के लिए जो भय, कोर्ट केस, शत्रु, पुरानी बीमारी, बुरे सपने या आध्यात्मिक अवरोध का अनुभव कर रहे हैं।',
+    mool_when: '<ul><li><span class="must">सर्वोत्तम:</span> रविवार सूर्योदय से पहले, मंगलवार शाम या मध्यरात्रि</li><li>भैरव अष्टमी (कृष्ण पक्ष की अष्टमी) — सर्वाधिक शक्तिशाली</li><li>काल भैरव जयंती (मार्गशीर्ष कृष्ण अष्टमी)</li><li>अमावस्या — गहरे कर्म नाश के लिए</li></ul>',
+    mool_where: 'दक्षिण दिशा की ओर मुख करें — भैरव की दिशा। काले या गहरे रंग के आसन पर बैठें। घर की पूजा वेदी या भैरव मंदिर सर्वोत्तम है।',
+    mool_must: '<ul><li class="must">रुद्राक्ष माला (108 दाने)</li><li class="must">सरसों के तेल का दीपक — भैरव का प्रिय नैवेद्य</li><li class="must">स्नान करके शुद्ध शरीर और मन</li></ul>',
+    mool_optional: '<ul><li class="optional">काले तिल — भैरव को अर्पित करें</li><li class="optional">उड़द की दाल — भैरव का नैवेद्य</li><li class="optional">लाल गुड़हल या काले फूल</li><li class="optional">सामने भैरव यंत्र रखें</li></ul>',
+    mool_count: '<ul><li>दैनिक अभ्यास: <span class="must">108 बार</span></li><li>गंभीर समस्या के लिए: <span class="must">1008 बार</span> रविवार या अष्टमी को</li><li>पूर्ण पुरश्चरण: <span class="must">1,25,000 बार</span> 40 दिनों में</li></ul>',
+
+    // BATUK BHAIRAV guidance
+    batuk_results: 'अचानक आपदाओं का नाश — दुर्घटना, अचानक बीमारी, आर्थिक संकट, कानूनी परेशानी, यात्रा में खतरे, नजर दोष। बच्चों और परिवार की अप्रत्याशित हानि से रक्षा।<span class="guidance-source">स्रोत: बटुक भैरव तंत्रम्, रुद्रयामल तंत्र</span>',
+    batuk_who: 'अचानक संकट, बीमारी या खतरे का सामना करने वाले लोग। बार-बार यात्रा करने वाले। बच्चों की सुरक्षा चाहने वाले माता-पिता। अप्रत्याशित आर्थिक हानि या नौकरी जाने से परेशान लोग।',
+    batuk_when: '<ul><li><span class="must">सर्वोत्तम:</span> मंगलवार और रविवार शाम</li><li>अष्टमी की मध्यरात्रि — सर्वाधिक शक्तिशाली</li><li>यात्रा से पहले — 11 बार जप करें</li><li>आपातकाल में: बिना गिने निरंतर जप करें</li></ul>',
+    batuk_where: 'घर की वेदी पूर्व या दक्षिण दिशा में। भैरव मंदिर के पास। यात्रा सुरक्षा के लिए — किसी भी दिशा में मानसिक जप।',
+    batuk_must: '<ul><li class="must">कोई भी तेल का दीपक</li><li class="must">सच्ची भावना और पूर्ण एकाग्रता</li><li class="must">गिनती के लिए माला — रुद्राक्ष प्रमुख</li></ul>',
+    batuk_optional: '<ul><li class="optional">लाल फूल या लाल सिंदूर</li><li class="optional">दीपक में सरसों का तेल</li><li class="optional">मीठा प्रसाद (मोदक या गुड़)</li></ul>',
+    batuk_count: '<ul><li>दैनिक सुरक्षा: <span class="must">108 बार</span></li><li>सक्रिय संकट के लिए: <span class="must">1008 बार</span> एक बैठक में</li><li>यात्रा से पहले: <span class="must">11 या 21 बार</span></li><li>पूर्ण सक्रियण: <span class="must">1,25,000 बार</span> 40 दिनों में</li></ul>',
+
+    // GAYATRI guidance
+    gayatri_results: 'दिव्य बुद्धि और मन की स्पष्टता का जागरण। भ्रम और मानसिक अंधकार का नाश। आध्यात्मिक समझ के लिए बौद्धिक शक्ति। एकाग्रता, स्मृति और विवेक की प्राप्ति।<span class="guidance-source">स्रोत: शैव आगम, महानिर्वाण तंत्र</span>',
+    gayatri_who: 'स्पष्टता चाहने वाले छात्र। गहरी समझ चाहने वाले साधक। जीवन के महत्वपूर्ण निर्णयों में भ्रमित लोग। अध्यापन, लेखन या आध्यात्मिक कार्य में लगे लोग।',
+    gayatri_when: '<ul><li><span class="must">सर्वोत्तम:</span> ब्रह्म मुहूर्त (सूर्योदय से 90 मिनट पहले)</li><li>संध्या काल — दूसरा सर्वोत्तम समय</li><li>बुधवार सुबह — बुद्धि से संबंधित</li><li>पूर्णिमा — सभी गायत्री मंत्रों के लिए विशेष</li></ul>',
+    gayatri_where: 'सूर्योदय के समय पूर्व दिशा में मुख करें। संध्या में दक्षिण की ओर। स्वच्छ ऊनी आसन पर बैठें। बहते पानी के पास अभ्यास विशेष फलदायी है।',
+    gayatri_must: '<ul><li class="must">स्नान अनिवार्य — गायत्री के लिए शुद्धता जरूरी</li><li class="must">तेल या घी का दीपक</li><li class="must">रुद्राक्ष या स्फटिक माला</li></ul>',
+    gayatri_optional: '<ul><li class="optional">माथे पर सफेद चंदन का लेप</li><li class="optional">सफेद फूल (चमेली या कमल)</li><li class="optional">सामने तांबे के बर्तन में जल</li></ul>',
+    gayatri_count: '<ul><li>दैनिक: <span class="must">108 बार</span> सूर्योदय पर</li><li>विशेष प्रभाव: <span class="must">3 × 108 = 324 बार</span> तीनों संध्याओं पर</li><li>पूर्ण पुरश्चरण: <span class="must">24,000 बार</span></li></ul>',
     mantra_wa_btn: 'भेजें',
 
     // WHATSAPP SHARE BAR
@@ -928,6 +1030,8 @@ const translations = {
     card6_text: 'प्रतिमा विज्ञान, महत्व, शैवाद और तंत्र से संबंध, विभिन्न परंपराओं में भैरव — शैव, शाक्त और नाथ संप्रदाय।',
 
     // INDEX — MANTRA
+    daily_mantra_title: 'आज का मंत्र',
+    dmw_more: 'सभी मंत्र →',
     mantra_title: 'मूल मंत्र',
     mantra_meaning: '"ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं"<br><em>हे बटुक भैरव, कृपया मेरे जीवन से सभी बाधाएं और कष्ट दूर करें।</em>',
     mantra_guide: 'प्रतिदिन 108 बार जप करें, अधिमानतः रविवार या मंगलवार को, दक्षिण दिशा में मुख करके।',

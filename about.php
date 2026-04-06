@@ -17,7 +17,7 @@ include 'includes/header.php';
     <h2 class="section-title" data-key="about_ico_title">Iconography — The Form of Bhairav</h2>
     <div class="gold-line"></div>
     <div class="two-col">
-      <div>
+      <div class="iconography-col">
         <p data-key="about_ico_intro">
           Kaal Bhairav's form is deliberately designed to be overwhelming to the senses —
           to confront the ego directly. He is described across texts as:
@@ -34,7 +34,7 @@ include 'includes/header.php';
           <li data-key="about_ico_li8"><strong class="text-gold">Setting:</strong> Cremation grounds, midnight, burning pyres — representing the ultimate reality of impermanence</li>
         </ul>
       </div>
-      <div>
+      <div class="weapons-panel">
         <h3 class="card-title" style="margin-bottom:1rem;" data-key="about_weapons_title">The 8 Weapons (Ashtayudha)</h3>
 
         <table>
@@ -54,7 +54,7 @@ include 'includes/header.php';
     <!-- NAME MEANING -->
     <h2 class="section-title" style="margin-top:4rem;" data-key="about_name_title">The Meaning of the Name</h2>
     <div class="gold-line"></div>
-    <div class="card-grid">
+    <div class="card-grid card-grid--2col">
       <div class="card">
         <h3 class="card-title" data-key="about_card_kaal_title">Kaal (काल)</h3>
         <p class="card-text" data-key="about_card_kaal_text">Means both "Time" and "Death." Bhairav as Kaal is Time personified — the force that dissolves all things. He is simultaneously the destroyer and the one who transcends destruction. He is called "Mahakal" — beyond all time.</p>

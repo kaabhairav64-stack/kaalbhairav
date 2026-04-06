@@ -99,6 +99,22 @@ function initDonation() {
   });
 }
 
+// Guidance accordion toggle
+function toggleGuidance(btn) {
+  var panel = btn.nextElementSibling;
+  var isOpen = panel.classList.contains('open');
+  btn.classList.toggle('open', !isOpen);
+  panel.classList.toggle('open', !isOpen);
+  var keyOpen = btn.getAttribute('data-open');
+  var keyClose = btn.getAttribute('data-close');
+  var lang = localStorage.getItem('kb_lang') || 'en';
+  if (!isOpen) {
+    btn.querySelector('.label-text').textContent = (lang === 'hi' ? (btn.getAttribute('data-close-hi') || keyClose) : keyClose);
+  } else {
+    btn.querySelector('.label-text').textContent = (lang === 'hi' ? (btn.getAttribute('data-open-hi') || keyOpen) : keyOpen);
+  }
+}
+
 // Copy mantra to clipboard
 function copyMantra(text) {
   navigator.clipboard.writeText(text).then(() => {
@@ -133,7 +149,7 @@ function showToast(msg) {
   setTimeout(() => toast.remove(), 3000);
 }
 
-// WhatsApp Share Bar (mobile only)
+// WhatsApp Share Bar
 function initWAShareBar() {
   var bar = document.getElementById('wa-share-bar');
   var btn = document.getElementById('wa-share-btn');
@@ -142,6 +158,7 @@ function initWAShareBar() {
 
   var dismissed = sessionStorage.getItem('wa_bar_dismissed');
   var shown = false;
+  var isDesktop = window.innerWidth >= 769;
 
   function buildWAUrl() {
     var url = (typeof KB_PAGE_URL !== 'undefined') ? KB_PAGE_URL : window.location.href;
@@ -150,10 +167,23 @@ function initWAShareBar() {
   }
 
   function showBar() {
-    if (!dismissed && !shown) {
+    if (!shown) {
       bar.classList.add('visible');
       btn.href = buildWAUrl();
       shown = true;
+    }
+  }
+
+  // Desktop: always show immediately
+  if (isDesktop) {
+    showBar();
+  } else {
+    // Mobile: show after scrolling 40%, respect dismiss
+    if (!dismissed) {
+      window.addEventListener('scroll', function() {
+        var scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPct > 40) showBar();
+      }, { passive: true });
     }
   }
 
@@ -164,12 +194,6 @@ function initWAShareBar() {
       dismissed = true;
     });
   }
-
-  // Show after scrolling 40% of page
-  window.addEventListener('scroll', function() {
-    var scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-    if (scrollPct > 40) showBar();
-  }, { passive: true });
 
   // Also update href on click in case lang changed
   btn.addEventListener('click', function() {
