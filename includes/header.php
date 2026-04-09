@@ -82,6 +82,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta name="description" content="<?php echo $meta_description; ?>">
 <meta name="keywords" content="<?php echo htmlspecialchars($page_keyword); ?>">
 <meta name="robots" content="index, follow">
+<meta name="msvalidate.01" content="A148FC00FAEF359CD32EDDD1C9FA32D3">
 <meta name="author" content="KaalBhairav.org">
 <link rel="canonical" href="https://kaalbhairav.org/<?php echo $current_page === 'index' ? '' : $current_page . '.php'; ?>">
 <meta property="og:title" content="<?php echo $page_title; ?>">
