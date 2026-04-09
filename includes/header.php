@@ -27,32 +27,45 @@ $meta_desc = [
 ];
 
 $og_desc = [
-    'index'       => 'काल भैरव — काशी के कोतवाल, काल के स्वामी। मंत्र, पूजा विधि, 64 रूप और पवित्र कथाएं। Kaal Bhairav — Kotwal of Kashi, Lord of Time.',
-    'about'       => 'काल भैरव का स्वरूप, अस्त्र और विभिन्न परंपराओं में उनका स्थान। Learn about Kaal Bhairav\'s form, weapons and traditions.',
-    '64-bhairav'  => 'ब्रह्मांड की 8 दिशाओं के 64 भैरव रूप। 64 Bhairavas — guardians of the 8 directions of the cosmos.',
-    'pooja-vidhi' => 'काल भैरव की संपूर्ण पूजा विधि — सामग्री, 16 चरण, और आध्यात्मिक प्रभाव। Complete Bhairav pooja procedure.',
-    'mantra'      => 'ॐ कालभैरवाय नमः — काल भैरव के पवित्र मंत्र। Sacred mantras of Kaal Bhairav for protection and liberation.',
-    'kashi'       => 'काशी और काल भैरव — अटूट दिव्य संबंध। Kashi and Kaal Bhairav — an inseparable bond since the beginning of time.',
-    'stories'     => 'ब्रह्मा के शिरच्छेदन से लेकर काशी के कोतवाल तक — काल भैरव की पवित्र कथाएं।',
-    'seva'        => 'कुत्ते की सेवा = भैरव की सेवा। Dog seva is one of the highest forms of Bhairav devotion.',
-    'disclaimer'  => 'KaalBhairav.org — disclaimer and spiritual practice guidelines.',
+    'index'       => 'जो एक बार काल भैरव के द्वार आया — वो कभी खाली नहीं लौटा। काल के स्वामी, काशी के कोतवाल का दिव्य रहस्य जानें। Kaal Bhairav — Lord of Time, Kotwal of Kashi.',
+    'about'       => 'तीन नेत्र, कपाल, त्रिशूल — और एक साधारण-सा कुत्ता। काल भैरव के हर रूप में एक गहरा रहस्य छुपा है। जानें उनका संपूर्ण स्वरूप।',
+    '64-bhairav'  => 'आपकी दिशा के भैरव कौन हैं? 64 रूप, 8 दिशाएं — ब्रह्मांड का संपूर्ण भैरव-मंडल। 64 Bhairavas — guardians of all 8 directions of the cosmos.',
+    'pooja-vidhi' => 'शास्त्र-सम्मत 16 उपचारों में पूर्ण पूजा — आज से शुरू करें। काल भैरव की कृपा अवश्य बरसेगी। Complete step-by-step Bhairav pooja vidhi.',
+    'mantra'      => 'ॐ कालभैरवाय नमः — जो इस मंत्र को श्रद्धा से जपता है, काल उसे नहीं छूता। पवित्र मंत्र, बीज मंत्र, अष्टकम — सब यहाँ।',
+    'kashi'       => 'काशी में श्वास लेना पुण्य है — लेकिन बिना भैरव के काशी अधूरी है। जानें यह अटूट दिव्य संबंध जो युगों से चला आ रहा है।',
+    'stories'     => 'ब्रह्मा का पाँचवाँ सिर काट दिया — और फिर भी करुणा। काल भैरव की वो कथाएं जो रोंगटे खड़े कर दें, मन को झकझोर दें।',
+    'seva'        => 'एक कुत्ते को एक रोटी — और काल भैरव प्रसन्न। यह भक्ति का सबसे सरल, सबसे शक्तिशाली मार्ग है। Dog seva = Bhairav seva.',
+    'disclaimer'  => 'KaalBhairav.org — आस्था, ज्ञान और श्रद्धा का डिजिटल तीर्थ। अस्वीकरण और आध्यात्मिक दिशानिर्देश।',
 ];
 
 $share_texts = [
-    'index'       => 'काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप जानें:',
-    'about'       => 'काल भैरव का स्वरूप और महत्व जानें:',
-    '64-bhairav'  => 'काल भैरव के 64 रूप — अष्टभैरव:',
-    'pooja-vidhi' => 'काल भैरव पूजा विधि — संपूर्ण 16-चरण प्रक्रिया:',
-    'mantra'      => 'काल भैरव के पवित्र मंत्र — ॐ कालभैरवाय नमः:',
-    'kashi'       => 'काल भैरव और काशी का दिव्य संबंध:',
-    'stories'     => 'काल भैरव की पवित्र कथाएं — शिव पुराण से:',
-    'seva'        => 'कुत्ते की सेवा = भैरव की सेवा। जानें कैसे:',
-    'disclaimer'  => 'KaalBhairav.org — अस्वीकरण:',
+    'index'       => 'जय काल भैरव! काशी के कोतवाल का यह दिव्य पोर्टल आपके साथ साझा कर रहा हूँ — मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं, सब एक जगह:',
+    'about'       => 'काल भैरव के स्वरूप, अस्त्र और महत्व के बारे में यह जानकारी अद्भुत है। हर शिव भक्त को एक बार जरूर पढ़नी चाहिए:',
+    '64-bhairav'  => 'क्या आप जानते हैं — काल भैरव के 64 रूप हैं? हर दिशा का एक भैरव। यह जानकर मन श्रद्धा से भर गया:',
+    'pooja-vidhi' => 'काल भैरव की पूजा विधि — शास्त्र-सम्मत, 16 उपचारों में पूर्ण। अपने परिवार के साथ जरूर साझा करें:',
+    'mantra'      => 'ॐ कालभैरवाय नमः — काल भैरव के यह पवित्र मंत्र आज से जपना शुरू करें। मूल मंत्र, बीज मंत्र, अष्टकम सब यहाँ:',
+    'kashi'       => 'काशी जाने वाले या वहाँ रहने वाले भक्तों के लिए — काल भैरव और काशी का यह दिव्य रहस्य जरूर पढ़ें:',
+    'stories'     => 'काल भैरव की यह कथा पढ़कर मन भाव-विभोर हो गया। आपके साथ साझा किए बिना रह नहीं सका:',
+    'seva'        => 'कुत्ते को खाना खिलाएं = काल भैरव की सेवा करें। यह जानकर जीवन बदल गया। आप भी पढ़ें:',
+    'disclaimer'  => 'KaalBhairav.org — अस्वीकरण और आध्यात्मिक दिशानिर्देश:',
+];
+
+$page_keywords = [
+    'index'       => 'काल भैरव, कालभैरव, काशी के कोतवाल, भैरव मंत्र, भैरव पूजा, कालभैरव मंदिर, Kaal Bhairav, Kashi, Bhairav mantra, Bhairav pooja, Varanasi, Shiva, tantra',
+    'about'       => 'काल भैरव स्वरूप, भैरव अष्टायुध, काल भैरव का महत्व, शैव परंपरा, Kaal Bhairav iconography, Ashtayudha, Shaiva tradition, Bhairav significance',
+    '64-bhairav'  => '64 भैरव, अष्टभैरव, भैरव दिशाएं, महाभैरव, 64 Bhairav, Ashtabhairav, 64 forms of Bhairav, Bhairav directions, Mahabhairavas',
+    'pooja-vidhi' => 'काल भैरव पूजा विधि, भैरव पूजन सामग्री, षोडशोपचार पूजा, Kaal Bhairav pooja vidhi, Bhairav worship procedure, Shodashopachara puja',
+    'mantra'      => 'काल भैरव मंत्र, भैरव बीज मंत्र, कालभैरव अष्टकम, भैरव गायत्री, Kaal Bhairav mantra, Bhairav beej mantra, Kalbhairav Ashtakam, Bhairav Gayatri',
+    'kashi'       => 'काशी और काल भैरव, वाराणसी कालभैरव मंदिर, काशी कोतवाल, Kashi Kaal Bhairav, Varanasi Bhairav temple, Kashi Kotwal, Bhairav Kashi connection',
+    'stories'     => 'काल भैरव कथा, भैरव शिव पुराण, ब्रह्मा शिरच्छेदन कथा, Kaal Bhairav stories, Bhairav Shiva Purana, Brahma beheading story, Bhairav legends',
+    'seva'        => 'कुत्ता सेवा भैरव, श्वान सेवा, भैरव वाहन सेवा, dog seva Bhairav, feed dogs Bhairav, Bhairav vahana seva, dog donation',
+    'disclaimer'  => 'KaalBhairav.org disclaimer, spiritual website terms, Hindu devotional site guidelines',
 ];
 
 $page_title      = $page_titles[$current_page] ?? $site_name;
 $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org — Complete devotional resource on Kaal Bhairav.';
 $og_description  = $og_desc[$current_page] ?? $meta_description;
+$page_keyword    = $page_keywords[$current_page] ?? 'Kaal Bhairav, KaalBhairav.org, काल भैरव, भैरव मंत्र, Bhairav mantra, Kashi, Varanasi';
 $share_text      = $share_texts[$current_page] ?? 'काल भैरव की जय! जानें:';
 $canonical_path  = ($current_page === 'index') ? '' : $current_page . '.php';
 $full_url        = 'https://kaalbhairav.org/' . $canonical_path;
@@ -67,7 +80,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <base href="<?php echo $base_href; ?>">
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo $meta_description; ?>">
-<meta name="keywords" content="Kaal Bhairav, Kashi, Bhairav mantra, Bhairav pooja, 64 Bhairav, Ashtabhairav, Varanasi, Shiva, dog seva, Bhairav stotram, tantra, Bhairav worship">
+<meta name="keywords" content="<?php echo htmlspecialchars($page_keyword); ?>">
 <meta name="robots" content="index, follow">
 <meta name="author" content="KaalBhairav.org">
 <link rel="canonical" href="https://kaalbhairav.org/<?php echo $current_page === 'index' ? '' : $current_page . '.php'; ?>">
@@ -229,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 </head>
-<body>
+<body class="page-<?php echo htmlspecialchars($current_page); ?>">
 <div class="particles" id="particles"></div>
 <nav>
     <div class="nav-inner">
