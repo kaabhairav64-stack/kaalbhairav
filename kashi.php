@@ -3,6 +3,22 @@ $page_title    = "Kaal Bhairav &amp; Kashi — The Sacred Connection | KaalBhair
 $meta_desc     = "The divine connection between Kaal Bhairav and Kashi (Varanasi) — the eternal city and its cosmic guardian. Why no one can reside in Kashi without Bhairav's permission.";
 $meta_keywords = "Kaal Bhairav Kashi, Bhairav Varanasi, Kotwal of Kashi, Kashi connection, Kaal Bhairav temple Varanasi, Kashi moksha, Bhairav Ganga";
 $current_page  = "kashi";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Article",
+  "headline" => "Kaal Bhairav and Kashi — The Sacred Connection",
+  "description" => "The divine connection between Kaal Bhairav and Kashi (Varanasi) — why Bhairav is the eternal Kotwal of the holy city, and how dying in Kashi grants moksha.",
+  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://kaalbhairav.org/kashi.php",
+  "inLanguage" => ["en", "hi"],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "about" => [
+    ["@type"=>"Place","name"=>"Kashi (Varanasi)","description"=>"Ancient city on the banks of the Ganga, cosmic axis of liberation and moksha"],
+    ["@type"=>"Thing","name"=>"Kaal Bhairav","description"=>"Eternal guardian and Kotwal of Kashi, the divine administrator of the sacred city"]
+  ],
+  "citation" => ["Skanda Purana — Kashi Khanda","Shiva Purana"]
+]);
 include 'includes/header.php';
 ?>
 

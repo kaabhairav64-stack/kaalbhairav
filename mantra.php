@@ -3,6 +3,19 @@ $page_title    = "Kaal Bhairav Mantras — Mool Mantra, Ashtakam, Gayatri, Beej 
 $meta_desc     = "Complete collection of Kaal Bhairav mantras — Mool Mantra, Kaal Bhairav Ashtakam by Adi Shankaracharya, Bhairav Gayatri, beej mantras, and Tantric procedures with guidance on proper use.";
 $meta_keywords = "Kaal Bhairav mantra, Bhairav Ashtakam, Kaal Bhairav Gayatri, Bhairav beej mantra, Batuk Bhairav mantra, Bhairav stotra, Om Kalabhairavaya namah, Bhairav tantra";
 $current_page  = "mantra";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "FAQPage",
+  "mainEntity" => [
+    ["@type"=>"Question","name"=>"What is the Kaal Bhairav Mool Mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"The Kaal Bhairav Mool Mantra is: Om Kalabhairavaya Namah (ॐ कालभैरवाय नमः) — meaning 'I bow to Kaal Bhairav, the Lord of Time and Destroyer of Ego.' This is the most accessible and powerful Bhairav mantra for daily practice."]],
+    ["@type"=>"Question","name"=>"When is the best time to chant Kaal Bhairav mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"The best times are: Sunday before sunrise, Tuesday at dusk, or midnight (Nishitha Kaal). Bhairav Ashtami — the 8th lunar day of Krishna Paksha — is the most potent day. Amavasya (new moon night) is highly recommended for removing deep-seated karma."]],
+    ["@type"=>"Question","name"=>"How many times should I repeat the Kaal Bhairav mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"For daily practice: 108 times using a Rudraksha mala. For serious problems: 1008 times on a Sunday or Ashtami. For complete activation (purashcharana): 1,25,000 times over 40 days."]],
+    ["@type"=>"Question","name"=>"What is the Batuk Bhairav mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"The Batuk Bhairav mantra is: Om Hreem Batukaya Apadudharanaya Kuru Kuru Batukaya Hreem Om Namah. Batuk is the eternal youth form of Bhairav — most accessible for all devotees regardless of experience."]],
+    ["@type"=>"Question","name"=>"What are the benefits of chanting Kaal Bhairav mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Benefits include: protection from evil spirits, black magic, enemies, and sudden misfortune; removal of fear and anxiety; victory in legal battles; removal of career and life obstacles; dissolution of negative karma; and ultimately, spiritual liberation (moksha)."]],
+    ["@type"=>"Question","name"=>"What is the Kaal Bhairav Ashtakam?","acceptedAnswer"=>["@type"=>"Answer","text"=>"The Kaal Bhairav Ashtakam is a sacred hymn of 8 verses composed by Adi Shankaracharya. Each verse describes Bhairav's divine attributes and ends glorifying Kalabhairava. Daily recitation removes all obstacles and grants fearlessness."]],
+    ["@type"=>"Question","name"=>"Which direction should I face while chanting Kaal Bhairav mantra?","acceptedAnswer"=>["@type"=>"Answer","text"=>"Face South — Bhairav's direction, the direction of Yama and cosmic justice. Sit on a black or dark-coloured mat. A clean home altar or Bhairav temple is ideal."]]
+  ]
+]);
 include 'includes/header.php';
 ?>
 

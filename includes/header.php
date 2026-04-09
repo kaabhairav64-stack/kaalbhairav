@@ -241,6 +241,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+<?php if (!empty($page_schema)): ?>
+<script type="application/ld+json"><?php echo $page_schema; ?></script>
+<?php endif; ?>
 </head>
 <body class="page-<?php echo htmlspecialchars($current_page); ?>">
 <div class="particles" id="particles"></div>
