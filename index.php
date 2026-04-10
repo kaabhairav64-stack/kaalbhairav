@@ -3,6 +3,18 @@ $page_title   = "Kaal Bhairav — Kotwal of Kashi | Lord of Time";
 $meta_desc    = "Enter the sacred world of Kaal Bhairav — the fierce form of Lord Shiva, Kotwal of Kashi, destroyer of ego, guardian of time. Stories, mantras, pooja vidhi, 64 forms and more.";
 $meta_keywords = "Kaal Bhairav, Kotwal of Kashi, Kaal Bhairav temple, Bhairav mantra, Bhairav pooja, Varanasi Bhairav, Lord Bhairav";
 $current_page = "home";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "FAQPage",
+  "mainEntity" => [
+    ["@type"=>"Question","name"=>"काल भैरव कौन हैं? (Who is Kaal Bhairav?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Kaal Bhairav is a fierce manifestation of Lord Shiva — the Lord of Time (Kaal), destroyer of ego, and eternal Kotwal (guardian) of Kashi (Varanasi). He was born from Shiva's third eye when Brahma's fifth head spoke a lie. He guards all souls entering and leaving Kashi and grants liberation to his devotees."]],
+    ["@type"=>"Question","name"=>"काल भैरव का मंत्र क्या है? (What is the Kaal Bhairav mantra?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"The primary Kaal Bhairav mantra is: ॐ कालभैरवाय नमः (Om Kalabhairavaya Namah) — meaning 'I bow to Kaal Bhairav, the Lord of Time.' Chant 108 times daily using a Rudraksha mala, preferably on Sundays or Tuesdays, facing South."]],
+    ["@type"=>"Question","name"=>"काल भैरव का वाहन क्या है? (What is Kaal Bhairav's vehicle?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Kaal Bhairav's vahana (vehicle) is the dog (shvan). The dog represents loyalty, fearlessness, and the ability to see in the dark. Feeding a dog is considered direct seva (service) to Kaal Bhairav himself — especially a black dog, which is most auspicious."]],
+    ["@type"=>"Question","name"=>"काल भैरव मंदिर कहाँ है? (Where is the Kaal Bhairav temple?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"The most sacred Kaal Bhairav temple is in Kashi (Varanasi), located in Kaal Bhairav Gali near Trilochan. As Kotwal of Kashi, Bhairav's temple must be visited before any other temple in Varanasi. He grants permission to reside in the holy city."]],
+    ["@type"=>"Question","name"=>"काल भैरव पूजा किस दिन करें? (On which day should Kaal Bhairav puja be done?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Kaal Bhairav puja is best performed on Sunday (Ravivar) and Tuesday (Mangalvar). The most sacred day is Kaal Bhairav Ashtami — Krishna Paksha Ashtami of Margashirsha month. Every Ashtami tithi (8th lunar day) and Amavasya (new moon) are also highly auspicious."]],
+    ["@type"=>"Question","name"=>"काल भैरव के 64 रूप कौन से हैं? (What are the 64 forms of Kaal Bhairav?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"The 64 Bhairavas are guardians of the 8 directions of the cosmos. They are led by the 8 Ashtabhairavas: Asitanga, Ruru, Chanda, Krodha, Unmatta, Kapala, Bhishana, and Samhara Bhairava. Each has 8 sub-forms, totalling 64 Bhairavas protecting the universe."]]
+  ]
+]);
 include 'includes/header.php';
 ?>
 
