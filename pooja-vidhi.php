@@ -5,28 +5,14 @@ $meta_keywords = "Kaal Bhairav pooja vidhi, Bhairav puja procedure, Kaal Bhairav
 $current_page  = "pooja";
 $page_schema = json_encode([
   "@context" => "https://schema.org",
-  "@type" => "HowTo",
-  "name" => "Kaal Bhairav Pooja Vidhi — Complete 16-Step Procedure",
-  "description" => "Complete Shodashopachara (16-step) Kaal Bhairav pooja vidhi — from purification to visarjana. Perform for protection, justice, obstacle removal, and liberation.",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
-  "inLanguage" => ["en", "hi"],
-  "step" => [
-    ["@type"=>"HowToStep","position"=>1,"name"=>"Shuddhi (Self-Purification)","text"=>"Take a bath, wear clean black or dark red clothes. Clean the worship space. Clear your mind of all negative thoughts."],
-    ["@type"=>"HowToStep","position"=>2,"name"=>"Dog Seva (Before Pooja)","text"=>"Feed a dog before beginning — this is the first offering to Bhairav himself. A black dog is most auspicious."],
-    ["@type"=>"HowToStep","position"=>3,"name"=>"Dipa Prajvalana (Lighting the Lamp)","text"=>"Light a mustard oil lamp before the Bhairav murti facing South. Chant: Om Kalabhairavaya Namah."],
-    ["@type"=>"HowToStep","position"=>4,"name"=>"Dhyana (Meditation on Form)","text"=>"Close your eyes and visualize Kaal Bhairav: dark complexion, three blazing eyes, skull garland, trident, kapala. Hold for at least 5 minutes."],
-    ["@type"=>"HowToStep","position"=>5,"name"=>"Sankalpa (Sacred Intention)","text"=>"State your name, gotra, and righteous purpose for performing this pooja clearly — aloud or in your mind."],
-    ["@type"=>"HowToStep","position"=>6,"name"=>"Avahana (Invocation)","text"=>"Invite Kaal Bhairav with folded hands: Om aagacha deva Kalabhairava, iham asanam grihna. Sarva puja swikuru."],
-    ["@type"=>"HowToStep","position"=>7,"name"=>"Asana (Offering a Seat)","text"=>"Place a clean black cloth beneath the murti as Bhairav's divine seat. Offer akshata (unbroken rice grains with turmeric)."],
-    ["@type"=>"HowToStep","position"=>8,"name"=>"Paadya, Arghya, Achamaniya","text"=>"Offer Gangajal three times, symbolically washing the feet, hands, and mouth of the deity. Say Om Kalabhairavaya Namah each time."],
-    ["@type"=>"HowToStep","position"=>9,"name"=>"Abhishek (Sacred Bath)","text"=>"Bathe the murti with Gangajal, raw milk, honey, curd, and Gangajal again — Panchamrita Abhishek. Chant the Batuk Bhairav mantra throughout."],
-    ["@type"=>"HowToStep","position"=>10,"name"=>"Vastra and Gandha (Clothing and Fragrance)","text"=>"Offer a black cloth to Bhairav. Apply sindoor or sandalwood paste. Offer mustard oil and kewra or musk fragrance."],
-    ["@type"=>"HowToStep","position"=>11,"name"=>"Pushpa (Flowers)","text"=>"Offer red hibiscus flowers or Kadamba flowers. Place bilva leaves smooth-side facing the murti. Add black sesame seeds."],
-    ["@type"=>"HowToStep","position"=>12,"name"=>"Dhupa and Dipa (Incense and Light)","text"=>"Offer Loban or Guggul incense in 3 clockwise circles before the murti. Then wave the lamp 3 clockwise circles."],
-    ["@type"=>"HowToStep","position"=>13,"name"=>"Naivedya (Food Offering)","text"=>"Offer cooked black urad dal, black sesame sweets (til ladoo), coconut, or banana. Do not taste before offering."],
-    ["@type"=>"HowToStep","position"=>14,"name"=>"Mantra Japa (Chanting)","text"=>"Using a Rudraksha mala, perform 108 repetitions of Om Kalabhairavaya Namah or another chosen Bhairav mantra."],
-    ["@type"=>"HowToStep","position"=>15,"name"=>"Aarti (Waving the Lamp)","text"=>"Perform aarti with camphor or ghee lamp clockwise — feet (1 time), navel (2 times), face (3 times), full body (7 times)."],
-    ["@type"=>"HowToStep","position"=>16,"name"=>"Pradakshina and Visarjana (Farewell)","text"=>"Perform 3 clockwise circumambulations. Offer farewell with folded hands and the visarjana shloka."]
+  "@type" => "FAQPage",
+  "mainEntity" => [
+    ["@type"=>"Question","name"=>"काल भैरव पूजा विधि क्या है? (What is Kaal Bhairav Pooja Vidhi?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Kaal Bhairav Pooja Vidhi is a 16-step Shodashopachara worship procedure — starting with self-purification (Shuddhi) and dog seva, followed by lamp lighting, dhyana, sankalpa, avahana, abhishek with panchamrita, flower offerings, incense, naivedya, 108 mantra japa, aarti, and farewell (visarjana)."]],
+    ["@type"=>"Question","name"=>"काल भैरव पूजा के लिए क्या सामग्री चाहिए? (What materials are needed for Kaal Bhairav Pooja?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Essential materials: Kaal Bhairav murti or image, mustard oil lamp, black sesame seeds (kala til), black urad dal, red hibiscus flowers, bilva leaves, incense (Loban/Guggul), Rudraksha mala (108 beads), Gangajal, sindoor, black cloth for altar, and coconut."]],
+    ["@type"=>"Question","name"=>"काल भैरव पूजा कब करनी चाहिए? (When should Kaal Bhairav Pooja be performed?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Best days: Sunday (Ravivar) and Tuesday (Mangalvar). Most sacred: Kaal Bhairav Ashtami — Krishna Paksha Ashtami of Margashirsha month. Also auspicious: every Ashtami tithi (8th lunar day), Amavasya (new moon), and midnight hour (Nishitha Kaal — 11:30 PM to 12:30 AM)."]],
+    ["@type"=>"Question","name"=>"काल भैरव पूजा के क्या लाभ हैं? (What are the benefits of Kaal Bhairav Pooja?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Benefits include: complete protection from evil spirits, black magic, enemies, and accidents; victory in court cases and legal battles; removal of career and life obstacles; freedom from fear and anxiety; dissolution of negative karma; and ultimately spiritual liberation (moksha) as described in Shiva Purana and Rudrayamala Tantra."]],
+    ["@type"=>"Question","name"=>"क्या काल भैरव पूजा घर पर की जा सकती है? (Can Kaal Bhairav Pooja be done at home?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"Yes, Kaal Bhairav Pooja can be performed at home. Set up a clean altar with a black cloth, place the murti or image, light a mustard oil lamp facing South. Begin by feeding a dog (dog seva) before starting the pooja. Perform with sincerity and righteous intent."]],
+    ["@type"=>"Question","name"=>"काल भैरव पूजा से पहले कुत्ते को खाना क्यों खिलाएं? (Why feed a dog before Kaal Bhairav Pooja?)","acceptedAnswer"=>["@type"=>"Answer","text"=>"The dog is Kaal Bhairav's vahana (vehicle). Feeding a dog before pooja is considered the first and most important offering to Bhairav himself. A black dog is especially auspicious. This practice is mentioned in the Bhairav Agamas and is non-optional in serious Bhairav worship."]]
   ]
 ]);
 include 'includes/header.php';
