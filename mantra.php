@@ -313,7 +313,27 @@ include 'includes/header.php';
       <p data-key="mantra_final_text">All authentic Shaiva Tantric traditions agree: <strong>Bhairav himself punishes those who misuse his energy.</strong> He is the Kotwal of cosmic justice. Using any practice for manipulation, control, or harm of others will invoke Bhairav's wrath — not his grace. The practitioner who approaches Bhairav with ego, greed, or malice will find their own karma accelerated and amplified. <em>True Bhairav sadhana dissolves the ego — it does not inflate it.</em></p>
     </div>
 
+    <!-- PDF DOWNLOAD LINK -->
+    <div style="text-align:center; margin:2rem 0;">
+      <a href="mantra-pdf.php" target="_blank" style="display:inline-flex;align-items:center;gap:0.6rem;background:linear-gradient(135deg,#1a0800,#2d0f00);color:#c9a84c;font-family:'Cinzel',serif;font-size:0.82rem;letter-spacing:0.08em;border:1px solid rgba(201,168,76,0.4);border-radius:4px;padding:0.7rem 1.5rem;text-decoration:none;">
+        ⬇ Download / Print Mantra Card (PDF)
+      </a>
+    </div>
+
   </div>
 </section>
+
+<!-- Hindi noscript fallback — for Google indexing of Hindi content -->
+<noscript>
+<div style="display:none;" aria-hidden="true">
+  <h2>काल भैरव मंत्र</h2>
+  <h3>मूल मंत्र</h3><p>ॐ कालभैरवाय नमः — काल भैरव को नमस्कार। यह सबसे शक्तिशाली भैरव मंत्र है। प्रतिदिन 108 बार रुद्राक्ष माला पर जप करें।</p>
+  <h3>बटुक भैरव मंत्र</h3><p>ॐ हृीं बटुकाय आपदुद्धारणाय कुरु कुरु बटुकाय हृीं — संकट निवारण के लिए यह मंत्र सबसे प्रभावशाली है।</p>
+  <h3>काल भैरव गायत्री</h3><p>ॐ कालदण्डाय विद्महे कालभैरवाय धीमहि तन्नो भैरवः प्रचोदयात् — ज्ञान और आध्यात्मिक प्रगति के लिए।</p>
+  <h3>भैरव बीज मंत्र</h3><p>ॐ भ्रं भैरवाय नमः — शत्रुओं से रक्षा और नकारात्मक शक्तियों के नाश के लिए।</p>
+  <h3>मंत्र जप कब करें</h3><p>रविवार और मंगलवार को सूर्योदय से पहले या रात्रि में। अष्टमी तिथि और अमावस्या पर सबसे शक्तिशाली। दक्षिण दिशा की ओर मुख करके बैठें।</p>
+  <h3>मंत्र जप के लाभ</h3><p>भय से मुक्ति, शत्रुओं से सुरक्षा, कर्म का नाश, न्याय में विजय, आध्यात्मिक उन्नति और अंततः मोक्ष।</p>
+</div>
+</noscript>
 
 <?php include 'includes/footer.php'; ?>

@@ -262,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
             <li><a href="<?php echo $base_href; ?>mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
             <li><a href="<?php echo $base_href; ?>seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
+            <li><a href="<?php echo $base_href; ?>bhairav-ashtami-2026.php" <?php echo $current_page==='ashtami'?'class="active"':''; ?> style="color:#e8c96e;">Ashtami 2026</a></li>
             <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php" <?php echo $current_page==='jayanti'?'class="active"':''; ?> style="color:#e8c96e;">Jayanti 2026</a></li>
             <li><a href="<?php echo $base_href; ?>disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
             <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>
