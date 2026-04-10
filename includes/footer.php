@@ -19,6 +19,7 @@
             <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" data-key="nav_pooja">Pooja Vidhi</a></li>
             <li><a href="<?php echo $base_href; ?>mantra.php" data-key="nav_mantra">Mantras</a></li>
             <li><a href="<?php echo $base_href; ?>seva.php" data-key="nav_seva">Dog Seva</a></li>
+            <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php">Jayanti 2026</a></li>
             <li><a href="<?php echo $base_href; ?>disclaimer.php" data-key="nav_disclaimer">Disclaimer</a></li>
         </ul>
         <p class="footer-text" data-key="footer_tagline">Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.</p>
