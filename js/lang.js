@@ -54,6 +54,17 @@ const translations = {
     about_wpn_r7_name: 'Abhaya Mudra', about_wpn_r7_sym: 'Grant of fearlessness to devotees',
     about_wpn_r8_name: 'Varada Mudra', about_wpn_r8_sym: 'Grant of boons and grace',
 
+    // MANDIR PAGE
+    mandir_title: 'Kaal Bhairav Virtual Mandir',
+    mandir_sub: 'Kaal Bhairav Virtual Temple · Daily Aarti Darshan',
+    mandir_live: 'AARTI LIVE NOW',
+    mandir_morning_lbl: 'Morning Aarti',
+    mandir_evening_lbl: 'Evening Aarti',
+    mandir_banner: '🔔 Aarti has begun — Tap here to enable audio',
+    mandir_banner_small: 'Tap here to start Aarti audio',
+    mandir_prayer: 'ॐ Kaalabhairavaya Namah',
+    mandir_prayer_sub: 'Jai Kaal Bhairav · Kotwal of Kashi · Destroyer of Fear',
+
     // STORIES PAGE
     stories_header: 'Sacred Stories',
     stories_sub: 'Legends from Shiva Purana, Skanda Purana, Linga Purana &amp; Tantric Texts',
@@ -581,6 +592,17 @@ const translations = {
     about_wpn_r6_name: 'खड्ग (Khadga — तलवार)', about_wpn_r6_sym: 'अज्ञान और माया को काटती है',
     about_wpn_r7_name: 'अभय मुद्रा', about_wpn_r7_sym: 'भक्तों को निर्भयता का वरदान',
     about_wpn_r8_name: 'वरद मुद्रा', about_wpn_r8_sym: 'वरदान और कृपा प्रदान',
+
+    // MANDIR PAGE
+    mandir_title: 'काल भैरव वर्चुअल मंदिर',
+    mandir_sub: 'काल भैरव वर्चुअल मंदिर · दैनिक आरती दर्शन',
+    mandir_live: 'आरती अभी लाइव है',
+    mandir_morning_lbl: 'प्रातः आरती',
+    mandir_evening_lbl: 'संध्या आरती',
+    mandir_banner: '🔔 आरती शुरू हो गई — सुनने के लिए यहाँ दबाएं',
+    mandir_banner_small: 'आरती की ध्वनि सुनने के लिए दबाएं',
+    mandir_prayer: 'ॐ कालभैरवाय नमः',
+    mandir_prayer_sub: 'जय काल भैरव · काशी के कोतवाल · भय के नाशक',
 
     // STORIES PAGE
     stories_header: 'पवित्र कथाएं',
