@@ -459,7 +459,7 @@ include 'includes/header.php';
 
 <div class="mandir-wrapper">
 
-  <h1 class="mandir-title" data-key="mandir_title">Kaal Bhairav Virtual Mandir</h1>
+  <!-- <h1 class="mandir-title" data-key="mandir_title">Kaal Bhairav Virtual Mandir</h1> -->
   <p class="mandir-subtitle" data-key="mandir_sub">Kaal Bhairav Virtual Temple · Daily Aarti Darshan</p>
 
   <!-- LIVE BADGE -->

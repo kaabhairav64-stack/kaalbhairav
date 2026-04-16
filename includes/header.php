@@ -135,11 +135,147 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
   cursor: pointer;
   border-radius: 2px;
 }
+.nav-mobile-actions { display: contents; }
+.lang-toggle-mobile {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.4);
+  color: #c9a84c;
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.6rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.lang-toggle-mobile:hover { background: rgba(201,168,76,0.1); border-color: #c9a84c; }
+/* Nav dropdowns (desktop) */
+.nav-dropdown { position: relative; }
+.nav-dropdown > .nav-dropdown-trigger { cursor: pointer; }
+.nav-dropdown > .nav-dropdown-trigger::after {
+  content: '\25BE';
+  font-size: 0.7em;
+  margin-left: 0.3em;
+  opacity: 0.75;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.nav-dropdown:hover > .nav-dropdown-trigger::after,
+.nav-dropdown.open > .nav-dropdown-trigger::after { transform: rotate(-180deg); opacity: 1; }
+.nav-submenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 180px;
+  background: rgba(10,5,0,0.98);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 3px;
+  padding: 0.4rem 0;
+  list-style: none;
+  z-index: 1001;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6), 0 0 16px rgba(139,0,0,0.15);
+  backdrop-filter: blur(10px);
+}
+.nav-dropdown:hover .nav-submenu,
+.nav-dropdown:focus-within .nav-submenu,
+.nav-dropdown.open .nav-submenu { display: block; }
+.nav-submenu li { padding: 0; display: block; }
+.nav-submenu a {
+  display: block;
+  padding: 0.55rem 1rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.nav-submenu a:hover, .nav-submenu a.active {
+  background: rgba(201,168,76,0.08);
+  border-color: transparent;
+}
 @media (max-width: 768px) {
   .nav-toggle { display: block; }
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: rgba(10,5,0,0.98); border-bottom: 1px solid rgba(201,168,76,0.3); padding: 1rem 0; z-index: 999; }
+  .lang-toggle-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.4rem;
+    padding: 0 0.7rem;
+    height: 2.1rem;
+    line-height: 1;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    padding: 0 0.6rem;
+    line-height: 1;
+  }
+  .nav-links.open .lang-toggle-wrap { display: none !important; }
+  .nav-mobile-actions { display: flex; align-items: center; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: rgba(10,5,0,0.98); border-bottom: 1px solid rgba(201,168,76,0.3); padding: 0.6rem 0 0.8rem; z-index: 999; }
   .nav-links.open { display: flex; }
-  .nav-links li { text-align: center; padding: 0.4rem 0; }
+  .nav-links li { text-align: center; padding: 0.1rem 0; }
+  /* Dropdown trigger → centered section divider "─── LEARN ───" */
+  .nav-links.open .nav-dropdown { margin: 0.6rem 0 0.2rem; width: 100%; display: block; }
+  /* Closing separator after each submenu section — gold gradient line (matches label style) */
+  .nav-links.open .nav-submenu {
+    margin: 0 1.5rem 0.6rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+  }
+  .nav-links.open .nav-submenu::after {
+    content: '';
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(201,168,76,0.35), transparent);
+  }
+  /* No trailing separator after the last dropdown (Festivals) */
+  .nav-links.open .nav-dropdown ~ .nav-dropdown .nav-submenu::after { content: none; }
+  .nav-links.open .nav-dropdown > .nav-dropdown-trigger {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    color: rgba(201,168,76,0.55) !important;
+    font-size: 0.6rem !important;
+    letter-spacing: 0.35em !important;
+    text-transform: uppercase;
+    padding: 0.4rem 0 0.2rem !important;
+    border: none !important;
+    cursor: default;
+    pointer-events: none;
+    background: transparent;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+  }
+  .nav-links.open .nav-dropdown > .nav-dropdown-trigger::before,
+  .nav-links.open .nav-dropdown > .nav-dropdown-trigger::after {
+    content: '';
+    flex: 1;
+    max-width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(201,168,76,0.35), transparent);
+    margin: 0;
+    transform: none;
+    opacity: 1;
+    display: block;
+  }
+  .nav-submenu {
+    display: block;
+    position: static;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    min-width: 0;
+    backdrop-filter: none;
+  }
+  .nav-submenu li { padding: 0; }
+  .nav-submenu a { white-space: normal; }
 }
 /* WhatsApp Share Bar */
 #wa-share-bar {
@@ -219,13 +355,17 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
-    padding: 0.65rem 0.75rem;
-    font-size: 0.58rem;
-    letter-spacing: 0.06em;
+    padding: 0.5rem 0.35rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.03em;
     border-radius: 8px;
     box-shadow: 0 0 16px rgba(139,0,0,0.5), 0 4px 12px rgba(0,0,0,0.6);
+    max-width: 58px;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.2;
   }
-  #wa-share-btn svg { width: 22px; height: 22px; }
+  #wa-share-btn svg { width: 18px; height: 18px; }
 }
 </style>
 <script>
@@ -252,21 +392,39 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
     <div class="nav-inner">
         <a href="<?php echo $base_href; ?>index.php" class="nav-logo">KaalBhairav<span>.org</span></a>
-        <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.textContent=document.getElementById('mainNav').classList.contains('open')?'✕':'☰'">☰</button>
+        <div class="nav-mobile-actions">
+          <button class="lang-toggle-btn lang-toggle-mobile" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi')">हिंदी</button>
+          <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.textContent=document.getElementById('mainNav').classList.contains('open')?'✕':'☰'">☰</button>
+        </div>
+<?php
+            $learn_pages     = ['stories','64-bhairav','kashi','pooja-vidhi','mantra'];
+            $festival_pages  = ['ashtami','jayanti'];
+            $learn_active    = in_array($current_page, $learn_pages, true) ? 'active' : '';
+            $festival_active = in_array($current_page, $festival_pages, true) ? 'active' : '';
+        ?>
         <ul class="nav-links" id="mainNav">
             <li><a href="<?php echo $base_href; ?>index.php" <?php echo $current_page==='index'?'class="active"':''; ?> data-key="nav_home">Home</a></li>
             <li><a href="<?php echo $base_href; ?>about.php" <?php echo $current_page==='about'?'class="active"':''; ?> data-key="nav_about">About</a></li>
-            <li><a href="<?php echo $base_href; ?>stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?> data-key="nav_stories">Stories</a></li>
-            <li><a href="<?php echo $base_href; ?>64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?> data-key="nav_64">64 Bhairavas</a></li>
-            <li><a href="<?php echo $base_href; ?>kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?> data-key="nav_kashi">Kashi</a></li>
-            <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
-            <li><a href="<?php echo $base_href; ?>mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
+            <li class="nav-dropdown">
+                <a href="#" class="nav-dropdown-trigger <?php echo $learn_active; ?>" data-key="nav_learn" aria-haspopup="true" aria-expanded="false" onclick="event.preventDefault();this.parentNode.classList.toggle('open')">Learn</a>
+                <ul class="nav-submenu">
+                    <li><a href="<?php echo $base_href; ?>stories.php" <?php echo $current_page==='stories'?'class="active"':''; ?> data-key="nav_stories">Stories</a></li>
+                    <li><a href="<?php echo $base_href; ?>64-bhairav.php" <?php echo $current_page==='64-bhairav'?'class="active"':''; ?> data-key="nav_64">64 Bhairavas</a></li>
+                    <li><a href="<?php echo $base_href; ?>kashi.php" <?php echo $current_page==='kashi'?'class="active"':''; ?> data-key="nav_kashi">Kashi</a></li>
+                    <li><a href="<?php echo $base_href; ?>pooja-vidhi.php" <?php echo $current_page==='pooja-vidhi'?'class="active"':''; ?> data-key="nav_pooja">Pooja Vidhi</a></li>
+                    <li><a href="<?php echo $base_href; ?>mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
+                </ul>
+            </li>
             <li><a href="<?php echo $base_href; ?>mandir.php" <?php echo $current_page==='mandir'?'class="active"':''; ?> style="color:#ff6600;">🛕 Live Aarti</a></li>
             <li><a href="<?php echo $base_href; ?>seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
-            <li><a href="<?php echo $base_href; ?>bhairav-ashtami-2026.php" <?php echo $current_page==='ashtami'?'class="active"':''; ?> style="color:#e8c96e;">Ashtami 2026</a></li>
-            <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php" <?php echo $current_page==='jayanti'?'class="active"':''; ?> style="color:#e8c96e;">Jayanti 2026</a></li>
-            <li><a href="<?php echo $base_href; ?>disclaimer.php" <?php echo $current_page==='disclaimer'?'class="active"':''; ?> data-key="nav_disclaimer">Disclaimer</a></li>
-            <li><button id="lang-toggle" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>
+            <li class="nav-dropdown">
+                <a href="#" class="nav-dropdown-trigger <?php echo $festival_active; ?>" data-key="nav_festivals" aria-haspopup="true" aria-expanded="false" style="color:#e8c96e;" onclick="event.preventDefault();this.parentNode.classList.toggle('open')">Festivals</a>
+                <ul class="nav-submenu">
+                    <li><a href="<?php echo $base_href; ?>bhairav-ashtami-2026.php" <?php echo $current_page==='ashtami'?'class="active"':''; ?> style="color:#e8c96e;">Ashtami 2026</a></li>
+                    <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php" <?php echo $current_page==='jayanti'?'class="active"':''; ?> style="color:#e8c96e;">Jayanti 2026</a></li>
+                </ul>
+            </li>
+            <li class="lang-toggle-wrap"><button id="lang-toggle" class="lang-toggle-btn" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>
         </ul>
     </div>
 </nav>

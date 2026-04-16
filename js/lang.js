@@ -415,12 +415,14 @@ const translations = {
     // NAV
     nav_home: 'Home',
     nav_about: 'About',
+    nav_learn: 'Learn',
     nav_stories: 'Stories',
     nav_64: '64 Bhairavas',
     nav_kashi: 'Kashi',
     nav_pooja: 'Pooja Vidhi',
     nav_mantra: 'Mantra &amp; Tantra',
     nav_seva: 'Dog Seva',
+    nav_festivals: 'Festivals',
     nav_disclaimer: 'Disclaimer',
 
     // MANTRA BUTTONS
@@ -954,12 +956,14 @@ const translations = {
     // NAV
     nav_home: 'होम',
     nav_about: 'परिचय',
+    nav_learn: 'ज्ञान',
     nav_stories: 'कथाएं',
     nav_64: '64 भैरव',
     nav_kashi: 'काशी',
     nav_pooja: 'पूजा विधि',
     nav_mantra: 'मंत्र और तंत्र',
     nav_seva: 'कुत्ता सेवा',
+    nav_festivals: 'पर्व',
     nav_disclaimer: 'अस्वीकरण',
 
     // MANTRA BUTTONS
@@ -1090,9 +1094,9 @@ function setLang(lang) {
       el.innerHTML = translations[lang][key];
     }
   });
-  // Update toggle button label
-  const btn = document.getElementById('lang-toggle');
-  if (btn) btn.textContent = lang === 'hi' ? 'English' : 'हिंदी';
+  // Update all toggle button labels (in-menu + mobile nav bar)
+  const label = lang === 'hi' ? 'English' : 'हिंदी';
+  document.querySelectorAll('.lang-toggle-btn').forEach(btn => { btn.textContent = label; });
 }
 
 function initLang() {
