@@ -209,7 +209,7 @@ include 'includes/header.php';
     <div class="donation-section">
       <div style="display:flex; align-items:center; justify-content:center; gap:0.6rem; margin-bottom:0.5rem; flex-wrap:wrap;">
         <span style="font-size:2.5rem; line-height:1; filter: brightness(0.05) drop-shadow(0 0 4px rgba(201,168,76,0.7));">🐕</span>
-        <h2 class="section-title" style="margin-bottom:0;" data-key="seva_title">Feed a Dog, Please Bhairav</h2>
+        <h2 class="section-title" style="margin-bottom:0;" data-key="seva_title">Feed a Dog to Please Bhairav</h2>
       </div>
       <div class="gold-line"></div>
       <p style="color:var(--smoke); max-width:600px; margin:0 auto 1.5rem;" data-key="seva_desc">

@@ -83,8 +83,8 @@ const translations = {
     story5_src: 'Source: Siddha Tantra tradition; Abhinavagupta\'s Tantraloka',
     story5_title: 'Bhairav and the Kapalika Tradition',
     story5_body: 'After the beheading of Brahma, Bhairav wandered as the first <em>Kapalika</em> ascetic — carrying the skull, bearing the mark of the ultimate sin, living outside all social norms. He ate from the skull, used cremation grounds as his home, wore skulls as ornaments.<br><br>The Kapalika tradition — one of the earliest Tantric sects — took Bhairav as their founding deity, modeling themselves on his wandering asceticism. They practiced in cremation grounds, used skull-bowls, and followed left-hand Tantric (<em>vamachara</em>) paths.<br><br>The deeper symbolism is profound: Bhairav carries the skull of Brahma to show that even <em>the greatest ego in creation</em> becomes an empty vessel — a mere bowl for Bhairav to feed from. The skull represents the dissolution of individual identity into cosmic consciousness. This is the core teaching of Kaal Bhairav: <em>ego is the only real sin, and time destroys all ego.</em>',
-    btn_explore_64: 'Explore the 64 Forms of Bhairav →',
-    btn_pooja_vidhi: 'Pooja Vidhi →',
+    btn_explore_64: 'Explore the 64 Forms of Bhairav&nbsp;→',
+    btn_pooja_vidhi: 'Pooja Vidhi&nbsp;→',
 
     // 64 BHAIRAV PAGE
     bhairav64_header: 'The 64 Forms of Bhairav',
@@ -97,6 +97,20 @@ const translations = {
     bhairav64_intro_p1: 'According to the Shaiva Tantric tradition (particularly the <em>Bhairavagama</em> and <em>Rudrayamala Tantra</em>), there are <strong class="text-gold">64 Bhairavas</strong> organized into 8 primary forms called the <strong class="text-gold">Ashtabhairava</strong> (Eight Bhairavas). Each of these 8 primary Bhairavas commands 8 sub-forms — making 8 × 8 = 64. They collectively preside over the 8 directions of the cosmos, 8 cremation grounds (<em>ashta shmashana</em>), and 8 aspects of Tantric power (<em>ashta siddhi</em>).',
     bhairav64_intro_p2: 'In Kashi (Varanasi), the Ashtabhairav are stationed at 8 points around the city, forming a sacred protective ring — the <em>Kashi Ashtabhairav Chakra</em> — that guards the holy city. Completing a pilgrimage to all 8 Bhairav shrines in Kashi is considered deeply auspicious.',
     bhairav64_sources_text: 'The enumeration and descriptions of the 64 Bhairavas are found primarily in:',
+    bhairav64_form1_sub1: 'Asitanga', bhairav64_form1_sub2: 'Pushpadanta', bhairav64_form1_sub3: 'Bhadrakarna', bhairav64_form1_sub4: 'Vikarana', bhairav64_form1_sub5: 'Vikrita', bhairav64_form1_sub6: 'Vikata', bhairav64_form1_sub7: 'Bala', bhairav64_form1_sub8: 'Mrityu',
+    bhairav64_form2_sub1: 'Ruru', bhairav64_form2_sub2: 'Chandika', bhairav64_form2_sub3: 'Trishula', bhairav64_form2_sub4: 'Jwala', bhairav64_form2_sub5: 'Stambha', bhairav64_form2_sub6: 'Nagabhushana', bhairav64_form2_sub7: 'Bhumika', bhairav64_form2_sub8: 'Virabhadra',
+    bhairav64_form3_sub1: 'Chanda', bhairav64_form3_sub2: 'Virachanda', bhairav64_form3_sub3: 'Chandisha', bhairav64_form3_sub4: 'Mahachanda', bhairav64_form3_sub5: 'Chandaksha', bhairav64_form3_sub6: 'Chandanatha', bhairav64_form3_sub7: 'Chandavira', bhairav64_form3_sub8: 'Chandabhairava',
+    bhairav64_form4_sub1: 'Krodha', bhairav64_form4_sub2: 'Rudrakrodha', bhairav64_form4_sub3: 'Mahakrodha', bhairav64_form4_sub4: 'Krodhanatha', bhairav64_form4_sub5: 'Krodhisha', bhairav64_form4_sub6: 'Kalakrodha', bhairav64_form4_sub7: 'Krodhavirabhadra', bhairav64_form4_sub8: 'Krodhabhairava',
+    bhairav64_form5_sub1: 'Unmatta', bhairav64_form5_sub2: 'Mattaprabhava', bhairav64_form5_sub3: 'Mattendra', bhairav64_form5_sub4: 'Unmattabhairava', bhairav64_form5_sub5: 'Krodhamatta', bhairav64_form5_sub6: 'Mahonmatta', bhairav64_form5_sub7: 'Nayonmatta', bhairav64_form5_sub8: 'Dvijonmatta',
+    bhairav64_form6_sub1: 'Kapala', bhairav64_form6_sub2: 'Mahakopala', bhairav64_form6_sub3: 'Kapalavirabhadra', bhairav64_form6_sub4: 'Kapalarudra', bhairav64_form6_sub5: 'Vamakopala', bhairav64_form6_sub6: 'Brahmakopala', bhairav64_form6_sub7: 'Kapaleshwara', bhairav64_form6_sub8: 'Kapalabhairava',
+    bhairav64_form7_sub1: 'Bhishana', bhairav64_form7_sub2: 'Atibhishana', bhairav64_form7_sub3: 'Mahabhishana', bhairav64_form7_sub4: 'Bhishanarudra', bhairav64_form7_sub5: 'Bhishanavira', bhairav64_form7_sub6: 'Shmashana Bhairav', bhairav64_form7_sub7: 'Krura Bhairav', bhairav64_form7_sub8: 'Bhishana Natha',
+    bhairav64_form8_sub1: 'Samhara', bhairav64_form8_sub2: 'Atisamhara', bhairav64_form8_sub3: 'Mahasamhara', bhairav64_form8_sub4: 'Samhareshwara', bhairav64_form8_sub5: 'Kaalasamhara', bhairav64_form8_sub6: 'Brahmasamhara', bhairav64_form8_sub7: 'Vishnusamhara', bhairav64_form8_sub8: 'Shivasamhara',
+    bhairav64_src1: '<strong>Bhairavagama</strong> — one of the 64 Shaiva Agamas',
+    bhairav64_src2: '<strong>Rudrayamala Tantra</strong> — describes the 8 × 8 structure in detail',
+    bhairav64_src3: '<strong>Kashi Khanda (Skanda Purana)</strong> — describes the Ashtabhairav of Varanasi',
+    bhairav64_src4: '<strong>Tantraloka</strong> by Abhinavagupta — philosophical commentary on Bhairav forms',
+    bhairav64_src5: '<strong>Sivapurana</strong> — Shatarudra Samhita describes the birth of Kaal Bhairav',
+    bhairav64_src6: '<strong>Kularnava Tantra</strong> — Tantric practices associated with Bhairav worship',
     bhairav64_label_dir: 'Direction:', bhairav64_label_color: 'Color:', bhairav64_label_shakti: 'Shakti:', bhairav64_label_subforms: '8 SUB-FORMS:',
     bhairav64_subof: 'Sub-form of',
     bhairav64_gname1: 'Asitanga Bhairav', bhairav64_gname2: 'Ruru Bhairav', bhairav64_gname3: 'Chanda Bhairav', bhairav64_gname4: 'Krodha Bhairav',
@@ -422,7 +436,10 @@ const translations = {
     nav_pooja: 'Pooja Vidhi',
     nav_mantra: 'Mantra &amp; Tantra',
     nav_seva: 'Dog Seva',
+    nav_mandir: '🛕 Live Aarti',
     nav_festivals: 'Festivals',
+    nav_ashtami: 'Ashtami 2026',
+    nav_jayanti: 'Jayanti 2026',
     nav_disclaimer: 'Disclaimer',
 
     // MANTRA BUTTONS
@@ -472,7 +489,7 @@ const translations = {
     wa_share_btn: 'Share on WhatsApp',
 
     // FOOTER
-    footer_tagline: 'Jay Kaal Bhairav · जय काल भैरव · Dogs are sacred to Kaal Bhairav. Be kind to animals.',
+    footer_tagline: 'Jay Kaal Bhairav · जय काल भैरव · <span class="footer-note">Dogs are sacred to Kaal Bhairav. Be kind to animals.</span>',
     footer_copy: '&copy; ' + new Date().getFullYear() + ' KaalBhairav.org · All Rights Reserved',
 
     // INDEX — HERO
@@ -532,7 +549,7 @@ const translations = {
     btn_all_stories: 'Read All Sacred Stories →',
 
     // INDEX — DOG SEVA
-    seva_title: 'Feed a Dog, Please Bhairav',
+    seva_title: 'Feed a Dog to Please Bhairav',
     seva_desc: 'The black dog is Kaal Bhairav\'s <em>vahana</em> and most beloved animal. Feeding a stray dog — especially on Sunday, Bhairav Ashtami, or during Kaal Bhairav Jayanti — is considered one of the most powerful acts of devotion.',
     btn_seva: 'Contribute to Dog Seva',
 
@@ -624,8 +641,8 @@ const translations = {
     story5_src: 'स्रोत: सिद्ध तंत्र परंपरा; अभिनवगुप्त का तंत्रालोक',
     story5_title: 'भैरव और कापालिक परंपरा',
     story5_body: 'ब्रह्मा का शिरच्छेदन करने के बाद भैरव प्रथम <em>कापालिक</em> तपस्वी के रूप में भटकते रहे — खोपड़ी लिए, परम पाप का बोझ उठाए, सभी सामाजिक नियमों के बाहर जीते हुए। वे खोपड़ी से खाते थे, श्मशान उनका घर था, खोपड़ियाँ उनके आभूषण थे।<br><br>कापालिक परंपरा — सबसे प्राचीन तांत्रिक संप्रदायों में से एक — ने भैरव को अपना आराध्य देव माना और उनकी भटकती तपस्या का अनुकरण किया। वे श्मशान में साधना करते, कपाल-पात्र उपयोग करते और वामाचार तांत्रिक मार्ग का अनुसरण करते।<br><br>गहरा प्रतीकवाद अत्यंत गहन है: भैरव ब्रह्मा की खोपड़ी लिए यह दिखाने के लिए कि <em>सृष्टि का सबसे महान अहंकार भी</em> एक खाली पात्र बन जाता है — भैरव के लिए एक साधारण कटोरा। खोपड़ी व्यक्तिगत पहचान के ब्रह्मांडीय चेतना में विलय का प्रतीक है। यही काल भैरव की मूल शिक्षा है: <em>अहंकार ही एकमात्र वास्तविक पाप है, और काल सभी अहंकारों को नष्ट करता है।</em>',
-    btn_explore_64: '64 भैरव रूप देखें →',
-    btn_pooja_vidhi: 'पूजा विधि →',
+    btn_explore_64: '64 भैरव रूप देखें&nbsp;→',
+    btn_pooja_vidhi: 'पूजा विधि&nbsp;→',
 
     // 64 BHAIRAV PAGE
     bhairav64_header: 'भैरव के 64 रूप',
@@ -638,6 +655,20 @@ const translations = {
     bhairav64_intro_p1: 'शैव तांत्रिक परंपरा (विशेषतः <em>भैरवागम</em> और <em>रुद्रयामल तंत्र</em>) के अनुसार, <strong class="text-gold">64 भैरव</strong> हैं जो 8 प्रमुख रूपों में संगठित हैं, जिन्हें <strong class="text-gold">अष्टभैरव</strong> कहा जाता है। इन 8 प्रमुख भैरवों में से प्रत्येक के 8 उप-रूप हैं — इस प्रकार 8 × 8 = 64। वे सामूहिक रूप से ब्रह्मांड की 8 दिशाओं, 8 श्मशान भूमियों (<em>अष्ट श्मशान</em>), और तांत्रिक शक्ति के 8 पहलुओं (<em>अष्ट सिद्धि</em>) पर अधिकार रखते हैं।',
     bhairav64_intro_p2: 'काशी (वाराणसी) में अष्टभैरव नगर के चारों ओर 8 बिंदुओं पर स्थित हैं, जो एक पवित्र सुरक्षा कवच बनाते हैं — <em>काशी अष्टभैरव चक्र</em> — जो पवित्र नगरी की रक्षा करता है। काशी के सभी 8 भैरव मंदिरों की तीर्थ यात्रा अत्यंत शुभ मानी जाती है।',
     bhairav64_sources_text: '64 भैरवों की गणना और विवरण मुख्यतः इन ग्रंथों में मिलते हैं:',
+    bhairav64_form1_sub1: 'असितांग', bhairav64_form1_sub2: 'पुष्पदंत', bhairav64_form1_sub3: 'भद्रकर्ण', bhairav64_form1_sub4: 'विकरण', bhairav64_form1_sub5: 'विकृत', bhairav64_form1_sub6: 'विकट', bhairav64_form1_sub7: 'बाल', bhairav64_form1_sub8: 'मृत्यु',
+    bhairav64_form2_sub1: 'रुरु', bhairav64_form2_sub2: 'चंडिका', bhairav64_form2_sub3: 'त्रिशूल', bhairav64_form2_sub4: 'ज्वाला', bhairav64_form2_sub5: 'स्तम्भ', bhairav64_form2_sub6: 'नागभूषण', bhairav64_form2_sub7: 'भूमिका', bhairav64_form2_sub8: 'वीरभद्र',
+    bhairav64_form3_sub1: 'चण्ड', bhairav64_form3_sub2: 'वीरचण्ड', bhairav64_form3_sub3: 'चण्डीश', bhairav64_form3_sub4: 'महाचण्ड', bhairav64_form3_sub5: 'चण्डाक्ष', bhairav64_form3_sub6: 'चण्डनाथ', bhairav64_form3_sub7: 'चण्डवीर', bhairav64_form3_sub8: 'चण्डभैरव',
+    bhairav64_form4_sub1: 'क्रोध', bhairav64_form4_sub2: 'रुद्रक्रोध', bhairav64_form4_sub3: 'महाक्रोध', bhairav64_form4_sub4: 'क्रोधनाथ', bhairav64_form4_sub5: 'क्रोधीश', bhairav64_form4_sub6: 'कालक्रोध', bhairav64_form4_sub7: 'क्रोधवीरभद्र', bhairav64_form4_sub8: 'क्रोधभैरव',
+    bhairav64_form5_sub1: 'उन्मत्त', bhairav64_form5_sub2: 'मत्तप्रभव', bhairav64_form5_sub3: 'मत्तेंद्र', bhairav64_form5_sub4: 'उन्मत्तभैरव', bhairav64_form5_sub5: 'क्रोधमत्त', bhairav64_form5_sub6: 'महोन्मत्त', bhairav64_form5_sub7: 'नयोन्मत्त', bhairav64_form5_sub8: 'द्विजोन्मत्त',
+    bhairav64_form6_sub1: 'कपाल', bhairav64_form6_sub2: 'महाकपाल', bhairav64_form6_sub3: 'कपालवीरभद्र', bhairav64_form6_sub4: 'कपालरुद्र', bhairav64_form6_sub5: 'वामकपाल', bhairav64_form6_sub6: 'ब्रह्मकपाल', bhairav64_form6_sub7: 'कपालेश्वर', bhairav64_form6_sub8: 'कपालभैरव',
+    bhairav64_form7_sub1: 'भीषण', bhairav64_form7_sub2: 'अतिभीषण', bhairav64_form7_sub3: 'महाभीषण', bhairav64_form7_sub4: 'भीषणरुद्र', bhairav64_form7_sub5: 'भीषणवीर', bhairav64_form7_sub6: 'श्मशान भैरव', bhairav64_form7_sub7: 'क्रूर भैरव', bhairav64_form7_sub8: 'भीषण नाथ',
+    bhairav64_form8_sub1: 'संहार', bhairav64_form8_sub2: 'अतिसंहार', bhairav64_form8_sub3: 'महासंहार', bhairav64_form8_sub4: 'संहारेश्वर', bhairav64_form8_sub5: 'कालसंहार', bhairav64_form8_sub6: 'ब्रह्मसंहार', bhairav64_form8_sub7: 'विष्णुसंहार', bhairav64_form8_sub8: 'शिवसंहार',
+    bhairav64_src1: '<strong>भैरवागम</strong> — 64 शैव आगमों में से एक',
+    bhairav64_src2: '<strong>रुद्रयामल तंत्र</strong> — 8 × 8 संरचना का विस्तृत वर्णन',
+    bhairav64_src3: '<strong>काशी खण्ड (स्कंद पुराण)</strong> — वाराणसी के अष्टभैरव का वर्णन',
+    bhairav64_src4: '<strong>तंत्रालोक</strong> अभिनवगुप्त द्वारा — भैरव रूपों पर दार्शनिक टीका',
+    bhairav64_src5: '<strong>शिवपुराण</strong> — शतरुद्र संहिता में काल भैरव के जन्म का वर्णन',
+    bhairav64_src6: '<strong>कुलार्णव तंत्र</strong> — भैरव पूजा से संबंधित तांत्रिक साधनाएं',
     bhairav64_label_dir: 'दिशा:', bhairav64_label_color: 'रंग:', bhairav64_label_shakti: 'शक्ति:', bhairav64_label_subforms: '8 उप-रूप:',
     bhairav64_subof: 'उप-रूप',
     bhairav64_gname1: 'असितांग भैरव', bhairav64_gname2: 'रुरु भैरव', bhairav64_gname3: 'चण्ड भैरव', bhairav64_gname4: 'क्रोध भैरव',
@@ -963,7 +994,10 @@ const translations = {
     nav_pooja: 'पूजा विधि',
     nav_mantra: 'मंत्र और तंत्र',
     nav_seva: 'कुत्ता सेवा',
+    nav_mandir: '🛕 लाइव आरती',
     nav_festivals: 'पर्व',
+    nav_ashtami: 'अष्टमी 2026',
+    nav_jayanti: 'जयंती 2026',
     nav_disclaimer: 'अस्वीकरण',
 
     // MANTRA BUTTONS
@@ -1013,7 +1047,7 @@ const translations = {
     wa_share_btn: 'WhatsApp पर भेजें',
 
     // FOOTER
-    footer_tagline: 'जय काल भैरव · Jay Kaal Bhairav · कुत्ता काल भैरव का पवित्र वाहन है। पशुओं पर दयालु रहें।',
+    footer_tagline: 'जय काल भैरव · Jay Kaal Bhairav · <span class="footer-note">कुत्ता काल भैरव का पवित्र वाहन है। पशुओं पर दयालु रहें।</span>',
     footer_copy: '&copy; ' + new Date().getFullYear() + ' KaalBhairav.org · सर्वाधिकार सुरक्षित',
 
     // INDEX — HERO

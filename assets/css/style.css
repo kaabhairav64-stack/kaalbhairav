@@ -290,6 +290,28 @@ nav {
   box-shadow: 0 0 20px rgba(201,168,76,0.3);
 }
 
+/* Equal-width paired buttons */
+.btn-pair {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-pair > .btn-primary,
+.btn-pair > .btn-secondary {
+  white-space: nowrap;
+  font-size: 0.7rem;
+}
+@media (min-width: 769px) {
+  .btn-pair > .btn-primary,
+  .btn-pair > .btn-secondary {
+    flex: 1 1 0;
+    max-width: 24rem;
+    margin: 0.4rem 0;
+    text-align: center;
+  }
+}
+
 /* ─── SECTIONS ─── */
 .section {
   padding: 5rem 2rem;
@@ -346,8 +368,7 @@ nav {
 }
 
 .card-grid--2col > .card {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -361,8 +382,7 @@ nav {
   position: relative;
   overflow: hidden;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
 }
 
@@ -540,6 +560,57 @@ nav {
   font-size: 0.82rem;
   color: var(--smoke);
   line-height: 1.5;
+}
+
+/* ─── SUB-FORMS LABEL ─── */
+.subforms-label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  color: var(--gold);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.85;
+}
+.subforms-label::before,
+.subforms-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(201,168,76,0.5), transparent);
+}
+
+/* ─── SUB-FORM TAGS ─── */
+.subforms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .subforms-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 400px) {
+  .subforms-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.subform-tag {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(139,0,0,0.35) 0%, rgba(80,0,0,0.5) 100%);
+  border: 1px solid rgba(201,168,76,0.45);
+  color: var(--gold-pale);
+  font-size: 0.92rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.85rem;
+  border-radius: 3px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.subform-tag:hover {
+  border-color: rgba(201,168,76,0.8);
+  background: linear-gradient(135deg, rgba(139,0,0,0.55) 0%, rgba(100,0,0,0.65) 100%);
 }
 
 /* ─── ICONOGRAPHY COL ─── */
@@ -816,6 +887,7 @@ footer {
   .trishul-divider { font-size: 1.3rem; letter-spacing: 0.4rem; text-align: center; }
 
   /* BUTTONS */
+  .btn-pair { gap: 0; }
   .btn-primary, .btn-secondary {
     display: block;
     width: 100%;
@@ -823,7 +895,7 @@ footer {
     text-align: center;
     padding: 0.85rem 1rem;
     font-size: 0.75rem;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto !important;
   }
 
   /* SECTIONS */
@@ -850,7 +922,7 @@ footer {
   .card { padding: 1.3rem 1.2rem; }
   .card-icon { font-size: 1.4rem; margin-right: 0.4rem; }
   .card-title { font-size: 0.98rem; }
-  .card-text { font-size: 0.88rem; text-align: left !important; }
+  .card-text { font-size: 0.88rem; text-align: center !important; }
 
   /* TWO-COL → single col */
   .two-col { grid-template-columns: 1fr; gap: 1rem; }
@@ -904,17 +976,27 @@ footer {
   td:last-child, th:last-child { width: 62%; }
 
   /* DONATION */
-  .donation-section { padding: 1.8rem 1rem; text-align: left; }
+  .donation-section { padding: 1.8rem 1rem; text-align: center; }
+  .donation-section p { text-align: center !important; }
   .donation-amount-grid { grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin: 1rem 0; }
   .amount-btn { font-size: 0.78rem; padding: 0.6rem 0.3rem; }
   input[type="number"]#custom-amount { width: 100%; }
 
   /* FOOTER */
-  footer { padding: 2rem 1.1rem; text-align: left; }
-  .footer-inner { text-align: left; }
-  .footer-links { justify-content: flex-start; gap: 0.8rem 1.2rem; }
-  .footer-logo { font-size: 1rem; }
-  .footer-text { font-size: 0.8rem; }
+  footer { padding: 2.2rem 1.1rem 5rem; text-align: center; }
+  .footer-inner { text-align: center; }
+  .footer-logo { font-size: 1.05rem; margin-bottom: 0.4rem; letter-spacing: 0.08em; }
+  .footer-links {
+    justify-content: center;
+    gap: 0.5rem 1rem;
+    margin: 1.2rem 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(201,168,76,0.18);
+    border-bottom: 1px solid rgba(201,168,76,0.18);
+  }
+  .footer-links a { font-size: 0.68rem; letter-spacing: 0.1em; }
+  .footer-text { font-size: 0.78rem; line-height: 1.65; margin-top: 0.8rem; text-align: center !important; }
+  .footer-note { display: block; margin-top: 0.35rem; text-align: center !important; }
 }
 
 /* ─── SMALL PHONES (≤ 420px) ─── */

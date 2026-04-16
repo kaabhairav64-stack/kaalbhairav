@@ -415,13 +415,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a href="<?php echo $base_href; ?>mantra.php" <?php echo $current_page==='mantra'?'class="active"':''; ?> data-key="nav_mantra">Mantra &amp; Tantra</a></li>
                 </ul>
             </li>
-            <li><a href="<?php echo $base_href; ?>mandir.php" <?php echo $current_page==='mandir'?'class="active"':''; ?> style="color:#ff6600;">🛕 Live Aarti</a></li>
+            <li><a href="<?php echo $base_href; ?>mandir.php" <?php echo $current_page==='mandir'?'class="active"':''; ?> style="color:#ff6600;" data-key="nav_mandir">🛕 Live Aarti</a></li>
             <li><a href="<?php echo $base_href; ?>seva.php" <?php echo $current_page==='seva'?'class="active"':''; ?> data-key="nav_seva">Dog Seva</a></li>
             <li class="nav-dropdown">
                 <a href="#" class="nav-dropdown-trigger <?php echo $festival_active; ?>" data-key="nav_festivals" aria-haspopup="true" aria-expanded="false" style="color:#e8c96e;" onclick="event.preventDefault();this.parentNode.classList.toggle('open')">Festivals</a>
                 <ul class="nav-submenu">
-                    <li><a href="<?php echo $base_href; ?>bhairav-ashtami-2026.php" <?php echo $current_page==='ashtami'?'class="active"':''; ?> style="color:#e8c96e;">Ashtami 2026</a></li>
-                    <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php" <?php echo $current_page==='jayanti'?'class="active"':''; ?> style="color:#e8c96e;">Jayanti 2026</a></li>
+                    <li><a href="<?php echo $base_href; ?>bhairav-ashtami-2026.php" <?php echo $current_page==='ashtami'?'class="active"':''; ?> style="color:#e8c96e;" data-key="nav_ashtami">Ashtami 2026</a></li>
+                    <li><a href="<?php echo $base_href; ?>kaal-bhairav-jayanti-2026.php" <?php echo $current_page==='jayanti'?'class="active"':''; ?> style="color:#e8c96e;" data-key="nav_jayanti">Jayanti 2026</a></li>
                 </ul>
             </li>
             <li class="lang-toggle-wrap"><button id="lang-toggle" class="lang-toggle-btn" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi');closeMenu()">हिंदी</button></li>

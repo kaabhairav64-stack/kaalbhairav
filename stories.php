@@ -136,9 +136,9 @@ include 'includes/header.php';
       </p>
     </div>
 
-    <div class="text-center mt-2">
-      <a href="/64-bhairav.php" class="btn-secondary" data-key="btn_explore_64">Explore the 64 Forms of Bhairav →</a>
-      <a href="/pooja-vidhi.php" class="btn-primary" style="margin-left:1rem;" data-key="btn_pooja_vidhi">Pooja Vidhi →</a>
+    <div class="text-center mt-2 btn-pair">
+      <a href="/64-bhairav.php" class="btn-secondary" data-key="btn_explore_64">Explore the 64 Forms of Bhairav&nbsp;→</a>
+      <a href="/pooja-vidhi.php" class="btn-primary" data-key="btn_pooja_vidhi">Pooja Vidhi&nbsp;→</a>
     </div>
 
   </div>

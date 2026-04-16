@@ -142,13 +142,11 @@ include 'includes/header.php';
       </div>
       <p data-key="bhairav64_form<?php echo $b['num']; ?>_desc"><?php echo $b['desc']; ?></p>
       <div style="margin-top:1.2rem;">
-        <p style="font-family:'Cinzel',serif; font-size:0.75rem; color:var(--crimson-bright); letter-spacing:0.1em; margin-bottom:0.5rem;" data-key="bhairav64_label_subforms">
-          8 SUB-FORMS:
-        </p>
-        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+        <p class="subforms-label" data-key="bhairav64_label_subforms">8 SUB-FORMS:</p>
+        <div class="subforms-grid">
           <?php foreach ($b['sub_forms'] as $i => $sf): ?>
-          <span style="background:rgba(139,0,0,0.2); border:1px solid rgba(201,168,76,0.2); color:var(--ash); font-size:0.8rem; padding:0.2rem 0.7rem; border-radius:2px; font-family:'Cinzel',serif;">
-            <?php echo ($i+1); ?>. <?php echo $sf; ?>
+          <span class="subform-tag">
+            <?php echo ($i+1); ?>. <span data-key="bhairav64_form<?php echo $b['num']; ?>_sub<?php echo ($i+1); ?>"><?php echo $sf; ?></span>
           </span>
           <?php endforeach; ?>
         </div>
@@ -188,12 +186,12 @@ include 'includes/header.php';
       <h3 data-key="bhairav64_sources_title">📚 Textual Sources</h3>
       <p data-key="bhairav64_sources_text">The enumeration and descriptions of the 64 Bhairavas are found primarily in:</p>
       <ul>
-        <li><strong>Bhairavagama</strong> — one of the 64 Shaiva Agamas</li>
-        <li><strong>Rudrayamala Tantra</strong> — describes the 8 × 8 structure in detail</li>
-        <li><strong>Kashi Khanda (Skanda Purana)</strong> — describes the Ashtabhairav of Varanasi</li>
-        <li><strong>Tantraloka</strong> by Abhinavagupta — philosophical commentary on Bhairav forms</li>
-        <li><strong>Sivapurana</strong> — Shatarudra Samhita describes the birth of Kaal Bhairav</li>
-        <li><strong>Kularnava Tantra</strong> — Tantric practices associated with Bhairav worship</li>
+        <li data-key="bhairav64_src1"><strong>Bhairavagama</strong> — one of the 64 Shaiva Agamas</li>
+        <li data-key="bhairav64_src2"><strong>Rudrayamala Tantra</strong> — describes the 8 × 8 structure in detail</li>
+        <li data-key="bhairav64_src3"><strong>Kashi Khanda (Skanda Purana)</strong> — describes the Ashtabhairav of Varanasi</li>
+        <li data-key="bhairav64_src4"><strong>Tantraloka</strong> by Abhinavagupta — philosophical commentary on Bhairav forms</li>
+        <li data-key="bhairav64_src5"><strong>Sivapurana</strong> — Shatarudra Samhita describes the birth of Kaal Bhairav</li>
+        <li data-key="bhairav64_src6"><strong>Kularnava Tantra</strong> — Tantric practices associated with Bhairav worship</li>
       </ul>
     </div>
 
