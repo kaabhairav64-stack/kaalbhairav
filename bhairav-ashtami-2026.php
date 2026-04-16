@@ -59,14 +59,14 @@ include 'includes/header.php';
     <div class="gold-line"></div>
     <p class="section-subtitle">काल भैरव अष्टमी 2026 — संपूर्ण कैलेंडर</p>
 
-    <div style="overflow-x:auto; margin-bottom:3rem;">
-      <table style="width:100%; border-collapse:collapse;">
+    <div class="ashtami-table-wrap" style="margin-bottom:3rem;">
+      <table class="ashtami-table" style="width:100%; border-collapse:collapse;">
         <thead>
           <tr>
             <th style="padding:0.8rem; text-align:left; border-bottom:1px solid rgba(201,168,76,0.3); color:#c9a84c; font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.05em;">Month</th>
             <th style="padding:0.8rem; text-align:left; border-bottom:1px solid rgba(201,168,76,0.3); color:#c9a84c; font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.05em;">Krishna Ashtami</th>
             <th style="padding:0.8rem; text-align:left; border-bottom:1px solid rgba(201,168,76,0.3); color:#c9a84c; font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.05em;">Shukla Ashtami</th>
-            <th style="padding:0.8rem; text-align:left; border-bottom:1px solid rgba(201,168,76,0.3); color:#c9a84c; font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.05em;">Special</th>
+            <th class="col-special" style="padding:0.8rem; text-align:left; border-bottom:1px solid rgba(201,168,76,0.3); color:#c9a84c; font-family:'Cinzel',serif; font-size:0.8rem; letter-spacing:0.05em;">Special</th>
           </tr>
         </thead>
         <tbody>
@@ -94,7 +94,7 @@ include 'includes/header.php';
             <td style="padding:0.75rem 0.8rem; color:var(--smoke); font-family:'Cinzel',serif; font-size:0.82rem;"><?php echo $row[0]; ?></td>
             <td style="padding:0.75rem 0.8rem; color:<?php echo $isJayanti ? '#c9a84c' : 'var(--smoke)'; ?>; font-weight:<?php echo $isJayanti ? '700' : '400'; ?>;"><?php echo $row[1]; ?></td>
             <td style="padding:0.75rem 0.8rem; color:var(--smoke);"><?php echo $row[2]; ?></td>
-            <td style="padding:0.75rem 0.8rem; color:#c9a84c; font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.03em;"><?php echo $row[3]; ?></td>
+            <td class="col-special" style="padding:0.75rem 0.8rem; color:#c9a84c; font-family:'Cinzel',serif; font-size:0.78rem; letter-spacing:0.03em;"><?php echo $row[3]; ?></td>
           </tr>
           <?php endforeach; ?>
         </tbody>

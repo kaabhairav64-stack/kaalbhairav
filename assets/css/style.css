@@ -974,6 +974,13 @@ footer {
   td, th { padding: 0.5rem 0.6rem; font-size: 0.82rem; white-space: normal; word-break: break-word; word-wrap: break-word; overflow-wrap: break-word; vertical-align: top; }
   td:first-child, th:first-child { width: 38%; }
   td:last-child, th:last-child { width: 62%; }
+  /* Ashtami date table — hide Special column, fit 3 cols on screen */
+  .col-special { display: none; }
+  .ashtami-table { table-layout: fixed; }
+  .ashtami-table th, .ashtami-table td { font-size: 0.74rem !important; padding: 0.5rem 0.45rem !important; }
+  .ashtami-table th:nth-child(1), .ashtami-table td:nth-child(1) { width: 33%; }
+  .ashtami-table th:nth-child(2), .ashtami-table td:nth-child(2) { width: 35%; }
+  .ashtami-table th:nth-child(3), .ashtami-table td:nth-child(3) { width: 32%; }
 
   /* DONATION */
   .donation-section { padding: 1.8rem 1rem; text-align: center; }
