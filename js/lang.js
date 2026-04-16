@@ -60,8 +60,6 @@ const translations = {
     mandir_live: 'AARTI LIVE NOW',
     mandir_morning_lbl: 'Morning Aarti',
     mandir_evening_lbl: 'Evening Aarti',
-    mandir_banner: '🔔 Aarti has begun — Tap here to enable audio',
-    mandir_banner_small: 'Tap here to start Aarti audio',
     mandir_prayer: 'ॐ Kaalabhairavaya Namah',
     mandir_prayer_sub: 'Jai Kaal Bhairav · Kotwal of Kashi · Destroyer of Fear',
 
@@ -618,8 +616,6 @@ const translations = {
     mandir_live: 'आरती अभी लाइव है',
     mandir_morning_lbl: 'प्रातः आरती',
     mandir_evening_lbl: 'संध्या आरती',
-    mandir_banner: '🔔 आरती शुरू हो गई — सुनने के लिए यहाँ दबाएं',
-    mandir_banner_small: 'आरती की ध्वनि सुनने के लिए दबाएं',
     mandir_prayer: 'ॐ कालभैरवाय नमः',
     mandir_prayer_sub: 'जय काल भैरव · काशी के कोतवाल · भय के नाशक',
 

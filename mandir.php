@@ -377,36 +377,6 @@ include 'includes/header.php';
   pointer-events: none;
 }
 
-/* Audio banner — slim, non-blocking */
-#audio-banner {
-  display: none;
-  width: 100%;
-  max-width: 680px;
-  margin: 0.8rem auto 0;
-  background: linear-gradient(135deg, rgba(139,0,0,0.85), rgba(80,0,0,0.85));
-  border: 1px solid rgba(201,168,76,0.5);
-  border-radius: 6px;
-  padding: 0.65rem 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  font-family: 'Cinzel', serif;
-  font-size: 0.82rem;
-  color: #e8c96e;
-  letter-spacing: 0.08em;
-  animation: bannerPulse 2s ease-in-out infinite;
-}
-#audio-banner.visible { display: block; }
-#audio-banner small {
-  display: block;
-  font-size: 0.68rem;
-  color: rgba(201,168,76,0.55);
-  margin-top: 0.2rem;
-  letter-spacing: 0.04em;
-}
-@keyframes bannerPulse {
-  0%,100% { border-color: rgba(201,168,76,0.4); }
-  50%      { border-color: rgba(201,168,76,0.9); }
-}
 
 
 /* Aarti live badge */
@@ -1272,11 +1242,6 @@ include 'includes/header.php';
     <div id="aartiFrame"></div>
   </div>
 
-  <!-- AUDIO BANNER — slim, appears below temple, no blocking overlay -->
-  <div id="audio-banner" onclick="unmuteAarti()">
-    <span data-key="mandir_banner">🔔 Aarti has begun — Tap here to enable audio</span>
-    <small data-key="mandir_banner_small">Tap here to start Aarti audio</small>
-  </div>
 
   <!-- PRAYER -->
   <div class="prayer-scroll">
@@ -1412,16 +1377,9 @@ function _openKapat() {
   }
 
   // Wait for kapat to fully open (3s transition) then start aarti
-  var _elapsed = elapsed, _test = testMode;
+  var _elapsed = elapsed;
   setTimeout(function() {
-    if (_test) {
-      // Test button click = user gesture → start unmuted directly, no banner
-      loadAartiPlayer(_elapsed, false);
-    } else {
-      // Auto-triggered by real time = no user gesture → start muted, show banner
-      loadAartiPlayer(_elapsed, true);
-      document.getElementById('audio-banner').classList.add('visible');
-    }
+    loadAartiPlayer(_elapsed, true); // start muted (browser requires), onReady unmutes
   }, 3000);
 }
 
@@ -1434,7 +1392,6 @@ function _closeKapat() {
   document.getElementById('flamesContainer').classList.remove('visible');
   document.getElementById('liveBadge').classList.remove('visible');
   stopAartiPlayer();
-  document.getElementById('audio-banner').classList.remove('visible');
 }
 
 // ===== MAIN TICK =====
@@ -1542,7 +1499,13 @@ function _createYTPlayer(startSec, muted) {
       rel:      0
     },
     events: {
-      onReady: function(e) { e.target.playVideo(); }
+      onReady: function(e) {
+        e.target.playVideo();
+        // Auto-unmute — works once browser sees the muted autoplay first
+        setTimeout(function() {
+          try { e.target.unMute(); e.target.setVolume(100); } catch(err) {}
+        }, 500);
+      }
     }
   });
 }
@@ -1566,13 +1529,6 @@ function onYouTubeIframeAPIReady() {
   }
 }
 
-function unmuteAarti() {
-  document.getElementById('audio-banner').classList.remove('visible');
-  if (ytPlayer && ytPlayer.unMute) {
-    ytPlayer.unMute();
-    ytPlayer.setVolume(100);
-  }
-}
 
 function stopAartiPlayer() {
   document.getElementById('aartiPlayer').classList.remove('visible');
