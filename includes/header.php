@@ -85,6 +85,12 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta name="msvalidate.01" content="A148FC00FAEF359CD32EDDD1C9FA32D3">
 <meta name="indexnow-key" content="43af73a0df314481819cb21edd4f51a4">
 <meta name="author" content="KaalBhairav.org">
+<link rel="icon" type="image/x-icon" href="<?php echo $base_href; ?>assets/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_href; ?>assets/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_href; ?>assets/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_href; ?>assets/favicons/apple-touch-icon.png">
+<link rel="manifest" href="<?php echo $base_href; ?>assets/favicons/site.webmanifest">
+<meta name="theme-color" content="#0a0500">
 <link rel="canonical" href="https://kaalbhairav.org/<?php echo $current_page === 'index' ? '' : $current_page . '.php'; ?>">
 <meta property="og:title" content="<?php echo $page_title; ?>">
 <meta property="og:description" content="<?php echo $og_description; ?>">
