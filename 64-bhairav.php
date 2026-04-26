@@ -2,7 +2,20 @@
 $page_title    = "64 Forms of Bhairav — Ashtabhairav and the 64 Bhairavas";
 $meta_desc     = "Complete guide to all 64 forms of Bhairav — the 8 Ashtabhairavas and their 8 sub-forms each. Learn their names, directions, powers, and significance in the Shaiva Tantric tradition.";
 $meta_keywords = "64 Bhairav, Ashtabhairav, 8 Bhairav, Asitanga Bhairav, Ruru Bhairav, Chanda Bhairav, Krodha Bhairav, Unmatta Bhairav, Kapala Bhairav, Bhishana Bhairav, Samhara Bhairav, 64 Bhairavas list";
-$current_page  = "64bhairav";
+$current_page  = "64-bhairav";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Article",
+  "headline" => "64 Forms of Bhairav �� The Ashtabhairavas and 64 Bhairavas",
+  "description" => "Complete guide to all 64 forms of Bhairav — the 8 Ashtabhairavas and their 8 sub-forms each, with directions, shaktis, and significance.",
+  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://kaalbhairav.org/64-bhairav.php",
+  "inLanguage" => ["en", "hi"],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "about" => ["@type"=>"Thing","name"=>"64 Bhairavas","description"=>"The 64 guardian forms of Bhairav led by 8 Ashtabhairavas protecting all directions of the cosmos"],
+  "citation" => ["Shiva Purana — Shatarudra Samhita","Rudrayamala Tantra"]
+]);
 include 'includes/header.php';
 ?>
 

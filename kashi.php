@@ -19,6 +19,37 @@ $page_schema = json_encode([
   ],
   "citation" => ["Skanda Purana — Kashi Khanda","Shiva Purana"]
 ]);
+$temple_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "HinduTemple",
+  "name" => "Kaal Bhairav Mandir, Varanasi",
+  "alternateName" => "काल भैरव मंदिर, वाराणसी",
+  "description" => "The most sacred Kaal Bhairav temple — the eternal Kotwal of Kashi. Must visit before any other temple in Varanasi.",
+  "url" => "https://kaalbhairav.org/kashi.php",
+  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "address" => [
+    "@type" => "PostalAddress",
+    "streetAddress" => "Kaal Bhairav Gali, near Trilochan",
+    "addressLocality" => "Varanasi",
+    "addressRegion" => "Uttar Pradesh",
+    "postalCode" => "221001",
+    "addressCountry" => "IN"
+  ],
+  "geo" => [
+    "@type" => "GeoCoordinates",
+    "latitude" => 25.3176,
+    "longitude" => 83.0107
+  ],
+  "openingHoursSpecification" => [
+    "@type" => "OpeningHoursSpecification",
+    "dayOfWeek" => ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens" => "05:00",
+    "closes" => "22:30"
+  ],
+  "isAccessibleForFree" => true,
+  "publicAccess" => true
+]);
+$page_schema = $page_schema . '</script><script type="application/ld+json">' . $temple_schema;
 include 'includes/header.php';
 ?>
 

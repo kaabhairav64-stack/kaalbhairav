@@ -3,6 +3,19 @@ $page_title    = "About Kaal Bhairav — Iconography, Significance, Traditions";
 $meta_desc     = "Learn about Kaal Bhairav in depth — his iconography, the 8 weapons, his connection to Shiva and Shakti, presence in Shaiva and Tantric traditions, and his role in Kashmir Shaivism.";
 $meta_keywords = "Kaal Bhairav about, Bhairav iconography, Bhairav Shaivism, Bhairav Tantra, Bhairav Kashmir Shaivism, Nath tradition Bhairav, Bhairav significance, Bhairav attributes";
 $current_page  = "about";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Article",
+  "headline" => "About Kaal Bhairav — Iconography, Significance & Traditions",
+  "description" => "In-depth guide to Kaal Bhairav — his iconography, 8 weapons, connection to Shiva, and presence in Shaiva, Tantric, and Nath traditions.",
+  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://kaalbhairav.org/about.php",
+  "inLanguage" => ["en", "hi"],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "about" => ["@type"=>"Thing","name"=>"Kaal Bhairav","description"=>"Fierce manifestation of Lord Shiva, Lord of Time, Kotwal of Kashi"],
+  "citation" => ["Shiva Purana","Rudrayamala Tantra","Vijnanabhairava Tantra"]
+]);
 include 'includes/header.php';
 ?>
 

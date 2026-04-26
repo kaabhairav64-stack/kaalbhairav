@@ -3,6 +3,18 @@ $page_title    = "Dog Seva &amp; Donation — Feed Bhairav's Vahana | kaalbhaira
 $meta_desc     = "The dog is Kaal Bhairav's sacred vahana. Feeding stray dogs, supporting dog welfare organizations, and contributing to Bhairav temple seva are among the most powerful acts of devotion.";
 $meta_keywords = "Kaal Bhairav dog seva, feed dogs Bhairav, Bhairav vahana dog, dog seva karma, stray dog feeding, Kaal Bhairav donation, Bhairav temple seva, Kashi Bhairav seva";
 $current_page  = "seva";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "Article",
+  "headline" => "Dog Seva — Feed Kaal Bhairav's Sacred Vahana",
+  "description" => "The dog is Kaal Bhairav's sacred vahana. Learn how to perform dog seva — feeding stray dogs as the most powerful act of Bhairav devotion.",
+  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://kaalbhairav.org/seva.php",
+  "inLanguage" => ["en", "hi"],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "about" => ["@type"=>"Thing","name"=>"Dog Seva","description"=>"Feeding dogs as sacred service to Kaal Bhairav, whose vahana (vehicle) is the dog"]
+]);
 include 'includes/header.php';
 ?>
 

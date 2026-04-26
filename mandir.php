@@ -3,6 +3,16 @@ $page_title    = "Kaal Bhairav Virtual Mandir — Daily Aarti Live | KaalBhairav
 $meta_desc     = "Attend the daily Kaal Bhairav aarti online — morning 6:00 AM and evening 7:00 PM IST. Virtual mandir with live kapat opening, aarti darshan, and mantra chanting.";
 $meta_keywords = "Kaal Bhairav virtual mandir, online aarti, काल भैरव आरती, live darshan, Bhairav aarti online, virtual temple";
 $current_page  = "mandir";
+$page_schema = json_encode([
+  "@context" => "https://schema.org",
+  "@type" => "WebPage",
+  "name" => "Kaal Bhairav Virtual Mandir — Live Aarti Daily",
+  "description" => "Attend the daily Kaal Bhairav aarti online — morning and evening darshan in the virtual mandir.",
+  "url" => "https://kaalbhairav.org/mandir.php",
+  "inLanguage" => ["en", "hi"],
+  "isPartOf" => ["@type"=>"WebSite","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "about" => ["@type"=>"HinduTemple","name"=>"Kaal Bhairav Virtual Mandir","description"=>"Online virtual temple for daily Kaal Bhairav aarti darshan"]
+]);
 include 'includes/header.php';
 ?>
 

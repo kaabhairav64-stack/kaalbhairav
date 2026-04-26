@@ -1,5 +1,5 @@
 <?php
-$current_page = basename($_SERVER['PHP_SELF'], '.php');
+if (!isset($current_page)) $current_page = basename($_SERVER['PHP_SELF'], '.php');
 $site_name = "KaalBhairav.org";
 
 $page_titles = [
@@ -12,6 +12,9 @@ $page_titles = [
     'stories'     => 'Sacred Stories of Kaal Bhairav — Puranic Legends | KaalBhairav.org',
     'seva'        => 'Dog Seva & Donation — Feed Bhairav\'s Vahana | KaalBhairav.org',
     'disclaimer'  => 'Disclaimer & Terms | KaalBhairav.org',
+    'mandir'      => 'Kaal Bhairav Virtual Mandir — Live Aarti Daily | KaalBhairav.org',
+    'ashtami'     => 'Kaal Bhairav Ashtami 2026 — All Dates, Timings & Puja Guide | KaalBhairav.org',
+    'jayanti'     => 'Kaal Bhairav Jayanti 2026 — Date, Tithi, Puja Vidhi | KaalBhairav.org',
 ];
 
 $meta_desc = [
@@ -24,6 +27,9 @@ $meta_desc = [
     'stories'     => 'काल भैरव की पवित्र कथाएं — शिव पुराण, स्कंद पुराण। Sacred stories of Kaal Bhairav from Shiva Purana and Skanda Purana.',
     'seva'        => 'कुत्ता सेवा — भैरव के वाहन की सेवा करें। Dog seva and donation — feeding dogs is the highest Bhairav devotion.',
     'disclaimer'  => 'KaalBhairav.org अस्वीकरण और उपयोग की शर्तें। Disclaimer and terms of use.',
+    'mandir'      => 'काल भैरव वर्चुअल मंदिर — प्रतिदिन आरती दर्शन। Attend the daily Kaal Bhairav aarti online — morning and evening darshan.',
+    'ashtami'     => '2026 की सभी काल भैरव अष्टमी तिथियाँ — कृष्ण पक्ष और शुक्ल पक्ष। All Kaal Bhairav Ashtami dates in 2026 with puja timings.',
+    'jayanti'     => 'काल भैरव जयंती 2026 — 27 नवंबर, शुक्रवार। Kaal Bhairav Jayanti 2026 is November 27 — complete puja vidhi, significance & timings.',
 ];
 
 $og_desc = [
@@ -36,6 +42,9 @@ $og_desc = [
     'stories'     => 'ब्रह्मा का पाँचवाँ सिर काट दिया — और फिर भी करुणा। काल भैरव की वो कथाएं जो रोंगटे खड़े कर दें, मन को झकझोर दें।',
     'seva'        => 'एक कुत्ते को एक रोटी — और काल भैरव प्रसन्न। यह भक्ति का सबसे सरल, सबसे शक्तिशाली मार्ग है। Dog seva = Bhairav seva.',
     'disclaimer'  => 'KaalBhairav.org — आस्था, ज्ञान और श्रद्धा का डिजिटल तीर्थ। अस्वीकरण और आध्यात्मिक दिशानिर्देश।',
+    'mandir'      => 'घर बैठे काल भैरव की आरती का दर्शन करें — सुबह और शाम, प्रतिदिन। यह वर्चुअल मंदिर आपका अपना मंदिर है।',
+    'ashtami'     => 'हर महीने की भैरव अष्टमी — 2026 की पूरी सूची। कब करें पूजा, कैसे करें — सब एक जगह।',
+    'jayanti'     => '27 नवंबर 2026 — काल भैरव जयंती। जब भैरव प्रकट हुए, वो तिथि है सबसे पवित्र। जानें पूजा विधि और महत्व।',
 ];
 
 $share_texts = [
@@ -48,6 +57,9 @@ $share_texts = [
     'stories'     => 'काल भैरव की यह कथा पढ़कर मन भाव-विभोर हो गया। आपके साथ साझा किए बिना रह नहीं सका:',
     'seva'        => 'कुत्ते को खाना खिलाएं = काल भैरव की सेवा करें। यह जानकर जीवन बदल गया। आप भी पढ़ें:',
     'disclaimer'  => 'KaalBhairav.org — अस्वीकरण और आध्यात्मिक दिशानिर्देश:',
+    'mandir'      => 'काल भैरव की आरती — प्रतिदिन सुबह और शाम, वर्चुअल मंदिर में दर्शन करें। यह लिंक भेजें अपने परिजनों को:',
+    'ashtami'     => '2026 की सभी भैरव अष्टमी तिथियाँ — हर महीने कब है अष्टमी, कैसे करें पूजा, सब एक जगह:',
+    'jayanti'     => 'काल भैरव जयंती 2026 — 27 नवंबर। भैरव के प्रकट होने का सबसे पवित्र दिन। पूजा विधि और महत्व जानें:',
 ];
 
 $page_keywords = [
@@ -60,6 +72,9 @@ $page_keywords = [
     'stories'     => 'काल भैरव कथा, भैरव शिव पुराण, ब्रह्मा शिरच्छेदन कथा, Kaal Bhairav stories, Bhairav Shiva Purana, Brahma beheading story, Bhairav legends',
     'seva'        => 'कुत्ता सेवा भैरव, श्वान सेवा, भैरव वाहन सेवा, dog seva Bhairav, feed dogs Bhairav, Bhairav vahana seva, dog donation',
     'disclaimer'  => 'KaalBhairav.org disclaimer, spiritual website terms, Hindu devotional site guidelines',
+    'mandir'      => 'काल भैरव वर्चुअल मंदिर, ऑनलाइन आरती, भैरव दर्शन, Kaal Bhairav virtual mandir, online aarti, live darshan, Bhairav aarti online, virtual temple',
+    'ashtami'     => 'काल भैरव अष्टमी 2026, भैरव अष्टमी तिथि, अगली भैरव अष्टमी, Kaal Bhairav Ashtami 2026, Bhairav Ashtami dates, next Bhairav Ashtami, Ashtami calendar 2026',
+    'jayanti'     => 'काल भैरव जयंती 2026, भैरव जयंती कब है, Kaal Bhairav Jayanti 2026, Bhairav Jayanti date, Bhairav Jayanti November 2026, Kaal Bhairav birthday',
 ];
 
 $page_title      = $page_titles[$current_page] ?? $site_name;
@@ -67,7 +82,8 @@ $meta_description = $meta_desc[$current_page] ?? 'KaalBhairav.org — Complete d
 $og_description  = $og_desc[$current_page] ?? $meta_description;
 $page_keyword    = $page_keywords[$current_page] ?? 'Kaal Bhairav, KaalBhairav.org, काल भैरव, भैरव मंत्र, Bhairav mantra, Kashi, Varanasi';
 $share_text      = $share_texts[$current_page] ?? 'काल भैरव की जय! जानें:';
-$canonical_path  = ($current_page === 'index') ? '' : $current_page . '.php';
+$actual_file     = basename($_SERVER['PHP_SELF']);
+$canonical_path  = ($actual_file === 'index.php') ? '' : $actual_file;
 $full_url        = 'https://kaalbhairav.org/' . $canonical_path;
 $is_local        = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8080', '127.0.0.1', '127.0.0.1:8080']);
 $base_href       = $is_local ? '/kaalbhairav/' : '/';
@@ -81,7 +97,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo $meta_description; ?>">
 <meta name="keywords" content="<?php echo htmlspecialchars($page_keyword); ?>">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="<?php echo in_array($current_page, ['404','500']) ? 'noindex, follow' : 'index, follow'; ?>">
 <meta name="msvalidate.01" content="A148FC00FAEF359CD32EDDD1C9FA32D3">
 <meta name="indexnow-key" content="43af73a0df314481819cb21edd4f51a4">
 <meta name="author" content="KaalBhairav.org">
@@ -91,7 +107,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_href; ?>assets/favicons/apple-touch-icon.png">
 <link rel="manifest" href="<?php echo $base_href; ?>assets/favicons/site.webmanifest">
 <meta name="theme-color" content="#0a0500">
-<link rel="canonical" href="https://kaalbhairav.org/<?php echo $current_page === 'index' ? '' : $current_page . '.php'; ?>">
+<link rel="canonical" href="<?php echo $full_url; ?>">
 <meta property="og:title" content="<?php echo $page_title; ?>">
 <meta property="og:description" content="<?php echo $og_description; ?>">
 <meta property="og:url" content="<?php echo $full_url; ?>">
@@ -107,10 +123,10 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta name="twitter:description" content="<?php echo $og_description; ?>">
 <meta name="twitter:image" content="https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://kaalbhairav.org","description":"काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं। Complete devotional resource on Kaal Bhairav.","inLanguage":["hi","en"],"potentialAction":{"@type":"SearchAction","target":"https://kaalbhairav.org/?s={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://kaalbhairav.org","description":"काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं। Complete devotional resource on Kaal Bhairav.","inLanguage":["hi","en"]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"KaalBhairav.org","url":"https://kaalbhairav.org","logo":"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg","sameAs":[],"description":"Devoted to spreading knowledge of Kaal Bhairav — the Kotwal of Kashi"}
+{"@context":"https://schema.org","@type":"Organization","name":"KaalBhairav.org","url":"https://kaalbhairav.org","logo":"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg","description":"Devoted to spreading knowledge of Kaal Bhairav — the Kotwal of Kashi"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
