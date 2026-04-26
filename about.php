@@ -8,11 +8,11 @@ $page_schema = json_encode([
   "@type" => "Article",
   "headline" => "About Kaal Bhairav — Iconography, Significance & Traditions",
   "description" => "In-depth guide to Kaal Bhairav — his iconography, 8 weapons, connection to Shiva, and presence in Shaiva, Tantric, and Nath traditions.",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
-  "url" => "https://kaalbhairav.org/about.php",
+  "image" => "https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://www.kaalbhairav.org/about.php",
   "inLanguage" => ["en", "hi"],
-  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
-  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
   "about" => ["@type"=>"Thing","name"=>"Kaal Bhairav","description"=>"Fierce manifestation of Lord Shiva, Lord of Time, Kotwal of Kashi"],
   "citation" => ["Shiva Purana","Rudrayamala Tantra","Vijnanabhairava Tantra"]
 ]);

@@ -8,11 +8,11 @@ $page_schema = json_encode([
   "@type" => "Article",
   "headline" => "Sacred Stories of Kaal Bhairav — Brahma, Kashi, and Origin Legends",
   "description" => "Sacred stories of Kaal Bhairav from Shiva Purana and Skanda Purana — the beheading of Brahma's fifth head, how Bhairav became Kotwal of Kashi, and legends of the Dandapani.",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
-  "url" => "https://kaalbhairav.org/stories.php",
+  "image" => "https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://www.kaalbhairav.org/stories.php",
   "inLanguage" => ["en", "hi"],
-  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
-  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
   "about" => ["@type"=>"Thing","name"=>"Kaal Bhairav","description"=>"The fierce manifestation of Shiva, eternal Kotwal of Kashi"],
   "citation" => ["Shiva Purana — Shatarudra Samhita","Skanda Purana — Kashi Khanda","Linga Purana"]
 ]);

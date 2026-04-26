@@ -8,11 +8,11 @@ $page_schema = json_encode([
   "@type" => "Article",
   "headline" => "Kaal Bhairav and Kashi — The Sacred Connection",
   "description" => "The divine connection between Kaal Bhairav and Kashi (Varanasi) — why Bhairav is the eternal Kotwal of the holy city, and how dying in Kashi grants moksha.",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
-  "url" => "https://kaalbhairav.org/kashi.php",
+  "image" => "https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://www.kaalbhairav.org/kashi.php",
   "inLanguage" => ["en", "hi"],
-  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
-  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
   "about" => [
     ["@type"=>"Place","name"=>"Kashi (Varanasi)","description"=>"Ancient city on the banks of the Ganga, cosmic axis of liberation and moksha"],
     ["@type"=>"Thing","name"=>"Kaal Bhairav","description"=>"Eternal guardian and Kotwal of Kashi, the divine administrator of the sacred city"]
@@ -25,8 +25,8 @@ $temple_schema = json_encode([
   "name" => "Kaal Bhairav Mandir, Varanasi",
   "alternateName" => "काल भैरव मंदिर, वाराणसी",
   "description" => "The most sacred Kaal Bhairav temple — the eternal Kotwal of Kashi. Must visit before any other temple in Varanasi.",
-  "url" => "https://kaalbhairav.org/kashi.php",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://www.kaalbhairav.org/kashi.php",
+  "image" => "https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
   "address" => [
     "@type" => "PostalAddress",
     "streetAddress" => "Kaal Bhairav Gali, near Trilochan",

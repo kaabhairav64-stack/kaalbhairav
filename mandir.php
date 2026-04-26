@@ -8,9 +8,9 @@ $page_schema = json_encode([
   "@type" => "WebPage",
   "name" => "Kaal Bhairav Virtual Mandir — Live Aarti Daily",
   "description" => "Attend the daily Kaal Bhairav aarti online — morning and evening darshan in the virtual mandir.",
-  "url" => "https://kaalbhairav.org/mandir.php",
+  "url" => "https://www.kaalbhairav.org/mandir.php",
   "inLanguage" => ["en", "hi"],
-  "isPartOf" => ["@type"=>"WebSite","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
+  "isPartOf" => ["@type"=>"WebSite","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org"],
   "about" => ["@type"=>"HinduTemple","name"=>"Kaal Bhairav Virtual Mandir","description"=>"Online virtual temple for daily Kaal Bhairav aarti darshan"]
 ]);
 include 'includes/header.php';

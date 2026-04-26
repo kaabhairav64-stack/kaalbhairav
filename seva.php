@@ -8,11 +8,11 @@ $page_schema = json_encode([
   "@type" => "Article",
   "headline" => "Dog Seva — Feed Kaal Bhairav's Sacred Vahana",
   "description" => "The dog is Kaal Bhairav's sacred vahana. Learn how to perform dog seva — feeding stray dogs as the most powerful act of Bhairav devotion.",
-  "image" => "https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
-  "url" => "https://kaalbhairav.org/seva.php",
+  "image" => "https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg",
+  "url" => "https://www.kaalbhairav.org/seva.php",
   "inLanguage" => ["en", "hi"],
-  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org"],
-  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
+  "author" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org"],
+  "publisher" => ["@type"=>"Organization","name"=>"KaalBhairav.org","url"=>"https://www.kaalbhairav.org","logo"=>["@type"=>"ImageObject","url"=>"https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg"]],
   "about" => ["@type"=>"Thing","name"=>"Dog Seva","description"=>"Feeding dogs as sacred service to Kaal Bhairav, whose vahana (vehicle) is the dog"]
 ]);
 include 'includes/header.php';

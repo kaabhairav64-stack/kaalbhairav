@@ -84,7 +84,7 @@ $page_keyword    = $page_keywords[$current_page] ?? 'Kaal Bhairav, KaalBhairav.o
 $share_text      = $share_texts[$current_page] ?? 'काल भैरव की जय! जानें:';
 $actual_file     = basename($_SERVER['PHP_SELF']);
 $canonical_path  = ($actual_file === 'index.php') ? '' : $actual_file;
-$full_url        = 'https://kaalbhairav.org/' . $canonical_path;
+$full_url        = 'https://www.kaalbhairav.org/' . $canonical_path;
 $is_local        = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8080', '127.0.0.1', '127.0.0.1:8080']);
 $base_href       = $is_local ? '/kaalbhairav/' : '/';
 ?>
@@ -113,7 +113,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta property="og:url" content="<?php echo $full_url; ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KaalBhairav.org">
-<meta property="og:image" content="https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
+<meta property="og:image" content="https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="hi_IN">
@@ -121,12 +121,12 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="<?php echo $page_title; ?>">
 <meta name="twitter:description" content="<?php echo $og_description; ?>">
-<meta name="twitter:image" content="https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
+<meta name="twitter:image" content="https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://kaalbhairav.org","description":"काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं। Complete devotional resource on Kaal Bhairav.","inLanguage":["hi","en"]}
+{"@context":"https://schema.org","@type":"WebSite","name":"KaalBhairav.org","url":"https://www.kaalbhairav.org","description":"काल भैरव — काशी के कोतवाल। मंत्र, पूजा विधि, 64 रूप, पवित्र कथाएं। Complete devotional resource on Kaal Bhairav.","inLanguage":["hi","en"]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"KaalBhairav.org","url":"https://kaalbhairav.org","logo":"https://kaalbhairav.org/assets/img/og-kaalbhairav.jpg","description":"Devoted to spreading knowledge of Kaal Bhairav — the Kotwal of Kashi"}
+{"@context":"https://schema.org","@type":"Organization","name":"KaalBhairav.org","url":"https://www.kaalbhairav.org","logo":"https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg","description":"Devoted to spreading knowledge of Kaal Bhairav — the Kotwal of Kashi"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
