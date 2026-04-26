@@ -85,6 +85,7 @@ $share_text      = $share_texts[$current_page] ?? 'काल भैरव की
 $actual_file     = basename($_SERVER['PHP_SELF']);
 $canonical_path  = ($actual_file === 'index.php') ? '' : $actual_file;
 $full_url        = 'https://www.kaalbhairav.org/' . $canonical_path;
+$asset_ver       = '26042601';
 $is_local        = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8080', '127.0.0.1', '127.0.0.1:8080']);
 $base_href       = $is_local ? '/kaalbhairav/' : '/';
 ?>
@@ -131,7 +132,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo $base_href; ?>assets/css/style.css">
+<link rel="stylesheet" href="<?php echo $base_href; ?>assets/css/style.css?v=<?php echo $asset_ver; ?>">
 <style>
 #lang-toggle {
   background: transparent;

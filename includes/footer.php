@@ -27,7 +27,7 @@
         <p class="footer-text" data-key="footer_copy">&copy; <?php echo date('Y'); ?> KaalBhairav.org · All Rights Reserved</p>
     </div>
 </footer>
-<script src="<?php echo $base_href; ?>js/lang.js"></script>
-<script src="<?php echo $base_href; ?>js/main.js"></script>
+<script src="<?php echo $base_href; ?>js/lang.js?v=<?php echo $asset_ver; ?>"></script>
+<script src="<?php echo $base_href; ?>js/main.js?v=<?php echo $asset_ver; ?>"></script>
 </body>
 </html>
