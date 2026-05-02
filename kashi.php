@@ -233,7 +233,7 @@ include 'includes/header.php';
       around the entire city of Kashi.
     </p>
     <div class="highlight-box">
-      <table>
+      <table class="ashta-table">
         <tr><th data-key="kashi_ashta_th1">Bhairav</th><th data-key="kashi_ashta_th2">Direction</th><th data-key="kashi_ashta_th3">Location in Kashi</th></tr>
         <tr><td data-key="kashi_ashta_r1_name">Kaal Bhairav</td><td data-key="kashi_ashta_r1_dir">Centre / Supreme</td><td data-key="kashi_ashta_r1_loc">Kaal Bhairav Gali, Trilochan</td></tr>
         <tr><td data-key="kashi_ashta_r2_name">Batuk Bhairav</td><td data-key="kashi_ashta_r2_dir">East</td><td data-key="kashi_ashta_r2_loc">Batuk Bhairav Mandir, Tulsi Ghat area</td></tr>

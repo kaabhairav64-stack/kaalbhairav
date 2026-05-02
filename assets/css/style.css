@@ -600,10 +600,18 @@ nav {
   gap: 0.5rem;
 }
 @media (max-width: 768px) {
-  .subforms-grid { grid-template-columns: repeat(2, 1fr); }
+  .subforms-grid { grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+  .subform-tag {
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    padding: 0.45rem 0.4rem;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.35;
+  }
 }
 @media (max-width: 400px) {
-  .subforms-grid { grid-template-columns: repeat(2, 1fr); }
+  .subform-tag { font-size: 0.72rem; padding: 0.4rem 0.3rem; letter-spacing: 0; }
 }
 .subform-tag {
   display: block;
@@ -762,7 +770,7 @@ footer {
   padding: 0.5rem 1.2rem;
   border-radius: 2px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
   transition: all 0.3s;
 }
 .guidance-toggle:hover { background: rgba(201,168,76,0.08); border-color: var(--gold); }
@@ -983,8 +991,11 @@ footer {
   /* TABLES — fit within screen, wrap text */
   table { width: 100%; table-layout: fixed; }
   td, th { padding: 0.5rem 0.6rem; font-size: 0.82rem; white-space: normal; word-break: break-word; word-wrap: break-word; overflow-wrap: break-word; vertical-align: top; }
-  td:first-child, th:first-child { width: 38%; }
-  td:last-child, th:last-child { width: 62%; }
+  /* 2-col tables only — 3+ col tables auto-distribute */
+  table:not(:has(th:nth-child(3))) td:first-child,
+  table:not(:has(th:nth-child(3))) th:first-child { width: 38%; }
+  table:not(:has(th:nth-child(3))) td:last-child,
+  table:not(:has(th:nth-child(3))) th:last-child { width: 62%; }
   /* Ashtami date table — hide Special column, fit 3 cols on screen */
   .col-special { display: none; }
   .ashtami-table { table-layout: fixed; }
@@ -992,6 +1003,12 @@ footer {
   .ashtami-table th:nth-child(1), .ashtami-table td:nth-child(1) { width: 33%; }
   .ashtami-table th:nth-child(2), .ashtami-table td:nth-child(2) { width: 35%; }
   .ashtami-table th:nth-child(3), .ashtami-table td:nth-child(3) { width: 32%; }
+  /* Eight Bhairavas of Kashi — 3-col table */
+  .ashta-table { table-layout: fixed; }
+  .ashta-table th, .ashta-table td { font-size: 0.78rem; padding: 0.5rem 0.5rem; }
+  .ashta-table th:nth-child(1), .ashta-table td:nth-child(1) { width: 33%; }
+  .ashta-table th:nth-child(2), .ashta-table td:nth-child(2) { width: 25%; }
+  .ashta-table th:nth-child(3), .ashta-table td:nth-child(3) { width: 42%; }
 
   /* DONATION */
   .donation-section { padding: 1.8rem 1rem; text-align: center; }
