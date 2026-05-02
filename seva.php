@@ -126,7 +126,7 @@ include 'includes/header.php';
       </tr>
     </table>
 
-    <!-- DONATION SECTION -->
+    <?php if (false): // DONATION SECTION — hidden ?>
     <h2 class="section-title" style="margin-top:3rem;" data-key="seva_donate_title">Contribute to Dog Seva</h2>
     <div class="gold-line"></div>
     <div class="donation-section">
@@ -174,6 +174,7 @@ include 'includes/header.php';
         </p>
       </div>
     </div>
+    <?php endif; ?>
 
     <!-- TEMPLE SEVA -->
     <h2 class="section-title" style="margin-top:3rem;" data-key="seva_temple_title">Temple Seva — Kaal Bhairav Mandir, Varanasi</h2>

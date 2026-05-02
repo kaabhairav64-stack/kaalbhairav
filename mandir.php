@@ -89,9 +89,12 @@ include 'includes/header.php';
   inset: 0;
   background: url('assets/img/mandir.png') center center / cover no-repeat;
   opacity: 0;
-  transition: opacity 2s ease;
+  transition: opacity 2s ease 8s;
 }
-.mandir-bg.visible { opacity: 1; }
+.mandir-bg.visible {
+  opacity: 1;
+  transition: opacity 2s ease 0s;
+}
 
 /* Kapat (doors) */
 .kapat-left, .kapat-right {
@@ -100,7 +103,7 @@ include 'includes/header.php';
   width: 50%;
   height: 100%;
   background: linear-gradient(135deg, #1a0800 0%, #2d1200 40%, #1a0800 100%);
-  transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 10s cubic-bezier(0.7, 0, 0.4, 1);
   z-index: 10;
   display: flex;
   align-items: center;
@@ -110,11 +113,37 @@ include 'includes/header.php';
   left: 0;
   transform-origin: left center;
   border-right: 2px solid rgba(201,168,76,0.4);
+  overflow: hidden;
 }
 .kapat-right {
   right: 0;
   transform-origin: right center;
   border-left: 2px solid rgba(201,168,76,0.4);
+  overflow: hidden;
+}
+
+/* Faded idol bleed — visible through closed doors */
+.kapat-left::before, .kapat-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200%;
+  background: url('assets/img/mandir.png') center center / cover no-repeat;
+  opacity: 0.08;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 2s ease 8s;
+}
+.kapat-left::before  { left: 0; }
+.kapat-right::before { right: 0; }
+.kapat-left.open::before, .kapat-right.open::before {
+  opacity: 0.4;
+  transition: opacity 0.5s ease 0s;
+}
+.kapat-left.open, .kapat-right.open {
+  transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .kapat-left.open { transform: perspective(800px) rotateY(-75deg); }
 .kapat-right.open { transform: perspective(800px) rotateY(75deg); }
