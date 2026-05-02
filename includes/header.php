@@ -85,7 +85,11 @@ $share_text      = $share_texts[$current_page] ?? 'काल भैरव की
 $actual_file     = basename($_SERVER['PHP_SELF']);
 $canonical_path  = ($actual_file === 'index.php') ? '' : $actual_file;
 $full_url        = 'https://www.kaalbhairav.org/' . $canonical_path;
-$asset_ver       = '26042601';
+$asset_ver       = max(
+  @filemtime(__DIR__ . '/../assets/css/style.css') ?: 0,
+  @filemtime(__DIR__ . '/../js/main.js')           ?: 0,
+  @filemtime(__DIR__ . '/../js/lang.js')           ?: 0
+) ?: '26042601';
 $is_local        = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8080', '127.0.0.1', '127.0.0.1:8080']);
 $base_href       = $is_local ? '/kaalbhairav/' : '/';
 ?>
