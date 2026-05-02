@@ -121,6 +121,8 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <meta property="og:image" content="https://www.kaalbhairav.org/assets/img/og-kaalbhairav.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Kaal Bhairav — Kotwal of Kashi">
 <meta property="og:locale" content="hi_IN">
 <meta property="og:locale:alternate" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
