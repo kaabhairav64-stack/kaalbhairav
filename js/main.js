@@ -201,10 +201,107 @@ function initWAShareBar() {
   });
 }
 
+// Track WA share bar visibility so aarti CTA can stack above it
+function initWABarTracking() {
+  var bar = document.getElementById('wa-share-bar');
+  if (!bar) return;
+  function sync() {
+    document.body.classList.toggle('wa-bar-visible', bar.classList.contains('visible'));
+  }
+  sync();
+  var observer = new MutationObserver(sync);
+  observer.observe(bar, { attributes: true, attributeFilter: ['class'] });
+}
+
+// Aarti Live CTA bar — mobile prominence for the live darshan feature
+function initAartiCTA() {
+  var bar = document.getElementById('aarti-cta-bar');
+  if (!bar || document.body.classList.contains('page-mandir')) return;
+  var textEl = bar.querySelector('.aarti-cta-text');
+  var countEl = bar.querySelector('.aarti-cta-countdown');
+  var timeEl  = bar.querySelector('.cta-clock-time');
+  if (!textEl) return;
+
+  var MORNING_MIN  = 6 * 60;       // 6:00 AM IST
+  var EVENING_MIN  = 19 * 60;      // 7:00 PM IST
+  var DURATION_MIN = 8;
+  var SOON_MIN     = 30;
+
+  function getIST() {
+    var now = new Date();
+    var utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+    return new Date(utc + (5.5 * 3600000));
+  }
+
+  function computeState() {
+    var ist = getIST();
+    var nowSec     = ist.getHours() * 3600 + ist.getMinutes() * 60 + ist.getSeconds();
+    var morningSec = MORNING_MIN * 60;
+    var eveningSec = EVENING_MIN * 60;
+    var durSec     = DURATION_MIN * 60;
+    var soonSec    = SOON_MIN * 60;
+
+    if (nowSec >= morningSec && nowSec < morningSec + durSec) {
+      return { state:'live', secsLeft: morningSec + durSec - nowSec };
+    }
+    if (nowSec >= eveningSec && nowSec < eveningSec + durSec) {
+      return { state:'live', secsLeft: eveningSec + durSec - nowSec };
+    }
+    var secsToNext;
+    if (nowSec < morningSec)         secsToNext = morningSec - nowSec;
+    else if (nowSec < eveningSec)    secsToNext = eveningSec - nowSec;
+    else                             secsToNext = (86400 - nowSec) + morningSec;
+    var nextIsMorning = (nowSec < morningSec) || (nowSec >= eveningSec);
+
+    if (secsToNext <= soonSec) return { state:'soon', secsToNext: secsToNext, nextIsMorning: nextIsMorning };
+    return { state:'idle', secsToNext: secsToNext, nextIsMorning: nextIsMorning };
+  }
+
+  function isHi() { return localStorage.getItem('kb_lang') === 'hi'; }
+
+  function buildText(s) {
+    var hi = isHi();
+    if (s.state === 'live') return hi ? 'आरती लाइव — दर्शन करें' : 'LIVE: Aarti darshan happening now';
+    if (s.state === 'soon') return hi ? 'आरती शुरू हो रही है' : 'Aarti starting soon';
+    if (s.nextIsMorning) return hi ? 'अगली आरती: सुबह 6 बजे' : 'Next aarti: 6 AM';
+    return hi ? 'अगली आरती: शाम 7 बजे' : 'Next aarti: 7 PM';
+  }
+
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function formatCountdown(secs) {
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor((secs % 3600) / 60);
+    var s = secs % 60;
+    return (h > 0 ? pad(h) + ':' : '') + pad(m) + ':' + pad(s);
+  }
+
+  function update() {
+    var s = computeState();
+    bar.classList.remove('state-live','state-soon','state-idle');
+    bar.classList.add('state-' + s.state);
+    textEl.textContent = buildText(s);
+    if (countEl) {
+      if (s.state === 'live') {
+        countEl.setAttribute('hidden', '');
+      } else {
+        if (timeEl) timeEl.textContent = formatCountdown(s.secsToNext);
+        countEl.removeAttribute('hidden');
+      }
+    }
+    bar.classList.add('visible');
+    document.body.classList.add('aarti-cta-active');
+  }
+
+  update();
+  setInterval(update, 1000);
+}
+
 // Init on DOM ready
 document.addEventListener('DOMContentLoaded', function() {
   generateFlames();
   initScrollReveal();
   initDonation();
   initWAShareBar();
+  initWABarTracking();
+  initAartiCTA();
 });

@@ -396,6 +396,175 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
   }
   #wa-share-btn svg { width: 18px; height: 18px; }
 }
+
+/* Aarti Live CTA Bar — sits directly below the fixed nav */
+#aarti-cta-bar {
+  display: none;
+  position: fixed;
+  top: 70px; left: 0; right: 0;
+  background:
+    linear-gradient(90deg, rgba(15,5,0,0.97) 0%, rgba(50,18,0,0.97) 50%, rgba(15,5,0,0.97) 100%);
+  border-top: 1px solid rgba(201,168,76,0.3);
+  border-bottom: 1px solid rgba(201,168,76,0.55);
+  box-shadow:
+    0 6px 22px rgba(0,0,0,0.55),
+    inset 0 0 24px rgba(201,168,76,0.08);
+  padding: 0.7rem 0.9rem;
+  z-index: 990;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  overflow: hidden;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+#aarti-cta-bar.visible { display: flex; }
+body.aarti-cta-active { padding-top: 48px; }
+
+/* Sheen sweep — adds movement & life across the bar */
+#aarti-cta-bar::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: -40%;
+  width: 40%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255,215,128,0.0) 30%,
+    rgba(255,215,128,0.18) 50%,
+    rgba(255,215,128,0.0) 70%,
+    transparent 100%);
+  pointer-events: none;
+  animation: aartiSheen 5.5s ease-in-out infinite;
+}
+@keyframes aartiSheen {
+  0%   { left: -40%; }
+  60%  { left: 110%; }
+  100% { left: 110%; }
+}
+
+#aarti-cta-bar .aarti-cta-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  line-height: 1;
+  display: inline-block;
+  text-shadow: 0 0 10px rgba(201,168,76,0.55);
+  animation: aartiBellRing 2.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  transform-origin: 50% 10%; /* hangs from the top */
+}
+/* Ringing motion: aggressive back-and-forth that decays into rest, then repeats */
+@keyframes aartiBellRing {
+  0%   { transform: rotate(0deg);   text-shadow: 0 0 8px  rgba(201,168,76,0.45); }
+  6%   { transform: rotate(-22deg); text-shadow: 0 0 16px rgba(255,210,100,0.95); }
+  12%  { transform: rotate(20deg);  text-shadow: 0 0 16px rgba(255,210,100,0.95); }
+  18%  { transform: rotate(-16deg); text-shadow: 0 0 14px rgba(255,210,100,0.85); }
+  24%  { transform: rotate(13deg);  text-shadow: 0 0 12px rgba(255,210,100,0.75); }
+  30%  { transform: rotate(-9deg);  text-shadow: 0 0 10px rgba(255,210,100,0.6);  }
+  36%  { transform: rotate(6deg);   }
+  42%  { transform: rotate(-3deg);  }
+  48%  { transform: rotate(0deg);   }
+  100% { transform: rotate(0deg);   text-shadow: 0 0 8px  rgba(201,168,76,0.45); }
+}
+
+#aarti-cta-bar .aarti-cta-text {
+  font-size: 0.82rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f5e4a0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.65);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+#aarti-cta-bar .aarti-cta-countdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: #ffd57a;
+  background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(40,12,0,0.55));
+  border: 1px solid rgba(201,168,76,0.5);
+  border-radius: 999px;  /* pill */
+  padding: 0.22rem 0.55rem 0.22rem 0.4rem;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 0 6px rgba(255,213,122,0.35);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.4), 0 0 8px rgba(201,168,76,0.18);
+}
+#aarti-cta-bar .aarti-cta-countdown[hidden] { display: none; }
+#aarti-cta-bar .cta-clock {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  animation: aartiClockPulse 2.4s ease-in-out infinite;
+}
+#aarti-cta-bar .cta-clock-time { display: inline-block; }
+@keyframes aartiClockPulse {
+  0%,100% { opacity: 0.8;  filter: drop-shadow(0 0 0 rgba(255,213,122,0)); }
+  50%     { opacity: 1;    filter: drop-shadow(0 0 3px rgba(255,213,122,0.7)); }
+}
+
+#aarti-cta-bar .aarti-cta-arrow {
+  font-size: 1.4rem;
+  color: rgba(245,228,160,0.9);
+  flex-shrink: 0;
+  line-height: 1;
+  animation: aartiArrow 1.4s ease-in-out infinite;
+}
+@keyframes aartiArrow {
+  0%,100% { transform: translateX(0);  opacity: 0.75; }
+  50%     { transform: translateX(4px); opacity: 1; }
+}
+
+/* LIVE state: pulsing crimson glow */
+#aarti-cta-bar.state-live {
+  background:
+    linear-gradient(90deg, rgba(60,0,0,0.97) 0%, rgba(140,10,10,0.97) 50%, rgba(60,0,0,0.97) 100%);
+  border-bottom-color: rgba(255,90,90,0.7);
+  animation: aartiLivePulse 2.2s ease-in-out infinite;
+}
+#aarti-cta-bar.state-live .aarti-cta-text { color: #ffd57a; }
+
+/* SOON state: warm amber */
+#aarti-cta-bar.state-soon {
+  background:
+    linear-gradient(90deg, rgba(35,12,0,0.97) 0%, rgba(95,38,0,0.97) 50%, rgba(35,12,0,0.97) 100%);
+  border-bottom-color: rgba(230,160,50,0.65);
+}
+#aarti-cta-bar.state-soon .aarti-cta-text { color: #ffd980; }
+
+/* IDLE state: warm gold (always visible, never bland) */
+#aarti-cta-bar.state-idle .aarti-cta-text { color: #f5e4a0; }
+
+@keyframes aartiLivePulse {
+  0%,100% { box-shadow: 0 6px 22px rgba(0,0,0,0.55), 0 0 0 rgba(220,40,40,0),
+                       inset 0 0 24px rgba(255,80,80,0.08); }
+  50%     { box-shadow: 0 6px 22px rgba(0,0,0,0.55), 0 4px 36px rgba(220,40,40,0.55),
+                       inset 0 0 32px rgba(255,80,80,0.18); }
+}
+
+/* Hide on desktop — full nav already gives desktop users access */
+@media (min-width: 769px) {
+  #aarti-cta-bar { display: none !important; }
+  body.aarti-cta-active { padding-top: 0; }
+}
+/* Hide on the mandir page itself (where aarti is already the main UI) */
+body.page-mandir #aarti-cta-bar { display: none !important; }
+body.page-mandir.aarti-cta-active { padding-top: 0; }
 </style>
 <script>
 var KB_PAGE_URL = "<?php echo $full_url; ?>";
@@ -457,3 +626,17 @@ document.addEventListener('DOMContentLoaded', function() {
         </ul>
     </div>
 </nav>
+<!-- Aarti Live CTA (mobile only, hidden on mandir page) -->
+<a id="aarti-cta-bar" href="<?php echo $base_href; ?>mandir.php">
+  <span class="aarti-cta-icon">🔔</span>
+  <span class="aarti-cta-text">Loading aarti status…</span>
+  <span class="aarti-cta-countdown" hidden>
+    <svg class="cta-clock" viewBox="0 0 16 16" aria-hidden="true">
+      <circle cx="8" cy="8" r="6.4"/>
+      <line x1="8" y1="8" x2="8" y2="4.2"/>
+      <line x1="8" y1="8" x2="10.6" y2="8"/>
+    </svg>
+    <span class="cta-clock-time">--:--</span>
+  </span>
+  <span class="aarti-cta-arrow">›</span>
+</a>
