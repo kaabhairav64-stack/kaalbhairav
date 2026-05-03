@@ -112,6 +112,7 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_href; ?>assets/favicons/apple-touch-icon.png">
 <link rel="manifest" href="<?php echo $base_href; ?>assets/favicons/site.webmanifest">
 <meta name="theme-color" content="#0a0500">
+<meta name="color-scheme" content="dark">
 <link rel="canonical" href="<?php echo $full_url; ?>">
 <meta property="og:title" content="<?php echo $page_title; ?>">
 <meta property="og:description" content="<?php echo $og_description; ?>">
