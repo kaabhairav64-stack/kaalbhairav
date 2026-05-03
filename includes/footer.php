@@ -10,7 +10,7 @@
 </div>
 <footer>
     <div class="footer-inner">
-        <div class="footer-logo">ॐ KaalBhairav.org</div>
+        <div class="footer-logo">ॐ KaalBhairav</div>
         <ul class="footer-links">
             <li><a href="<?php echo $base_href; ?>about.php" data-key="nav_about">About</a></li>
             <li><a href="<?php echo $base_href; ?>stories.php" data-key="nav_stories">Stories</a></li>
