@@ -1520,9 +1520,52 @@ var pendingStart = -1; // elapsed seconds waiting for API to be ready
 
 var pendingMuted = true;
 
+// ===== GA engagement tracking =====
+var aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
+
+function _gaAartiEvent(name) {
+  if (typeof gtag === 'function') {
+    gtag('event', name, { mode: (typeof testMode !== 'undefined' && testMode) ? 'test' : 'live' });
+  }
+}
+
+function _startAartiGAPoller() {
+  if (aartiGA.poller) return;
+  aartiGA.poller = setInterval(function() {
+    if (!ytPlayer) return;
+    var state, muted, vol;
+    try {
+      state = ytPlayer.getPlayerState && ytPlayer.getPlayerState();
+      muted = ytPlayer.isMuted && ytPlayer.isMuted();
+      vol   = ytPlayer.getVolume ? ytPlayer.getVolume() : 0;
+    } catch(e) { return; }
+    if (state !== YT.PlayerState.PLAYING) return;
+    var audible = !muted && vol > 0;
+    if (audible && !aartiGA.unmutedSent) {
+      aartiGA.unmutedSent = true;
+      _gaAartiEvent('aarti_unmuted');
+    }
+    if (audible) {
+      aartiGA.listenSecs += 5;
+      [30, 60, 180, 300].forEach(function(m) {
+        if (aartiGA.listenSecs >= m && !aartiGA.milestones[m]) {
+          aartiGA.milestones[m] = true;
+          _gaAartiEvent('aarti_listen_' + m + 's');
+        }
+      });
+    }
+  }, 5000);
+}
+
+function _resetAartiGA() {
+  if (aartiGA.poller) { clearInterval(aartiGA.poller); }
+  aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
+}
+
 function _createYTPlayer(startSec, muted) {
   // Destroy previous instance if any
   if (ytPlayer) { try { ytPlayer.destroy(); } catch(e){} ytPlayer = null; }
+  _resetAartiGA();
 
   document.getElementById('aartiPlayer').classList.add('visible');
 
@@ -1544,6 +1587,13 @@ function _createYTPlayer(startSec, muted) {
         setTimeout(function() {
           try { e.target.unMute(); e.target.setVolume(100); } catch(err) {}
         }, 500);
+      },
+      onStateChange: function(e) {
+        if (e.data === YT.PlayerState.PLAYING && !aartiGA.playSent) {
+          aartiGA.playSent = true;
+          _gaAartiEvent('aarti_play');
+          _startAartiGAPoller();
+        }
       }
     }
   });
@@ -1571,6 +1621,7 @@ function onYouTubeIframeAPIReady() {
 
 function stopAartiPlayer() {
   document.getElementById('aartiPlayer').classList.remove('visible');
+  _resetAartiGA();
   if (ytPlayer) { try { ytPlayer.stopVideo(); ytPlayer.destroy(); } catch(e){} ytPlayer = null; }
   // Re-create the target div (YT API replaces it with iframe)
   var p = document.getElementById('aartiPlayer');

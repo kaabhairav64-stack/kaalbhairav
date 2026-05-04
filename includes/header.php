@@ -98,6 +98,13 @@ $base_href       = $is_local ? '/kaalbhairav/' : '/';
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F9BYKE3H1S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F9BYKE3H1S');
+</script>
 <base href="<?php echo $base_href; ?>">
 <title><?php echo $page_title; ?></title>
 <meta name="description" content="<?php echo $meta_description; ?>">
