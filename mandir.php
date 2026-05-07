@@ -400,7 +400,7 @@ include 'includes/header.php';
   text-shadow: 0 0 15px rgba(255,100,0,0.6);
 }
 
-/* ===== YOUTUBE PLAYER ===== */
+/* ===== AUDIO PLAYER ===== */
 .aarti-player {
   width: 100%;
   max-width: 680px;
@@ -408,10 +408,9 @@ include 'includes/header.php';
   display: none;
 }
 .aarti-player.visible { display: block; }
-.aarti-player iframe {
-  width: 1px;
-  height: 1px;
-  border: none;
+.aarti-player audio {
+  width: 0;
+  height: 0;
   opacity: 0;
   pointer-events: none;
 }
@@ -1276,9 +1275,9 @@ include 'includes/header.php';
     </div>
   </div>
 
-  <!-- YOUTUBE PLAYER (YT IFrame API — loads muted, unmuted on tap) -->
+  <!-- LOCAL AUDIO PLAYER (HTML5 — loads muted, unmuted on tap) -->
   <div class="aarti-player" id="aartiPlayer">
-    <div id="aartiFrame"></div>
+    <audio id="aartiFrame" preload="auto"></audio>
   </div>
 
 
@@ -1294,8 +1293,8 @@ include 'includes/header.php';
 
 <script>
 // ===== CONFIGURATION =====
-var AARTI_YOUTUBE_ID = 'v70gYG7XJmc';
-var AARTI_DURATION_MIN = 8; // minutes (video is 7:08, rounded up)
+var AARTI_AUDIO_SRC = 'assets/audio/aarti.mp3';
+var AARTI_DURATION_MIN = 8; // minutes (audio is ~7:08, rounded up)
 
 // IST aarti times
 var MORNING_HOUR = 6,  MORNING_MIN = 0;
@@ -1415,11 +1414,9 @@ function _openKapat() {
     elapsed = Math.max(0, h * 3600 + ist.getMinutes() * 60 + ist.getSeconds() - startSec);
   }
 
-  // Wait for kapat to fully open (3s transition) then start aarti
-  var _elapsed = elapsed;
-  setTimeout(function() {
-    loadAartiPlayer(_elapsed, true); // start muted (browser requires), onReady unmutes
-  }, 3000);
+  // Start audio immediately so the click gesture (if any) is still "fresh"
+  // for unmuted autoplay. Kapat continues opening in parallel.
+  loadAartiPlayer(elapsed);
 }
 
 function _closeKapat() {
@@ -1503,22 +1500,15 @@ function tick() {
   }
 }
 
-// unmuteAarti() and loadAartiPlayer() defined below after YT API script loads
+// loadAartiPlayer() and stopAartiPlayer() defined below
 
 // Run immediately + every second
 tick();
 setInterval(tick, 1000);
 </script>
 
-<!-- YouTube IFrame API — loads async, does not block page -->
-<script src="https://www.youtube.com/iframe_api"></script>
 <script>
-var ytPlayer    = null;
-var ytApiReady  = false;
-var pendingStart = -1; // elapsed seconds waiting for API to be ready
-
-
-var pendingMuted = true;
+var audioPlayer = null;
 
 // ===== GA engagement tracking =====
 var aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
@@ -1532,15 +1522,8 @@ function _gaAartiEvent(name) {
 function _startAartiGAPoller() {
   if (aartiGA.poller) return;
   aartiGA.poller = setInterval(function() {
-    if (!ytPlayer) return;
-    var state, muted, vol;
-    try {
-      state = ytPlayer.getPlayerState && ytPlayer.getPlayerState();
-      muted = ytPlayer.isMuted && ytPlayer.isMuted();
-      vol   = ytPlayer.getVolume ? ytPlayer.getVolume() : 0;
-    } catch(e) { return; }
-    if (state !== YT.PlayerState.PLAYING) return;
-    var audible = !muted && vol > 0;
+    if (!audioPlayer || audioPlayer.paused || audioPlayer.ended) return;
+    var audible = !audioPlayer.muted && audioPlayer.volume > 0;
     if (audible && !aartiGA.unmutedSent) {
       aartiGA.unmutedSent = true;
       _gaAartiEvent('aarti_unmuted');
@@ -1562,73 +1545,70 @@ function _resetAartiGA() {
   aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
 }
 
-function _createYTPlayer(startSec, muted) {
-  // Destroy previous instance if any
-  if (ytPlayer) { try { ytPlayer.destroy(); } catch(e){} ytPlayer = null; }
+// Tries to play with sound. If browser blocks (no recent gesture),
+// falls back to muted playback and unmutes on the next user tap.
+function loadAartiPlayer(elapsed) {
+  if (audioPlayer) { try { audioPlayer.pause(); } catch(e){} }
   _resetAartiGA();
 
   document.getElementById('aartiPlayer').classList.add('visible');
 
-  ytPlayer = new YT.Player('aartiFrame', {
-    width: '1', height: '1',
-    videoId: AARTI_YOUTUBE_ID,
-    playerVars: {
-      autoplay: 1,
-      mute:     muted ? 1 : 0,
-      start:    startSec,
-      controls: 0,
-      loop:     0,
-      rel:      0
-    },
-    events: {
-      onReady: function(e) {
-        e.target.playVideo();
-        // Auto-unmute — works once browser sees the muted autoplay first
-        setTimeout(function() {
-          try { e.target.unMute(); e.target.setVolume(100); } catch(err) {}
-        }, 500);
-      },
-      onStateChange: function(e) {
-        if (e.data === YT.PlayerState.PLAYING && !aartiGA.playSent) {
-          aartiGA.playSent = true;
-          _gaAartiEvent('aarti_play');
-          _startAartiGAPoller();
-        }
-      }
+  var el = document.getElementById('aartiFrame');
+  el.muted  = false;
+  el.volume = 1;
+  el.src    = AARTI_AUDIO_SRC;
+
+  audioPlayer = el;
+
+  el.addEventListener('loadedmetadata', function _seekOnce() {
+    el.removeEventListener('loadedmetadata', _seekOnce);
+    try { el.currentTime = elapsed || 0; } catch(e) {}
+  });
+
+  el.addEventListener('playing', function _onPlay() {
+    el.removeEventListener('playing', _onPlay);
+    if (!aartiGA.playSent) {
+      aartiGA.playSent = true;
+      _gaAartiEvent('aarti_play');
+      _startAartiGAPoller();
     }
   });
-}
 
-// muted=false when called from a user gesture (test button click)
-// muted=true  when auto-triggered by real aarti time (no gesture)
-function loadAartiPlayer(elapsed, muted) {
-  if (ytApiReady) {
-    _createYTPlayer(elapsed, muted);
-  } else {
-    pendingStart = elapsed;
-    pendingMuted = muted;
+  // Arm tap-to-unmute up front so a tap during the play() resolution
+  // window also unmutes — not just taps after the rejection lands.
+  _armTapToUnmute(el);
+
+  var p = el.play();
+  if (p && p.catch) {
+    p.catch(function() {
+      // Unmuted autoplay blocked — start muted so audio is at least playing.
+      // The tap-to-unmute listener (already armed) will unmute on first tap.
+      el.muted = true;
+      el.play().catch(function(){});
+    });
   }
 }
 
-function onYouTubeIframeAPIReady() {
-  ytApiReady = true;
-  if (pendingStart >= 0) {
-    _createYTPlayer(pendingStart, pendingMuted);
-    pendingStart = -1;
-  }
+function _armTapToUnmute(el) {
+  var unmute = function() {
+    document.removeEventListener('click', unmute, true);
+    document.removeEventListener('touchstart', unmute, true);
+    try { el.muted = false; el.volume = 1; } catch(e) {}
+  };
+  document.addEventListener('click', unmute, true);
+  document.addEventListener('touchstart', unmute, true);
 }
-
 
 function stopAartiPlayer() {
   document.getElementById('aartiPlayer').classList.remove('visible');
   _resetAartiGA();
-  if (ytPlayer) { try { ytPlayer.stopVideo(); ytPlayer.destroy(); } catch(e){} ytPlayer = null; }
-  // Re-create the target div (YT API replaces it with iframe)
+  if (audioPlayer) {
+    try { audioPlayer.pause(); audioPlayer.removeAttribute('src'); audioPlayer.load(); } catch(e){}
+    audioPlayer = null;
+  }
+  // Re-create a fresh audio element to drop any attached listeners
   var p = document.getElementById('aartiPlayer');
-  var d = document.createElement('div');
-  d.id = 'aartiFrame';
-  p.innerHTML = '';
-  p.appendChild(d);
+  p.innerHTML = '<audio id="aartiFrame" preload="auto"></audio>';
 }
 </script>
 
