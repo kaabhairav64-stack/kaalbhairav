@@ -1,5 +1,7 @@
-# Force HTTPS
+# Force HTTPS — skip localhost so dev can test over HTTP without cert hassles
 RewriteEngine On
+RewriteCond %{HTTP_HOST} !^localhost(:[0-9]+)?$
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1(:[0-9]+)?$
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 

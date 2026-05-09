@@ -1501,14 +1501,14 @@ function tick() {
 }
 
 // loadAartiPlayer() and stopAartiPlayer() defined below
-
-// Run immediately + every second
-tick();
-setInterval(tick, 1000);
+// Bootstrap (tick + setInterval) lives at the bottom of the next <script>
+// block, after loadAartiPlayer is defined — otherwise a page-load that lands
+// inside the aarti window throws ReferenceError before setInterval can arm.
 </script>
 
 <script>
 var audioPlayer = null;
+var wakeLockSentinel = null;
 
 // ===== GA engagement tracking =====
 var aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
@@ -1560,6 +1560,33 @@ function loadAartiPlayer(elapsed) {
 
   audioPlayer = el;
 
+  // Keep screen awake during aarti (desktop + Android + iOS 16.4+)
+  if ('wakeLock' in navigator) {
+    navigator.wakeLock.request('screen').then(function(s) {
+      wakeLockSentinel = s;
+      s.addEventListener('release', function() { wakeLockSentinel = null; });
+    }).catch(function() {});
+  }
+  // Re-acquire if user tabs away then back during aarti
+  document.addEventListener('visibilitychange', _reacquireWakeLock);
+
+  // Media Session — keeps audio playing through screen-lock on mobile,
+  // shows lockscreen controls + metadata
+  if ('mediaSession' in navigator) {
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title:  'Kaal Bhairav Aarti',
+        artist: 'KaalBhairav.org',
+        album:  'Live Darshan',
+        artwork: [
+          { src: 'assets/img/og-kaalbhairav-square.jpg', sizes: '512x512', type: 'image/jpeg' }
+        ]
+      });
+      navigator.mediaSession.setActionHandler('play',  function(){ if (audioPlayer) audioPlayer.play(); });
+      navigator.mediaSession.setActionHandler('pause', function(){ if (audioPlayer) audioPlayer.pause(); });
+    } catch(e) {}
+  }
+
   el.addEventListener('loadedmetadata', function _seekOnce() {
     el.removeEventListener('loadedmetadata', _seekOnce);
     try { el.currentTime = elapsed || 0; } catch(e) {}
@@ -1606,10 +1633,38 @@ function stopAartiPlayer() {
     try { audioPlayer.pause(); audioPlayer.removeAttribute('src'); audioPlayer.load(); } catch(e){}
     audioPlayer = null;
   }
+  // Release wake lock + clear media session
+  document.removeEventListener('visibilitychange', _reacquireWakeLock);
+  if (wakeLockSentinel) {
+    try { wakeLockSentinel.release(); } catch(e) {}
+    wakeLockSentinel = null;
+  }
+  if ('mediaSession' in navigator) {
+    try {
+      navigator.mediaSession.metadata = null;
+      navigator.mediaSession.setActionHandler('play',  null);
+      navigator.mediaSession.setActionHandler('pause', null);
+    } catch(e) {}
+  }
   // Re-create a fresh audio element to drop any attached listeners
   var p = document.getElementById('aartiPlayer');
   p.innerHTML = '<audio id="aartiFrame" preload="auto"></audio>';
 }
+
+// Wake locks are auto-dropped when the tab is hidden — re-request on return
+function _reacquireWakeLock() {
+  if (document.visibilityState !== 'visible') return;
+  if (wakeLockSentinel || !audioPlayer || audioPlayer.paused) return;
+  if (!('wakeLock' in navigator)) return;
+  navigator.wakeLock.request('screen').then(function(s) {
+    wakeLockSentinel = s;
+    s.addEventListener('release', function() { wakeLockSentinel = null; });
+  }).catch(function() {});
+}
+
+// Bootstrap — must run AFTER loadAartiPlayer is defined
+tick();
+setInterval(tick, 1000);
 </script>
 
 <?php include 'includes/footer.php'; ?>
