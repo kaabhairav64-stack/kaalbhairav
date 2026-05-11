@@ -408,11 +408,12 @@ include 'includes/header.php';
   display: none;
 }
 .aarti-player.visible { display: block; }
-.aarti-player audio {
-  width: 0;
-  height: 0;
+.aarti-player video {
+  width: 1px;
+  height: 1px;
   opacity: 0;
   pointer-events: none;
+  border: 0;
 }
 
 
@@ -1275,9 +1276,9 @@ include 'includes/header.php';
     </div>
   </div>
 
-  <!-- LOCAL AUDIO PLAYER (HTML5 — loads muted, unmuted on tap) -->
+  <!-- LOCAL VIDEO PLAYER (hidden 1x1 — muted autoplay, unmute after 500ms) -->
   <div class="aarti-player" id="aartiPlayer">
-    <audio id="aartiFrame" preload="auto"></audio>
+    <video id="aartiFrame" preload="auto" muted playsinline></video>
   </div>
 
 
@@ -1293,8 +1294,8 @@ include 'includes/header.php';
 
 <script>
 // ===== CONFIGURATION =====
-var AARTI_AUDIO_SRC = 'assets/audio/aarti.mp3';
-var AARTI_DURATION_MIN = 8; // minutes (audio is ~7:08, rounded up)
+var AARTI_VIDEO_SRC = 'assets/audio/aarti.mp4';
+var AARTI_DURATION_MIN = 8; // minutes (video is exactly 8:00; audio runs 7:08, then silence)
 
 // IST aarti times
 var MORNING_HOUR = 6,  MORNING_MIN = 0;
@@ -1545,8 +1546,10 @@ function _resetAartiGA() {
   aartiGA = { playSent:false, unmutedSent:false, listenSecs:0, milestones:{}, poller:null };
 }
 
-// Tries to play with sound. If browser blocks (no recent gesture),
-// falls back to muted playback and unmutes on the next user tap.
+// Mirrors the YouTube IFrame pattern: muted autoplay (always allowed for
+// <video muted playsinline>), then programmatic unmute after 500ms. If the
+// browser denies the unmute (no gesture), the tap-to-unmute listener catches
+// the next user tap and unmutes then.
 function loadAartiPlayer(elapsed) {
   if (audioPlayer) { try { audioPlayer.pause(); } catch(e){} }
   _resetAartiGA();
@@ -1554,9 +1557,9 @@ function loadAartiPlayer(elapsed) {
   document.getElementById('aartiPlayer').classList.add('visible');
 
   var el = document.getElementById('aartiFrame');
-  el.muted  = false;
+  el.muted  = true;
   el.volume = 1;
-  el.src    = AARTI_AUDIO_SRC;
+  el.src    = AARTI_VIDEO_SRC;
 
   audioPlayer = el;
 
@@ -1605,15 +1608,13 @@ function loadAartiPlayer(elapsed) {
   // window also unmutes — not just taps after the rejection lands.
   _armTapToUnmute(el);
 
-  var p = el.play();
-  if (p && p.catch) {
-    p.catch(function() {
-      // Unmuted autoplay blocked — start muted so audio is at least playing.
-      // The tap-to-unmute listener (already armed) will unmute on first tap.
-      el.muted = true;
-      el.play().catch(function(){});
-    });
-  }
+  el.play().catch(function(){});
+
+  // Try to unmute shortly after — mirrors YouTube's onReady → unMute().
+  // If the browser denies this (no gesture), tap-to-unmute will handle it.
+  setTimeout(function() {
+    try { el.muted = false; el.volume = 1; } catch(e) {}
+  }, 500);
 }
 
 function _armTapToUnmute(el) {
@@ -1646,9 +1647,9 @@ function stopAartiPlayer() {
       navigator.mediaSession.setActionHandler('pause', null);
     } catch(e) {}
   }
-  // Re-create a fresh audio element to drop any attached listeners
+  // Re-create a fresh video element to drop any attached listeners
   var p = document.getElementById('aartiPlayer');
-  p.innerHTML = '<audio id="aartiFrame" preload="auto"></audio>';
+  p.innerHTML = '<video id="aartiFrame" preload="auto" muted playsinline></video>';
 }
 
 // Wake locks are auto-dropped when the tab is hidden — re-request on return
