@@ -2,7 +2,7 @@
 $page_title    = "Kaal Bhairav Pooja Vidhi — Complete Worship Procedure";
 $meta_desc     = "Complete step-by-step Kaal Bhairav Pooja Vidhi — materials required, sankalpa, shodashopachara puja, abhishek, aarti, naivedya, and spiritual effects. Perform for protection, justice, and liberation.";
 $meta_keywords = "Kaal Bhairav pooja vidhi, Bhairav puja procedure, Kaal Bhairav worship, Bhairav abhishek, Kaal Bhairav puja at home, Bhairav ashtami puja, Bhairav puja effects";
-$current_page  = "pooja";
+$current_page  = "pooja-vidhi";
 $page_schema = json_encode([
   "@context" => "https://schema.org",
   "@type" => "FAQPage",

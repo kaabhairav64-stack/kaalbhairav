@@ -597,7 +597,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="particles" id="particles"></div>
 <nav>
     <div class="nav-inner">
-        <a href="<?php echo $base_href; ?>index.php" class="nav-logo"><img src="<?php echo $base_href; ?>assets/img/logo.svg" alt="" class="nav-logo-img" width="36" height="36">KaalBhairav</a>
+        <a href="<?php echo $base_href; ?>index.php" class="nav-logo"><img src="<?php echo $base_href; ?>assets/img/logo.svg" alt="KaalBhairav.org logo" class="nav-logo-img" width="36" height="36">KaalBhairav</a>
         <div class="nav-mobile-actions">
           <button class="lang-toggle-btn lang-toggle-mobile" onclick="setLang(localStorage.getItem('kb_lang')==='hi'?'en':'hi')">हिंदी</button>
           <button class="nav-toggle" id="navToggle" onclick="document.getElementById('mainNav').classList.toggle('open');this.textContent=document.getElementById('mainNav').classList.contains('open')?'✕':'☰'">☰</button>
