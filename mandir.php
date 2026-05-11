@@ -83,17 +83,25 @@ include 'includes/header.php';
   overflow: visible;
 }
 
-/* Mandir background image */
-.mandir-bg {
+/* Mandir scene — visible <video> doubles as the background image AND
+   gives the browser a real "video is playing" signal so the OS keeps
+   the screen on without relying on Wake Lock (matches YouTube embed). */
+.aarti-player {
   position: absolute;
   inset: 0;
-  background: url('assets/img/mandir.png') center center / cover no-repeat;
   opacity: 0;
   transition: opacity 2s ease 8s;
+  pointer-events: none;
 }
-.mandir-bg.visible {
+.aarti-player.visible {
   opacity: 1;
   transition: opacity 2s ease 0s;
+}
+.aarti-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Kapat (doors) */
@@ -401,20 +409,7 @@ include 'includes/header.php';
 }
 
 /* ===== AUDIO PLAYER ===== */
-.aarti-player {
-  width: 100%;
-  max-width: 680px;
-  margin: 1.5rem auto 0;
-  display: none;
-}
-.aarti-player.visible { display: block; }
-.aarti-player video {
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
-  border: 0;
-}
+/* (Mandir scene .aarti-player rules are defined near the top with .mandir-bg replacement.) */
 
 
 
@@ -616,8 +611,11 @@ include 'includes/header.php';
 
     <div class="temple-arch">
 
-      <!-- Mandir background -->
-      <div class="mandir-bg" id="mandirBg"></div>
+      <!-- Mandir scene: the playing <video> IS the background image
+           (file shows mandir.png; visible video keeps the screen awake) -->
+      <div class="aarti-player" id="aartiPlayer">
+        <video id="aartiFrame" preload="none" muted playsinline></video>
+      </div>
 
       <!-- Glow -->
       <div class="temple-glow" id="templeGlow"></div>
@@ -1276,12 +1274,6 @@ include 'includes/header.php';
     </div>
   </div>
 
-  <!-- LOCAL VIDEO PLAYER (hidden 1x1 — muted autoplay, unmute after 500ms) -->
-  <div class="aarti-player" id="aartiPlayer">
-    <video id="aartiFrame" preload="auto" muted playsinline></video>
-  </div>
-
-
   <!-- PRAYER -->
   <div class="prayer-scroll">
     <p>
@@ -1396,7 +1388,7 @@ function _openKapat() {
   document.getElementById('kapatRight').classList.add('open');
   document.getElementById('kapatMsg').classList.add('hidden');
   setTimeout(function() {
-    document.getElementById('mandirBg').classList.add('visible');
+    document.getElementById('aartiPlayer').classList.add('visible');
     document.getElementById('templeGlow').classList.add('visible');
     document.getElementById('flamesContainer').classList.add('visible');
   }, 1500);
@@ -1424,7 +1416,7 @@ function _closeKapat() {
   document.getElementById('kapatLeft').classList.remove('open');
   document.getElementById('kapatRight').classList.remove('open');
   document.getElementById('kapatMsg').classList.remove('hidden');
-  document.getElementById('mandirBg').classList.remove('visible');
+  document.getElementById('aartiPlayer').classList.remove('visible');
   document.getElementById('templeGlow').classList.remove('visible');
   document.getElementById('flamesContainer').classList.remove('visible');
   document.getElementById('liveBadge').classList.remove('visible');
@@ -1554,7 +1546,7 @@ function loadAartiPlayer(elapsed) {
   if (audioPlayer) { try { audioPlayer.pause(); } catch(e){} }
   _resetAartiGA();
 
-  document.getElementById('aartiPlayer').classList.add('visible');
+  // Visibility now handled by _openKapat (fades in 1500ms after kapat opens).
 
   var el = document.getElementById('aartiFrame');
   el.muted  = true;
@@ -1649,7 +1641,7 @@ function stopAartiPlayer() {
   }
   // Re-create a fresh video element to drop any attached listeners
   var p = document.getElementById('aartiPlayer');
-  p.innerHTML = '<video id="aartiFrame" preload="auto" muted playsinline></video>';
+  p.innerHTML = '<video id="aartiFrame" preload="none" muted playsinline></video>';
 }
 
 // Wake locks are auto-dropped when the tab is hidden — re-request on return
